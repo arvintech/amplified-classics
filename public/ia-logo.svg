@@ -1,0 +1,29 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-green { fill: #1e5631; }
+      .logo-text { font-family: 'Georgia', serif; font-style: italic; }
+    </style>
+  </defs>
+  
+  <!-- POWERED BY text -->
+  <text x="26" y="62" font-size="13" font-weight="600" font-family="Arial, sans-serif" class="logo-green" letter-spacing="1">POWERED BY</text>
+  
+  <!-- Parallel vertical bars (||) -->
+  <rect x="27" y="80" width="30" height="320" class="logo-green"/>
+  <rect x="88" y="80" width="30" height="320" class="logo-green"/>
+  
+  <!-- Large IA letters -->
+  <!-- I -->
+  <rect x="262" y="80" width="38" height="320" class="logo-green"/>
+  
+  <!-- A - constructed with polygons -->
+  <path d="M 330 80 L 380 80 L 420 400 L 370 400 L 362 360 L 348 360 L 340 400 L 290 400 Z" class="logo-green"/>
+  <path d="M 345 210 L 365 210 L 360 320 L 350 320 Z" fill="#ffffff"/>
+  
+  <!-- TM trademark -->
+  <text x="380" y="105" font-size="18" font-weight="bold" font-family="Arial, sans-serif" class="logo-green">TM</text>
+  
+  <!-- Intelligence Amplifier text -->
+  <text x="32" y="455" font-size="38" class="logo-text logo-green">Intelligence Amplifier</text>
+</svg>

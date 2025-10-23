@@ -1,0 +1,2174 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import { 
+  ArrowLeft, ArrowRight, BookOpen, Users, MessageSquare, 
+  Lightbulb, ChevronDown, ChevronUp, Brain, Sparkles, ShoppingCart, Bookmark 
+} from 'lucide-react'
+import { bookConfig } from '../config'
+import { chapter1 } from '../chapters/chapter-1'
+import { chapter2 } from '../chapters/chapter-2'
+import { chapter3 } from '../chapters/chapter-3'
+import { chapter4 } from '../chapters/chapter-4'
+import { chapter5 } from '../chapters/chapter-5'
+import { chapter6 } from '../chapters/chapter-6'
+import { chapter7 } from '../chapters/chapter-7'
+import { chapter8 } from '../chapters/chapter-8'
+// Import remaining chapter data files as they are created
+// import { chapter9 } from '../chapters/chapter-9'
+// ... import all chapters
+
+const chapters: any[] = [
+  chapter1,
+  chapter2,
+  chapter3,
+  chapter4,
+  chapter5,
+  chapter6,
+  chapter7,
+  chapter8,
+  // chapter8,
+  // chapter9,
+  // ... add all imported chapters
+]
+
+export default function ChapterPage({ params }: { params: { chapter: string } }) {
+  const chapterNum = parseInt(params.chapter.replace('chapter-', ''))
+  
+  if (isNaN(chapterNum) || chapterNum < 1 || chapterNum > bookConfig.totalChapters) {
+    notFound()
+  }
+  
+  const chapterData = chapters[chapterNum - 1]
+  
+  // Show "coming soon" for chapters not yet implemented
+  if (!chapterData) {
+    return (
+      <div style={{ 
+        padding: '4rem 2rem', 
+        textAlign: 'center', 
+        minHeight: '100vh', 
+        background: 'var(--background)' 
+      }}>
+        <div style={{
+          maxWidth: '600px',
+          margin: '0 auto',
+          padding: '3rem',
+          background: 'white',
+          border: '2px solid var(--border-color)'
+        }}>
+          <h1 style={{
+            fontSize: '2rem',
+            marginBottom: '1rem',
+            color: 'var(--text-primary)',
+            fontFamily: 'var(--font-heading)'
+          }}>
+            Chapter {chapterNum} Coming Soon
+          </h1>
+          <p style={{
+            fontSize: '1.125rem',
+            lineHeight: 1.7,
+            color: 'var(--text-secondary)'
+          }}>
+            This chapter is currently being developed. Check back soon for the complete Intelligence Amplified analysis!
+          </p>
+          <Link
+            href={`/books/${bookConfig.slug}`}
+            style={{
+              display: 'inline-block',
+              marginTop: '2rem',
+              padding: '0.75rem 1.5rem',
+              background: 'var(--primary)',
+              color: 'white',
+              textDecoration: 'none',
+              fontWeight: '600'
+            }}
+          >
+            Back to {bookConfig.title}
+          </Link>
+        </div>
+      </div>
+    )
+  }
+  
+  return <ChapterView chapterData={chapterData} chapterNum={chapterNum} />
+}
+
+function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum: number }) {
+  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set())
+  
+  const toggleSection = (section: string) => {
+    const newExpanded = new Set(expandedSections)
+    if (newExpanded.has(section)) {
+      newExpanded.delete(section)
+    } else {
+      newExpanded.add(section)
+    }
+    setExpandedSections(newExpanded)
+  }
+
+  return (
+    <div style={{ background: 'var(--background)', minHeight: '100vh' }}>
+      {/* Header */}
+      <div style={{
+        padding: '1.5rem 2rem',
+        borderBottom: '1px solid var(--border-color)',
+        background: 'white',
+        position: 'sticky',
+        top: 0,
+        zIndex: 10
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Link
+            href={`/books/${bookConfig.slug}`}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              fontSize: '0.9375rem',
+              fontWeight: '600'
+            }}
+          >
+            <ArrowLeft size={18} />
+            Back to {bookConfig.title}
+          </Link>
+          
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            {chapterNum > 1 && (
+              <Link
+                href={`/books/${bookConfig.slug}/chapter-${chapterNum - 1}`}
+                style={{
+                  padding: '0.5rem 1rem',
+                  border: '2px solid var(--border-color)',
+                  textDecoration: 'none',
+                  color: 'var(--text-primary)',
+                  fontSize: '0.875rem',
+                  fontWeight: '600',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem'
+                }}
+              >
+                <ArrowLeft size={16} />
+                Previous
+              </Link>
+            )}
+            {chapterNum < bookConfig.totalChapters && (
+              <Link
+                href={`/books/${bookConfig.slug}/chapter-${chapterNum + 1}`}
+                style={{
+                  padding: '0.5rem 1rem',
+                  background: 'var(--primary)',
+                  color: 'white',
+                  textDecoration: 'none',
+                  fontSize: '0.875rem',
+                  fontWeight: '600',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  border: '2px solid var(--primary)'
+                }}
+              >
+                Next
+                <ArrowRight size={16} />
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div style={{ maxWidth: '900px', margin: '0 auto', padding: '3rem 2rem' }}>
+        {/* Chapter Title */}
+        <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
+          <div style={{
+            display: 'inline-block',
+            padding: '0.25rem 0.75rem',
+            background: 'var(--primary)',
+            color: 'white',
+            fontSize: '0.75rem',
+            fontWeight: '700',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            marginBottom: '1rem'
+          }}>
+            Chapter {chapterNum}
+          </div>
+          <h1 style={{
+            fontSize: '3rem',
+            fontWeight: '300',
+            marginBottom: '1rem',
+            color: 'var(--primary)',
+            fontFamily: 'var(--font-heading)',
+            letterSpacing: '-0.02em'
+          }}>
+            {bookConfig.title}
+          </h1>
+          <div style={{
+            display: 'flex',
+            gap: '1.5rem',
+            justifyContent: 'center',
+            fontSize: '0.875rem',
+            color: 'var(--text-secondary)',
+            marginTop: '1rem'
+          }}>
+            <span>⏱️ {chapterData.readingTime} min read</span>
+            <span>📖 {chapterData.pages} pages</span>
+          </div>
+        </div>
+
+        {/* Series Opening - Chapter 1 Only (Green Instructional Box) */}
+        {chapterData.seriesOpening && (
+          <section style={{ marginBottom: '3rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.08) 0%, rgba(30, 86, 49, 0.15) 100%)',
+              padding: '2.5rem',
+              border: '3px solid var(--primary)',
+              borderRadius: '0.5rem',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
+            }}>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '1rem',
+                marginBottom: '1.5rem'
+              }}>
+                <span style={{ fontSize: '2.5rem' }}>✨</span>
+                <h2 style={{
+                  fontSize: '1.75rem',
+                  fontWeight: '700',
+                  color: 'var(--primary)',
+                  margin: 0,
+                  fontFamily: 'var(--font-heading)'
+                }}>
+                  {chapterData.seriesOpening.title}
+                </h2>
+              </div>
+              
+              <p style={{
+                fontSize: '1.125rem',
+                lineHeight: 1.8,
+                color: 'var(--text-primary)',
+                marginBottom: '2rem',
+                fontWeight: '500'
+              }}>
+                {chapterData.seriesOpening.introduction}
+              </p>
+              
+              <div style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+                gap: '1.5rem',
+                marginBottom: '2rem'
+              }}>
+                {chapterData.seriesOpening.features.map((feature: any, idx: number) => (
+                  <div key={idx} style={{
+                    background: 'white',
+                    padding: '1.5rem',
+                    border: '2px solid var(--primary)',
+                    borderRadius: '0.25rem'
+                  }}>
+                    <div style={{
+                      fontSize: '2rem',
+                      marginBottom: '0.75rem'
+                    }}>
+                      {feature.icon}
+                    </div>
+                    <h3 style={{
+                      fontSize: '1.125rem',
+                      fontWeight: '700',
+                      color: 'var(--primary)',
+                      marginBottom: '0.5rem'
+                    }}>
+                      {feature.name}
+                    </h3>
+                    <p style={{
+                      fontSize: '0.9375rem',
+                      lineHeight: 1.6,
+                      color: 'var(--text-secondary)',
+                      margin: 0
+                    }}>
+                      {feature.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              
+              <div style={{
+                padding: '1.5rem',
+                background: 'white',
+                border: '2px solid var(--primary)',
+                borderLeft: '6px solid var(--primary)',
+                borderRadius: '0.25rem'
+              }}>
+                <p style={{
+                  fontSize: '1rem',
+                  lineHeight: 1.7,
+                  color: 'var(--text-primary)',
+                  margin: 0,
+                  fontStyle: 'italic'
+                }}>
+                  <strong style={{ color: 'var(--primary)', fontWeight: '700' }}>💡 Remember:</strong> {chapterData.seriesOpening.callToAction}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* At a Glance - Chapter Opening Overview */}
+        {chapterData.atAGlance && (
+          <section style={{ marginBottom: '3rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.05) 0%, rgba(30, 86, 49, 0.10) 100%)',
+              padding: '2rem',
+              border: '2px solid var(--primary)',
+              borderLeft: '6px solid var(--primary)'
+            }}>
+              <h2 style={{
+                fontSize: '1.5rem',
+                fontWeight: '600',
+                marginBottom: '1.5rem',
+                color: 'var(--primary)',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem'
+              }}>
+                📋 Chapter at a Glance
+              </h2>
+              
+              <div style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+                gap: '1.5rem' 
+              }}>
+                <div>
+                  <div style={{ 
+                    fontSize: '0.875rem', 
+                    fontWeight: '700', 
+                    color: 'var(--primary)', 
+                    marginBottom: '0.5rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    Setting
+                  </div>
+                  <div style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 1.6 }}>
+                    {chapterData.atAGlance.setting}
+                  </div>
+                </div>
+                
+                <div>
+                  <div style={{ 
+                    fontSize: '0.875rem', 
+                    fontWeight: '700', 
+                    color: 'var(--primary)', 
+                    marginBottom: '0.5rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    Narrator
+                  </div>
+                  <div style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 1.6 }}>
+                    {chapterData.atAGlance.narrator}
+                  </div>
+                </div>
+                
+                <div>
+                  <div style={{ 
+                    fontSize: '0.875rem', 
+                    fontWeight: '700', 
+                    color: 'var(--primary)', 
+                    marginBottom: '0.5rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    Key Event
+                  </div>
+                  <div style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 1.6 }}>
+                    {chapterData.atAGlance.keyEvent}
+                  </div>
+                </div>
+                
+                <div>
+                  <div style={{ 
+                    fontSize: '0.875rem', 
+                    fontWeight: '700', 
+                    color: 'var(--primary)', 
+                    marginBottom: '0.5rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    Mood
+                  </div>
+                  <div style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 1.6 }}>
+                    {chapterData.atAGlance.mood}
+                  </div>
+                </div>
+              </div>
+              
+              <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--primary)' }}>
+                <div style={{ 
+                  fontSize: '0.875rem', 
+                  fontWeight: '700', 
+                  color: 'var(--primary)', 
+                  marginBottom: '0.75rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>
+                  Important Characters
+                </div>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {chapterData.atAGlance.importantCharacters.map((char: any, idx: number) => (
+                    <span key={idx} style={{
+                      padding: '0.375rem 0.875rem',
+                      background: 'white',
+                      border: '1px solid var(--primary)',
+                      fontSize: '0.875rem',
+                      fontWeight: '600',
+                      color: 'var(--text-primary)'
+                    }}>
+                      {char}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--primary)' }}>
+                <div style={{ 
+                  fontSize: '0.875rem', 
+                  fontWeight: '700', 
+                  color: 'var(--primary)', 
+                  marginBottom: '0.75rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>
+                  Literary Devices
+                </div>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {chapterData.atAGlance.literaryDevices.map((device: any, idx: number) => (
+                    <span key={idx} style={{
+                      padding: '0.375rem 0.875rem',
+                      background: 'white',
+                      border: '1px solid var(--primary)',
+                      fontSize: '0.875rem',
+                      fontWeight: '600',
+                      color: 'var(--text-primary)'
+                    }}>
+                      {device}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              <div style={{ 
+                marginTop: '1.5rem', 
+                paddingTop: '1.5rem', 
+                borderTop: '1px solid var(--primary)',
+                fontSize: '1.125rem',
+                fontStyle: 'italic',
+                color: 'var(--text-primary)',
+                fontWeight: '500'
+              }}>
+                <strong style={{ color: 'var(--primary)' }}>Central Question:</strong> {chapterData.atAGlance.centralQuestion}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Summary */}
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{
+            fontSize: '1.75rem',
+            fontWeight: '400',
+            marginBottom: '1.5rem',
+            color: 'var(--text-primary)',
+            fontFamily: 'var(--font-heading)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem'
+          }}>
+            <BookOpen size={24} />
+            Chapter Summary
+          </h2>
+          <div style={{
+            background: 'white',
+            padding: '2rem',
+            border: '2px solid var(--border-color)'
+          }}>
+            <p style={{
+              fontSize: '1.125rem',
+              lineHeight: 1.8,
+              color: 'var(--text-primary)',
+              fontWeight: '500',
+              marginBottom: '1.5rem'
+            }}>
+              {chapterData.summary.brief}
+            </p>
+            {chapterData.summary.full.map((paragraph: string, idx: number) => (
+              <p key={idx} style={{
+                fontSize: '1rem',
+                lineHeight: 1.7,
+                color: 'var(--text-secondary)',
+                marginBottom: '1rem'
+              }}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </section>
+
+        {/* Terms to Know - Vocabulary Glossary */}
+        {chapterData.termsToKnow && chapterData.termsToKnow.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              📚 Terms to Know
+            </h2>
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
+              gap: '1.5rem' 
+            }}>
+              {chapterData.termsToKnow.map((term: any, idx: number) => (
+                <div key={idx} style={{
+                  background: 'white',
+                  padding: '1.5rem',
+                  border: '2px solid var(--border-color)',
+                  borderTop: '4px solid var(--primary)'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '700',
+                    marginBottom: '1rem',
+                    color: 'var(--primary)',
+                    fontFamily: 'var(--font-heading)'
+                  }}>
+                    {term.term}
+                  </h3>
+                  
+                  <div style={{ marginBottom: '1rem' }}>
+                    <div style={{
+                      fontSize: '0.75rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      color: 'var(--text-secondary)',
+                      marginBottom: '0.5rem'
+                    }}>
+                      Definition
+                    </div>
+                    <p style={{
+                      fontSize: '1rem',
+                      lineHeight: 1.6,
+                      color: 'var(--text-primary)',
+                      marginBottom: '0'
+                    }}>
+                      {term.definition}
+                    </p>
+                  </div>
+                  
+                  <div style={{ marginBottom: '1rem' }}>
+                    <div style={{
+                      fontSize: '0.75rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      color: 'var(--text-secondary)',
+                      marginBottom: '0.5rem'
+                    }}>
+                      In This Chapter
+                    </div>
+                    <p style={{
+                      fontSize: '0.9375rem',
+                      lineHeight: 1.6,
+                      color: 'var(--text-secondary)',
+                      marginBottom: '0'
+                    }}>
+                      {term.context}
+                    </p>
+                  </div>
+                  
+                  <div style={{
+                    padding: '1rem',
+                    background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.05) 0%, rgba(30, 86, 49, 0.08) 100%)',
+                    borderLeft: '3px solid var(--primary)'
+                  }}>
+                    <div style={{
+                      fontSize: '0.75rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      color: 'var(--primary)',
+                      marginBottom: '0.5rem'
+                    }}>
+                      Why It Matters
+                    </div>
+                    <p style={{
+                      fontSize: '0.9375rem',
+                      lineHeight: 1.6,
+                      color: 'var(--text-primary)',
+                      marginBottom: '0',
+                      fontStyle: 'italic'
+                    }}>
+                      {term.whyItMatters}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Reading Moments Intro - Speed Learning Box (Chapter 1 Only) */}
+        {chapterData.readingMomentsIntro && (
+          <div style={{
+            marginBottom: '2rem',
+            padding: '2rem',
+            background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.08) 0%, rgba(30, 86, 49, 0.15) 100%)',
+            border: '3px solid var(--primary)',
+            borderLeft: '8px solid var(--primary)',
+            borderRadius: '0.5rem',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: '700',
+              color: 'var(--primary)',
+              marginBottom: '1rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}>
+              {chapterData.readingMomentsIntro.title}
+            </h3>
+            <p style={{
+              fontSize: '1.0625rem',
+              lineHeight: 1.8,
+              color: 'var(--text-primary)',
+              margin: 0
+            }} dangerouslySetInnerHTML={{ 
+              __html: chapterData.readingMomentsIntro.content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') 
+            }} />
+          </div>
+        )}
+
+        {/* Reading Moments (ChapterNextTemplate) */}
+        {chapterData.readingMoments && chapterData.readingMoments.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Sparkles size={24} />
+              Notice → Explore → Amplify
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+              {chapterData.readingMoments.map((moment: any) => (
+                <div key={moment.id} style={{
+                  background: 'white',
+                  border: '2px solid var(--border-color)',
+                  overflow: 'hidden'
+                }}>
+                  {/* Notice Section */}
+                  <div style={{
+                    padding: '2rem',
+                    background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.03) 0%, rgba(30, 86, 49, 0.06) 100%)'
+                  }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                      <span style={{ fontSize: '2rem' }}>{moment.emoji}</span>
+                      <h3 style={{
+                        fontSize: '1.375rem',
+                        fontWeight: '600',
+                        color: 'var(--text-primary)',
+                        margin: 0
+                      }}>
+                        {moment.title}
+                      </h3>
+                    </div>
+                    <p style={{
+                      fontSize: '1rem',
+                      lineHeight: 1.7,
+                      color: 'var(--text-secondary)',
+                      marginBottom: '1.5rem'
+                    }}>
+                      {moment.notice}
+                    </p>
+                    
+                    {/* Explore Questions */}
+                    <div style={{
+                      background: 'white',
+                      padding: '1.5rem',
+                      border: '2px solid var(--primary)',
+                      borderRadius: '0.25rem'
+                    }}>
+                      <h4 style={{
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        color: 'var(--primary)',
+                        marginBottom: '1rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        Explore
+                      </h4>
+                      <ol style={{ margin: 0, paddingLeft: '1.5rem' }}>
+                        {moment.explore.map((question: string, idx: number) => (
+                          <li key={idx} style={{
+                            fontSize: '1rem',
+                            lineHeight: 1.6,
+                            color: 'var(--text-primary)',
+                            marginBottom: '0.75rem',
+                            fontWeight: '500'
+                          }}>
+                            {question}
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
+                  
+                  {/* Amplify Section (Expandable) */}
+                  <div>
+                    <button
+                      onClick={() => toggleSection(moment.id)}
+                      style={{
+                        width: '100%',
+                        padding: '1.5rem',
+                        background: 'var(--primary)',
+                        color: 'white',
+                        border: 'none',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        cursor: 'pointer',
+                        fontSize: '1.125rem',
+                        fontWeight: '600'
+                      }}
+                    >
+                      <span>💡 Amplify Your Understanding</span>
+                      {expandedSections.has(moment.id) ? (
+                        <ChevronUp size={24} />
+                      ) : (
+                        <ChevronDown size={24} />
+                      )}
+                    </button>
+                    {expandedSections.has(moment.id) && (
+                      <div style={{
+                        padding: '2rem',
+                        fontSize: '1rem',
+                        lineHeight: 1.7,
+                        color: 'var(--text-primary)'
+                      }}>
+                        <div dangerouslySetInnerHTML={{ __html: moment.amplify.replace(/\n/g, '<br/>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Characters */}
+        {chapterData.characters && chapterData.characters.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Users size={24} />
+              Character Development
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {chapterData.characters.map((character: any, idx: number) => (
+                <div key={idx} style={{
+                  background: 'white',
+                  padding: '2rem',
+                  border: '2px solid var(--border-color)'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                    <span style={{ fontSize: '2rem' }}>{character.keyTrait.emoji}</span>
+                    <div>
+                      <h3 style={{
+                        fontSize: '1.375rem',
+                        fontWeight: '600',
+                        color: 'var(--text-primary)',
+                        marginBottom: '0.25rem'
+                      }}>
+                        {character.name}
+                      </h3>
+                      <span style={{
+                        display: 'inline-block',
+                        padding: '0.25rem 0.75rem',
+                        background: 'var(--card-bg)',
+                        border: '1px solid var(--border-color)',
+                        fontSize: '0.75rem',
+                        fontWeight: '600',
+                        color: 'var(--text-primary)'
+                      }}>
+                        {character.keyTrait.text}
+                      </span>
+                    </div>
+                  </div>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)'
+                  }}>
+                    {character.development}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Key Quotes */}
+        {chapterData.quotes && chapterData.quotes.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <MessageSquare size={24} />
+              Key Quotes
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {chapterData.quotes.map((quote: any, idx: number) => (
+                <div key={idx} style={{
+                  background: 'white',
+                  padding: '2rem',
+                  border: '2px solid var(--border-color)',
+                  borderLeft: '4px solid var(--primary)'
+                }}>
+                  <blockquote style={{
+                    fontSize: '1.125rem',
+                    lineHeight: 1.7,
+                    fontStyle: 'italic',
+                    color: 'var(--text-primary)',
+                    marginBottom: '1rem',
+                    paddingLeft: '1.5rem',
+                    borderLeft: '3px solid var(--primary)'
+                  }}>
+                    "{quote.text}"
+                  </blockquote>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)'
+                  }}>
+                    {quote.analysis}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* IA Analysis */}
+        {chapterData.iaAnalysis && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Brain size={24} />
+              Intelligence Amplified Analysis
+            </h2>
+            
+            {/* Themes */}
+            {chapterData.iaAnalysis.themes && (
+              <div style={{ marginBottom: '2rem' }}>
+                <h3 style={{
+                  fontSize: '1.25rem',
+                  fontWeight: '600',
+                  marginBottom: '1rem',
+                  color: 'var(--text-primary)'
+                }}>
+                  Themes
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  {chapterData.iaAnalysis.themes.map((theme: any, idx: number) => (
+                    <div key={idx} style={{
+                      background: 'white',
+                      padding: '1.5rem',
+                      border: '2px solid var(--border-color)'
+                    }}>
+                      <h4 style={{
+                        fontSize: '1.125rem',
+                        fontWeight: '600',
+                        marginBottom: '0.75rem',
+                        color: 'var(--primary)'
+                      }}>
+                        {theme.name}
+                      </h4>
+                      <p style={{
+                        fontSize: '1rem',
+                        lineHeight: 1.7,
+                        color: 'var(--text-secondary)'
+                      }}>
+                        {theme.explanation}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Literary Techniques */}
+            {chapterData.iaAnalysis.literaryTechniques && (
+              <div>
+                <h3 style={{
+                  fontSize: '1.25rem',
+                  fontWeight: '600',
+                  marginBottom: '1rem',
+                  color: 'var(--text-primary)'
+                }}>
+                  Literary Techniques
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  {chapterData.iaAnalysis.literaryTechniques.map((technique: any, idx: number) => (
+                    <div key={idx} style={{
+                      background: 'white',
+                      padding: '1.5rem',
+                      border: '2px solid var(--border-color)'
+                    }}>
+                      <h4 style={{
+                        fontSize: '1.125rem',
+                        fontWeight: '600',
+                        marginBottom: '0.75rem',
+                        color: 'var(--primary)'
+                      }}>
+                        {technique.name}
+                      </h4>
+                      <p style={{
+                        fontSize: '1rem',
+                        lineHeight: 1.7,
+                        color: 'var(--text-secondary)',
+                        marginBottom: '0.75rem'
+                      }}>
+                        {technique.explanation}
+                      </p>
+                      {technique.example && (
+                        <p style={{
+                          fontSize: '0.9375rem',
+                          lineHeight: 1.6,
+                          color: 'var(--text-secondary)',
+                          fontStyle: 'italic',
+                          padding: '1rem',
+                          background: 'var(--card-bg)',
+                          borderLeft: '3px solid var(--primary)'
+                        }}>
+                          Example: {technique.example}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* Modern Adaptation */}
+        {chapterData.modernAdaptation && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Sparkles size={24} strokeWidth={1.5} />
+              Modern Adaptation
+            </h2>
+            <div style={{
+              background: 'linear-gradient(135deg, #0080FF 0%, #0066CC 100%)',
+              color: 'white',
+              padding: '2rem',
+              border: '2px solid #0080FF',
+              position: 'relative',
+              overflow: 'hidden',
+              boxShadow: '0 4px 12px rgba(0, 128, 255, 0.2)'
+            }}>
+              {/* Decorative Modern Pattern */}
+              <div style={{
+                position: 'absolute',
+                top: '-50px',
+                right: '-50px',
+                width: '200px',
+                height: '200px',
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '50%',
+                pointerEvents: 'none'
+              }} />
+              <div style={{
+                position: 'absolute',
+                bottom: '-30px',
+                left: '-30px',
+                width: '150px',
+                height: '150px',
+                background: 'rgba(255, 255, 255, 0.03)',
+                borderRadius: '50%',
+                pointerEvents: 'none'
+              }} />
+              
+              {/* Earmark Icon */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                right: 0,
+                width: '60px',
+                height: '60px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                background: 'rgba(255, 255, 255, 0.25)',
+                clipPath: 'polygon(0 0, 100% 0, 100% 100%)'
+              }}>
+                <Bookmark 
+                  size={24} 
+                  strokeWidth={1.5}
+                  style={{
+                    color: 'white',
+                    position: 'absolute',
+                    top: '8px',
+                    right: '8px'
+                  }}
+                />
+              </div>
+              
+              {/* "2025" Modern Badge */}
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.375rem 0.875rem',
+                background: 'rgba(255, 255, 255, 0.2)',
+                backdropFilter: 'blur(10px)',
+                borderRadius: '20px',
+                fontSize: '0.75rem',
+                fontWeight: '700',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+                marginBottom: '1.25rem',
+                border: '1px solid rgba(255, 255, 255, 0.3)'
+              }}>
+                <span style={{
+                  width: '6px',
+                  height: '6px',
+                  background: '#00FF88',
+                  borderRadius: '50%',
+                  display: 'inline-block',
+                  animation: 'pulse 2s infinite'
+                }} />
+                2025 Context
+              </div>
+              
+              <p style={{
+                fontSize: '1.0625rem',
+                lineHeight: 1.7,
+                marginBottom: '1.5rem',
+                color: 'rgba(255, 255, 255, 0.95)',
+                fontFamily: '"Roboto Condensed", "Arial Narrow", "Helvetica Neue Condensed", sans-serif',
+                fontWeight: '400',
+                letterSpacing: '-0.01em',
+                position: 'relative',
+                zIndex: 1
+              }}>
+                {chapterData.modernAdaptation.setting}
+              </p>
+              
+              {chapterData.modernAdaptation.parallels && (
+                <div style={{ marginBottom: '1.5rem', position: 'relative', zIndex: 1 }}>
+                  {chapterData.modernAdaptation.parallels.map((parallel: string, idx: number) => {
+                    // Remove emoji/icon at the start and parse bold formatting
+                    const cleanText = parallel.replace(/^[^\w\s]+\s*/, '')
+                    return (
+                      <div 
+                        key={idx} 
+                        style={{
+                          fontSize: '1rem',
+                          lineHeight: 1.6,
+                          marginBottom: '0.75rem',
+                          color: 'rgba(255, 255, 255, 0.9)',
+                          fontFamily: '"Roboto Condensed", "Arial Narrow", "Helvetica Neue Condensed", sans-serif',
+                          fontWeight: '400',
+                          letterSpacing: '-0.01em',
+                          paddingLeft: '1rem',
+                          borderLeft: '2px solid rgba(255, 255, 255, 0.3)'
+                        }}
+                        dangerouslySetInnerHTML={{ 
+                          __html: cleanText.replace(/\*\*(.*?)\*\*/g, '<strong style="color: rgba(255, 255, 255, 1); font-weight: 600;">$1</strong>') 
+                        }}
+                      />
+                    )
+                  })}
+                </div>
+              )}
+              
+              {chapterData.modernAdaptation.discussionPrompt && (
+                <div style={{
+                  padding: '1.25rem',
+                  background: 'rgba(255, 255, 255, 0.12)',
+                  backdropFilter: 'blur(10px)',
+                  borderRadius: '8px',
+                  borderLeft: '4px solid rgba(255, 255, 255, 0.5)',
+                  position: 'relative',
+                  zIndex: 1
+                }}>
+                  <div style={{
+                    fontSize: '0.6875rem',
+                    fontWeight: '700',
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: 'rgba(255, 255, 255, 0.7)',
+                    marginBottom: '0.5rem',
+                    fontFamily: '"Roboto Condensed", "Arial Narrow", "Helvetica Neue Condensed", sans-serif'
+                  }}>
+                    Discussion Question
+                  </div>
+                  <p 
+                    style={{
+                      fontSize: '1rem',
+                      lineHeight: 1.7,
+                      fontWeight: '500',
+                      fontStyle: 'italic',
+                      color: 'rgba(255, 255, 255, 0.95)',
+                      fontFamily: '"Roboto Condensed", "Arial Narrow", "Helvetica Neue Condensed", sans-serif',
+                      letterSpacing: '-0.01em',
+                      margin: 0
+                    }}
+                  >
+                    {chapterData.modernAdaptation.discussionPrompt}
+                  </p>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* Thematic Threads */}
+        {chapterData.thematicThreads && chapterData.thematicThreads.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)'
+            }}>
+              Thematic Threads
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+              {chapterData.thematicThreads.map((thread: any, idx: number) => (
+                <div key={idx} style={{
+                  background: 'white',
+                  padding: '1.5rem',
+                  border: '2px solid var(--border-color)'
+                }}>
+                  <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{thread.emoji}</div>
+                  <h3 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '600',
+                    marginBottom: '0.75rem',
+                    color: 'var(--text-primary)'
+                  }}>
+                    {thread.name}
+                  </h3>
+                  <p style={{
+                    fontSize: '0.9375rem',
+                    lineHeight: 1.6,
+                    color: 'var(--text-secondary)'
+                  }}>
+                    {thread.explanation}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Discussion Questions */}
+        {chapterData.discussionQuestions && chapterData.discussionQuestions.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Lightbulb size={24} />
+              Discussion Questions
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {chapterData.discussionQuestions.map((q: any, idx: number) => (
+                <div key={idx} style={{
+                  background: 'white',
+                  padding: '1.5rem',
+                  border: '2px solid var(--border-color)'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '600',
+                    marginBottom: '0.5rem',
+                    color: 'var(--primary)'
+                  }}>
+                    {q.title}
+                  </h3>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)'
+                  }}>
+                    {q.question}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Speed Learning Notice - Chapter 1 Only */}
+        {chapterData.speedLearningNotice && (
+          <div style={{
+            marginBottom: '2rem',
+            padding: '1.5rem',
+            background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.06) 0%, rgba(30, 86, 49, 0.10) 100%)',
+            border: '2px solid var(--primary)',
+            borderLeft: '6px solid var(--primary)',
+            borderRadius: '0.25rem'
+          }}>
+            <h3 style={{
+              fontSize: '1.125rem',
+              fontWeight: '700',
+              color: 'var(--primary)',
+              marginBottom: '0.75rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}>
+              {chapterData.speedLearningNotice.title}
+            </h3>
+            <p style={{
+              fontSize: '1rem',
+              lineHeight: 1.7,
+              color: 'var(--text-primary)',
+              margin: 0
+            }}>
+              {chapterData.speedLearningNotice.content}
+            </p>
+          </div>
+        )}
+
+        {/* Amplified Discussion */}
+        {chapterData.amplifiedDiscussion && chapterData.amplifiedDiscussion.length > 0 && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Brain size={24} />
+              Amplified Discussion
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {chapterData.amplifiedDiscussion.map((discussion: any) => (
+                <div key={discussion.id} style={{
+                  background: 'white',
+                  border: '2px solid var(--border-color)',
+                  overflow: 'hidden'
+                }}>
+                  <button
+                    onClick={() => toggleSection(discussion.id)}
+                    style={{
+                      width: '100%',
+                      padding: '1.5rem',
+                      background: 'var(--card-bg)',
+                      border: 'none',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      cursor: 'pointer',
+                      textAlign: 'left'
+                    }}
+                  >
+                    <div>
+                      <h3 style={{
+                        fontSize: '1.25rem',
+                        fontWeight: '600',
+                        color: 'var(--text-primary)',
+                        marginBottom: '0.5rem'
+                      }}>
+                        {discussion.title}
+                      </h3>
+                      <p style={{
+                        fontSize: '1rem',
+                        color: 'var(--text-secondary)'
+                      }}>
+                        {discussion.question}
+                      </p>
+                    </div>
+                    {expandedSections.has(discussion.id) ? (
+                      <ChevronUp size={24} color="var(--primary)" />
+                    ) : (
+                      <ChevronDown size={24} color="var(--primary)" />
+                    )}
+                  </button>
+                  
+                  {expandedSections.has(discussion.id) && (
+                    <div style={{
+                      padding: '2rem',
+                      borderTop: '1px solid var(--border-color)'
+                    }}>
+                      <div 
+                        style={{
+                          fontSize: '1rem',
+                          lineHeight: 1.7,
+                          color: 'var(--text-secondary)',
+                          whiteSpace: 'pre-wrap'
+                        }}
+                        dangerouslySetInnerHTML={{ __html: discussion.aiResponse.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br />') }}
+                      />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Educator Resources */}
+        {chapterData.educatorResources && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)'
+            }}>
+              Educator Resources
+            </h2>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {chapterData.educatorResources.writingPrompt && (
+                <div style={{
+                  background: 'white',
+                  padding: '2rem',
+                  border: '2px solid var(--border-color)'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '600',
+                    marginBottom: '1rem',
+                    color: 'var(--primary)'
+                  }}>
+                    ✍️ Writing Prompt
+                  </h3>
+                  <h4 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '600',
+                    marginBottom: '0.75rem',
+                    color: 'var(--text-primary)'
+                  }}>
+                    {chapterData.educatorResources.writingPrompt.title}
+                  </h4>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1rem'
+                  }}>
+                    {chapterData.educatorResources.writingPrompt.description}
+                  </p>
+                  <p style={{
+                    fontSize: '0.9375rem',
+                    lineHeight: 1.6,
+                    color: 'var(--text-secondary)',
+                    fontStyle: 'italic',
+                    padding: '1rem',
+                    background: 'var(--card-bg)',
+                    borderLeft: '3px solid var(--primary)'
+                  }}>
+                    <strong>Purpose:</strong> {chapterData.educatorResources.writingPrompt.purpose}
+                  </p>
+                </div>
+              )}
+              
+              {chapterData.educatorResources.activity && (
+                <div style={{
+                  background: 'white',
+                  padding: '2rem',
+                  border: '2px solid var(--border-color)'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '600',
+                    marginBottom: '1rem',
+                    color: 'var(--primary)'
+                  }}>
+                    🎨 Activity
+                  </h3>
+                  <h4 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '600',
+                    marginBottom: '0.75rem',
+                    color: 'var(--text-primary)'
+                  }}>
+                    {chapterData.educatorResources.activity.title}
+                  </h4>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1rem'
+                  }}>
+                    {chapterData.educatorResources.activity.description}
+                  </p>
+                  {chapterData.educatorResources.activity.materials && (
+                    <p style={{
+                      fontSize: '0.9375rem',
+                      color: 'var(--text-secondary)',
+                      fontStyle: 'italic'
+                    }}>
+                      <strong>Materials:</strong> {chapterData.educatorResources.activity.materials}
+                    </p>
+                  )}
+                </div>
+              )}
+              
+              {chapterData.educatorResources.crossCurricular && (
+                <div style={{
+                  background: 'white',
+                  padding: '2rem',
+                  border: '2px solid var(--border-color)'
+                }}>
+                  <h3 style={{
+                    fontSize: '1.25rem',
+                    fontWeight: '600',
+                    marginBottom: '1rem',
+                    color: 'var(--primary)'
+                  }}>
+                    🔗 Cross-Curricular Connections
+                  </h3>
+                  <h4 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '600',
+                    marginBottom: '0.75rem',
+                    color: 'var(--text-primary)'
+                  }}>
+                    {chapterData.educatorResources.crossCurricular.title}
+                  </h4>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '1rem'
+                  }}>
+                    {chapterData.educatorResources.crossCurricular.description}
+                  </p>
+                  {chapterData.educatorResources.crossCurricular.subjects && (
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      {chapterData.educatorResources.crossCurricular.subjects.map((subject: string, idx: number) => (
+                        <span key={idx} style={{
+                          padding: '0.375rem 0.75rem',
+                          background: 'var(--card-bg)',
+                          border: '1px solid var(--border-color)',
+                          fontSize: '0.875rem',
+                          fontWeight: '600',
+                          color: 'var(--text-primary)'
+                        }}>
+                          {subject}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* Critical Thinking Exercise */}
+        {chapterData.criticalThinkingExercise && (
+          <section style={{ marginBottom: '3rem' }}>
+            <h2 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1.5rem',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-heading)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem'
+            }}>
+              <Brain size={24} />
+              Critical Thinking Exercise
+            </h2>
+            
+            <div style={{
+              background: 'white',
+              border: '3px solid var(--primary)',
+              overflow: 'hidden'
+            }}>
+              {/* Title Banner */}
+              <div style={{
+                background: 'var(--primary)',
+                color: 'white',
+                padding: '1.5rem 2rem'
+              }}>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  fontWeight: '600',
+                  margin: 0,
+                  fontFamily: 'var(--font-heading)'
+                }}>
+                  {chapterData.criticalThinkingExercise.title}
+                </h3>
+              </div>
+              
+              {/* Main Prompt */}
+              <div style={{ padding: '2rem' }}>
+                <div style={{
+                  fontSize: '1.125rem',
+                  lineHeight: 1.8,
+                  color: 'var(--text-primary)',
+                  marginBottom: '2rem',
+                  fontWeight: '500',
+                  padding: '1.5rem',
+                  background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.03) 0%, rgba(30, 86, 49, 0.06) 100%)',
+                  borderLeft: '4px solid var(--primary)'
+                }}>
+                  {chapterData.criticalThinkingExercise.prompt}
+                </div>
+                
+                {/* Guiding Questions */}
+                <div style={{ marginBottom: '2rem' }}>
+                  <h4 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '700',
+                    color: 'var(--primary)',
+                    marginBottom: '1rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    🔍 Guiding Questions
+                  </h4>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                    {chapterData.criticalThinkingExercise.guidingQuestions.map((q: string, idx: number) => (
+                      <div key={idx} style={{
+                        padding: '1rem 1.5rem',
+                        background: 'white',
+                        border: '2px solid var(--border-color)',
+                        borderLeft: '4px solid var(--primary)'
+                      }}>
+                        <p style={{
+                          fontSize: '1rem',
+                          lineHeight: 1.7,
+                          color: 'var(--text-primary)',
+                          margin: 0
+                        }}>
+                          <strong style={{ color: 'var(--primary)' }}>{idx + 1}.</strong> {q}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Thinking Framework */}
+                <div style={{ marginBottom: '2rem' }}>
+                  <h4 style={{
+                    fontSize: '1.125rem',
+                    fontWeight: '700',
+                    color: 'var(--primary)',
+                    marginBottom: '1rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    🧠 Thinking Framework
+                  </h4>
+                  <div style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+                    gap: '1rem' 
+                  }}>
+                    <div style={{
+                      padding: '1.5rem',
+                      background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.05) 0%, rgba(30, 86, 49, 0.08) 100%)',
+                      border: '2px solid var(--primary)'
+                    }}>
+                      <div style={{
+                        fontSize: '0.875rem',
+                        fontWeight: '700',
+                        color: 'var(--primary)',
+                        marginBottom: '0.75rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        📊 Analyze
+                      </div>
+                      <p style={{
+                        fontSize: '0.9375rem',
+                        lineHeight: 1.6,
+                        color: 'var(--text-primary)',
+                        margin: 0
+                      }}>
+                        {chapterData.criticalThinkingExercise.thinkingFramework.analyze}
+                      </p>
+                    </div>
+                    
+                    <div style={{
+                      padding: '1.5rem',
+                      background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.05) 0%, rgba(30, 86, 49, 0.08) 100%)',
+                      border: '2px solid var(--primary)'
+                    }}>
+                      <div style={{
+                        fontSize: '0.875rem',
+                        fontWeight: '700',
+                        color: 'var(--primary)',
+                        marginBottom: '0.75rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        ⚖️ Evaluate
+                      </div>
+                      <p style={{
+                        fontSize: '0.9375rem',
+                        lineHeight: 1.6,
+                        color: 'var(--text-primary)',
+                        margin: 0
+                      }}>
+                        {chapterData.criticalThinkingExercise.thinkingFramework.evaluate}
+                      </p>
+                    </div>
+                    
+                    <div style={{
+                      padding: '1.5rem',
+                      background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.05) 0%, rgba(30, 86, 49, 0.08) 100%)',
+                      border: '2px solid var(--primary)'
+                    }}>
+                      <div style={{
+                        fontSize: '0.875rem',
+                        fontWeight: '700',
+                        color: 'var(--primary)',
+                        marginBottom: '0.75rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        🔗 Synthesize
+                      </div>
+                      <p style={{
+                        fontSize: '0.9375rem',
+                        lineHeight: 1.6,
+                        color: 'var(--text-primary)',
+                        margin: 0
+                      }}>
+                        {chapterData.criticalThinkingExercise.thinkingFramework.synthesize}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Expected Depth */}
+                <div style={{
+                  padding: '1.5rem',
+                  background: 'var(--card-bg)',
+                  border: '2px solid var(--border-color)',
+                  borderLeft: '4px solid var(--primary)',
+                  marginBottom: '1.5rem'
+                }}>
+                  <div style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '700',
+                    color: 'var(--primary)',
+                    marginBottom: '0.75rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    🎯 Expected Depth
+                  </div>
+                  <p style={{
+                    fontSize: '0.9375rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    margin: 0,
+                    fontStyle: 'italic'
+                  }}>
+                    {chapterData.criticalThinkingExercise.expectedDepth}
+                  </p>
+                </div>
+                
+                {/* Classroom Application */}
+                <div style={{
+                  padding: '1.5rem',
+                  background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.08) 0%, rgba(30, 86, 49, 0.12) 100%)',
+                  border: '2px solid var(--primary)'
+                }}>
+                  <div style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '700',
+                    color: 'var(--primary)',
+                    marginBottom: '0.75rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem'
+                  }}>
+                    👩‍🏫 For Teachers: Classroom Application
+                  </div>
+                  <p style={{
+                    fontSize: '0.9375rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-primary)',
+                    margin: 0
+                  }}>
+                    {chapterData.criticalThinkingExercise.classroomApplication}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Why Literature Matters - Closing Motivation */}
+        {chapterData.whyLiteratureMatters && (
+          <section style={{ marginBottom: '3rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #D4AF37 100%)',
+              padding: '2.5rem',
+              border: '3px solid #B8860B',
+              borderRadius: '0.75rem',
+              position: 'relative',
+              overflow: 'hidden',
+              boxShadow: '0 12px 24px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+            }}>
+              {/* Gold Shimmer Effect */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: '-100%',
+                width: '200%',
+                height: '100%',
+                background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
+                animation: 'shimmer 3s infinite',
+                pointerEvents: 'none'
+              }} />
+              
+              {/* Decorative Gold Coins */}
+              <div style={{
+                position: 'absolute',
+                top: '-40px',
+                right: '-40px',
+                width: '200px',
+                height: '200px',
+                background: 'radial-gradient(circle, rgba(255, 223, 0, 0.15) 0%, transparent 70%)',
+                borderRadius: '50%',
+                pointerEvents: 'none'
+              }} />
+              <div style={{
+                position: 'absolute',
+                bottom: '-30px',
+                left: '-30px',
+                width: '150px',
+                height: '150px',
+                background: 'radial-gradient(circle, rgba(255, 223, 0, 0.12) 0%, transparent 70%)',
+                borderRadius: '50%',
+                pointerEvents: 'none'
+              }} />
+              
+              {/* Elegant Currency Symbol Watermark */}
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                right: '5%',
+                transform: 'translateY(-50%)',
+                fontSize: '6rem',
+                fontWeight: '300',
+                color: 'rgba(184, 134, 11, 0.06)',
+                pointerEvents: 'none',
+                lineHeight: 1,
+                fontFamily: 'Georgia, serif',
+                letterSpacing: '0.05em'
+              }}>
+                $
+              </div>
+              
+              {/* Content */}
+              <div style={{ position: 'relative', zIndex: 1 }}>
+                <div style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.5rem 1rem',
+                  background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%)',
+                  backdropFilter: 'blur(10px)',
+                  borderRadius: '25px',
+                  fontSize: '0.6875rem',
+                  fontWeight: '800',
+                  letterSpacing: '0.1em',
+                  textTransform: 'uppercase',
+                  marginBottom: '1.75rem',
+                  border: '2px solid rgba(255, 215, 0, 0.5)',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+                  color: '#FFD700'
+                }}>
+                  <span style={{ fontSize: '1rem' }}>💎</span>
+                  <span style={{ 
+                    background: 'linear-gradient(135deg, #FFD700 0%, #FFF8DC 50%, #FFD700 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text'
+                  }}>
+                    Why Literature Matters
+                  </span>
+                  <span style={{ fontSize: '1rem' }}>💎</span>
+                </div>
+                
+                <div style={{
+                  background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%)',
+                  padding: '2rem',
+                  borderRadius: '0.5rem',
+                  border: '2px solid rgba(255, 215, 0, 0.4)',
+                  boxShadow: 'inset 0 2px 4px rgba(0, 0, 0, 0.3)',
+                  backdropFilter: 'blur(5px)'
+                }}>
+                  <p style={{
+                    fontSize: '1.5rem',
+                    lineHeight: 1.7,
+                    fontWeight: '600',
+                    background: 'linear-gradient(135deg, #FFD700 0%, #FFF8DC 50%, #FFD700 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                    margin: 0,
+                    fontStyle: 'italic',
+                    letterSpacing: '-0.01em',
+                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)'
+                  }}>
+                    "{chapterData.whyLiteratureMatters}"
+                  </p>
+                </div>
+              </div>
+              
+              {/* CSS Animation */}
+              <style>{`
+                @keyframes shimmer {
+                  0% { transform: translateX(-100%); }
+                  100% { transform: translateX(100%); }
+                }
+              `}</style>
+            </div>
+          </section>
+        )}
+
+        {/* Next Time Teaser - Chapter 1 Only */}
+        {chapterData.nextTimeTeaser && (
+          <section style={{ marginBottom: '3rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.10) 0%, rgba(30, 86, 49, 0.18) 100%)',
+              padding: '2.5rem',
+              border: '3px solid var(--primary)',
+              borderRadius: '0.5rem',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              {/* Decorative Element */}
+              <div style={{
+                position: 'absolute',
+                top: '-20px',
+                right: '-20px',
+                fontSize: '8rem',
+                opacity: 0.1,
+                pointerEvents: 'none'
+              }}>
+                {chapterData.nextTimeTeaser.emoji}
+              </div>
+              
+              <div style={{ position: 'relative', zIndex: 1 }}>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  marginBottom: '1rem'
+                }}>
+                  <span style={{ fontSize: '2.5rem' }}>{chapterData.nextTimeTeaser.emoji}</span>
+                  <h2 style={{
+                    fontSize: '1.75rem',
+                    fontWeight: '700',
+                    color: 'var(--primary)',
+                    margin: 0,
+                    fontFamily: 'var(--font-heading)'
+                  }}>
+                    {chapterData.nextTimeTeaser.title}
+                  </h2>
+                </div>
+                
+                <p style={{
+                  fontSize: '1.125rem',
+                  lineHeight: 1.8,
+                  color: 'var(--text-primary)',
+                  marginBottom: '1.5rem',
+                  fontWeight: '500'
+                }}>
+                  {chapterData.nextTimeTeaser.preview}
+                </p>
+                
+                <div style={{
+                  padding: '1.5rem',
+                  background: 'white',
+                  border: '2px solid var(--primary)',
+                  borderLeft: '6px solid var(--primary)',
+                  borderRadius: '0.25rem'
+                }}>
+                  <div style={{
+                    fontSize: '0.875rem',
+                    fontWeight: '700',
+                    color: 'var(--primary)',
+                    marginBottom: '0.5rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em'
+                  }}>
+                    🤔 Think About This
+                  </div>
+                  <p style={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-primary)',
+                    margin: 0,
+                    fontStyle: 'italic'
+                  }}>
+                    {chapterData.nextTimeTeaser.hookQuestion}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Navigation Footer */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          paddingTop: '3rem',
+          borderTop: '2px solid var(--border-color)',
+          marginTop: '3rem',
+          gap: '2rem'
+        }}>
+          {chapterNum > 1 ? (
+            <Link
+              href={`/books/${bookConfig.slug}/chapter-${chapterNum - 1}`}
+              style={{
+                padding: '1rem 2rem',
+                border: '2px solid var(--border-color)',
+                textDecoration: 'none',
+                color: 'var(--text-primary)',
+                fontSize: '1rem',
+                fontWeight: '600',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}
+            >
+              <ArrowLeft size={20} />
+              Previous Chapter
+            </Link>
+          ) : (
+            <div style={{
+              flex: 1,
+              maxWidth: '450px',
+              padding: '1.5rem',
+              background: 'linear-gradient(135deg, rgba(30, 86, 49, 0.05) 0%, rgba(30, 86, 49, 0.10) 100%)',
+              border: '2px solid var(--primary)',
+              borderRadius: '0.375rem',
+              display: 'flex',
+              gap: '1.25rem',
+              alignItems: 'center'
+            }}>
+              {bookConfig.coverImage && (
+                <img 
+                  src={bookConfig.coverImage} 
+                  alt={`${bookConfig.title} cover`}
+                  style={{
+                    width: '90px',
+                    height: '135px',
+                    objectFit: 'cover',
+                    borderRadius: '0.25rem',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.15)',
+                    flexShrink: 0
+                  }}
+                />
+              )}
+              <div style={{ flex: 1 }}>
+                <div style={{
+                  fontSize: '0.875rem',
+                  fontWeight: '700',
+                  color: 'var(--primary)',
+                  marginBottom: '0.5rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>
+                  📖 Experience the Full Story
+                </div>
+                <p style={{
+                  fontSize: '0.9375rem',
+                  lineHeight: 1.6,
+                  color: 'var(--text-secondary)',
+                  marginBottom: '1rem'
+                }}>
+                  Nothing compares to holding the book in your hands and experiencing the complete narrative as the author intended.
+                </p>
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                  {bookConfig.purchaseLinks?.independent && (
+                    <a
+                      href={bookConfig.purchaseLinks.independent.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        padding: '0.5rem 1rem',
+                        background: '#DC143C',
+                        color: 'white',
+                        textDecoration: 'none',
+                        fontSize: '0.875rem',
+                        fontWeight: '600',
+                        borderRadius: '0.25rem',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.375rem',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                        transform: 'translateY(0)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)'
+                        e.currentTarget.style.boxShadow = '0 4px 8px rgba(220, 20, 60, 0.3)'
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0) scale(1)'
+                        e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)'
+                      }}
+                    >
+                      <ShoppingCart size={16} style={{ transition: 'transform 0.3s ease' }} />
+                      Powell's Books
+                    </a>
+                  )}
+                  {bookConfig.purchaseLinks?.amazon && (
+                    <a
+                      href={bookConfig.purchaseLinks.amazon.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        padding: '0.5rem 1rem',
+                        background: '#FF9900',
+                        color: 'black',
+                        textDecoration: 'none',
+                        fontSize: '0.875rem',
+                        fontWeight: '600',
+                        borderRadius: '0.25rem',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.375rem',
+                        transition: 'all 0.3s ease',
+                        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                        transform: 'translateY(0)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)'
+                        e.currentTarget.style.boxShadow = '0 4px 8px rgba(255, 153, 0, 0.4)'
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0) scale(1)'
+                        e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)'
+                      }}
+                    >
+                      <ShoppingCart size={16} style={{ transition: 'transform 0.3s ease' }} />
+                      Amazon
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+          
+          {chapterNum < bookConfig.totalChapters && (
+            <Link
+              href={`/books/${bookConfig.slug}/chapter-${chapterNum + 1}`}
+              style={{
+                padding: '1rem 2rem',
+                background: 'var(--primary)',
+                color: 'white',
+                textDecoration: 'none',
+                fontSize: '1rem',
+                fontWeight: '600',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                border: '2px solid var(--primary)'
+              }}
+            >
+              Next Chapter
+              <ArrowRight size={20} />
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}

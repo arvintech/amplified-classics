@@ -1,0 +1,18 @@
+
+> amplified-classics@1.0.0 dev
+> next dev -H 0.0.0.0
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3001
+  - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 1709ms
+ ○ Compiling /books/jane-eyre/[chapter] ...
+ ✓ Compiled /books/jane-eyre/[chapter] in 2.5s (554 modules)
+ GET /books/jane-eyre/chapter-1 200 in 3100ms
+ ○ Compiling /books/pride-and-prejudice/[chapter] ...
+ ✓ Compiled /books/pride-and-prejudice/[chapter] in 674ms (564 modules)
+ GET /books/pride-and-prejudice/chapter-1 200 in 1153ms
+[?25h

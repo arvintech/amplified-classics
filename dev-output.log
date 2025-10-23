@@ -1,0 +1,35 @@
+
+> amplified-classics@1.0.0 dev
+> next dev -H 0.0.0.0
+
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3000
+  - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 1606ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.6s (489 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/9476ce9079262448.webpack.hot-update.json 404 in 2745ms
+ ✓ Compiled / in 292ms (499 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/9476ce9079262448.webpack.hot-update.json 404 in 159ms
+ GET / 200 in 502ms
+ GET / 200 in 51ms
+ ○ Compiling /books/jane-eyre ...
+ ✓ Compiled /books/jane-eyre in 524ms (504 modules)
+ ○ Compiling /books/jane-eyre/[chapter] ...
+ ✓ Compiled /books/jane-eyre/[chapter] in 708ms (572 modules)
+ ✓ Compiled /books/wuthering-heights in 490ms (575 modules)
+ ✓ Compiled in 578ms (575 modules)
+ ✓ Compiled in 275ms (301 modules)
+ ✓ Compiled in 285ms (301 modules)
+ GET /books/jane-eyre 200 in 128ms
+ ✓ Compiled in 410ms (575 modules)
+ GET /books/jane-eyre 200 in 170ms
+ ○ Compiling /books/sense-and-sensibility ...
+ ✓ Compiled /books/sense-and-sensibility in 566ms (578 modules)
+ ✓ Compiled /books/evelina in 339ms (581 modules)
+ ✓ Compiled /books/pride-and-prejudice in 244ms (584 modules)
+ ✓ Compiled in 934ms (547 modules)
