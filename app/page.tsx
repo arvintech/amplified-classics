@@ -73,6 +73,19 @@ const books = [
     chapters: 61,
     quote: '"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."',
     url: '/books/pride-and-prejudice'
+  },
+  {
+    id: 'the-man-who-was-thursday',
+    title: 'The Man Who Was Thursday',
+    subtitle: 'A Nightmare',
+    author: 'G.K. Chesterton',
+    year: '1908',
+    description: 'A surreal philosophical thriller where poet Gabriel Syme infiltrates an anarchist council, only to discover nothing is as it seems. Chesterton\'s masterpiece blends mystery, metaphysics, and wild adventure in a chase across Europe.',
+    themes: ['Order vs. Chaos', 'Identity & Deception', 'Faith & Doubt', 'Surrealism'],
+    status: 'In Development',
+    chapters: 15,
+    quote: '"The poets have been mysteriously silent on the subject of cheese."',
+    url: '/books/the-man-who-was-thursday'
   }
 ]
 
@@ -187,8 +200,8 @@ export default function HomePage() {
             flexWrap: 'wrap'
           }}>
             {[
-              { label: 'Books', value: '5' },
-              { label: 'Chapters', value: '267' },
+              { label: 'Books', value: '6' },
+              { label: 'Chapters', value: '282' },
               { label: 'Free Forever', value: '100%' }
             ].map((stat, idx) => (
               <div key={idx} style={{ textAlign: 'center' }}>
