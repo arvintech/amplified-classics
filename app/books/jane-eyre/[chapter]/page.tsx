@@ -16,8 +16,11 @@ import { chapter5 } from '../chapters/chapter-5'
 import { chapter6 } from '../chapters/chapter-6'
 import { chapter7 } from '../chapters/chapter-7'
 import { chapter8 } from '../chapters/chapter-8'
+import { chapter9 } from '../chapters/chapter-9'
+import { chapter10 } from '../chapters/chapter-10'
+import { chapter11 } from '../chapters/chapter-11'
+import { chapter12 } from '../chapters/chapter-12'
 // Import remaining chapter data files as they are created
-// import { chapter9 } from '../chapters/chapter-9'
 // ... import all chapters
 
 const chapters: any[] = [
@@ -29,8 +32,10 @@ const chapters: any[] = [
   chapter6,
   chapter7,
   chapter8,
-  // chapter8,
-  // chapter9,
+  chapter9,
+  chapter10,
+  chapter11,
+  chapter12,
   // ... add all imported chapters
 ]
 

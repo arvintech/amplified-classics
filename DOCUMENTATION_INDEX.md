@@ -8,6 +8,7 @@
 2. **CONTRIBUTOR_GUIDE.md** — Complete contributor documentation (30 min read)
 3. **BOOK_SETUP_GUIDE.md** — Detailed setup instructions with code examples (20 min read)
 4. **CHAPTER_TEMPLATE_STRUCTURE.md** — Chapter content standards (20 min read)
+5. **CURSOR_CHAT_WORKFLOW.md** — How to manage AI chat sessions effectively (15 min read) ⭐ NEW
 
 ---
 
@@ -37,6 +38,8 @@
 | **METHOD_DOCUMENTATION_SUMMARY.md** | Teaching methodology | Understanding pedagogical approach |
 | **METHOD_QUICK_GUIDE.md** | Notice → Explore → Amplify summary | Quick reference |
 | **ROUTING_RESTRUCTURE_SUMMARY.md** | System architecture | Planning and scaling |
+| **CHAT_SESSION_LOG.md** | Track AI chat sessions & decisions | After each work session |
+| **CURSOR_CHAT_WORKFLOW.md** | Chat management best practices | Before starting content work |
 
 ---
 
@@ -81,6 +84,8 @@
 - CONTRIBUTOR_GUIDE.md → "Collaboration Best Practices"
 - ROUTING_RESTRUCTURE_SUMMARY.md → "Multi-Contributor Workflow"
 - BOOK_SETUP_GUIDE.md → "Commit Your Work"
+- CURSOR_CHAT_WORKFLOW.md → "Managing AI Sessions"
+- CHAT_SESSION_LOG.md → "Tracking Decisions"
 
 ### Getting Help
 - CONTRIBUTOR_GUIDE.md → "Getting Help"
