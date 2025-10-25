@@ -80,11 +80,11 @@ const books = [
     subtitle: 'A Nightmare',
     author: 'G.K. Chesterton',
     year: '1908',
-    description: 'A surreal philosophical thriller where poet Gabriel Syme infiltrates an anarchist council, only to discover nothing is as it seems. Chesterton\'s masterpiece blends mystery, metaphysics, and wild adventure in a chase across Europe.',
-    themes: ['Order vs. Chaos', 'Identity & Deception', 'Faith & Doubt', 'Surrealism'],
-    status: 'In Development',
+    description: 'A philosophical thriller exploring anarchism, order, and the nature of good and evil through a surreal nightmare of conspiracy and revelation.',
+    themes: ['Order vs. Chaos', 'Identity & Performance', 'The Problem of Evil', 'Faith vs. Nihilism'],
+    status: 'Complete',
     chapters: 15,
-    quote: '"The poets have been mysteriously silent on the subject of cheese."',
+    quote: '"The man who called himself Thursday was walking hither and thither in an unmeaning sort of way, with his chin up in the air and his blue eyes fixed on the heavens."',
     url: '/books/the-man-who-was-thursday'
   }
 ]
