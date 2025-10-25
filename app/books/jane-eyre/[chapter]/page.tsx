@@ -23,8 +23,30 @@ import { chapter12 } from '../chapters/chapter-12'
 import { chapter13 } from '../chapters/chapter-13'
 import { chapter14 } from '../chapters/chapter-14'
 import { chapter15 } from '../chapters/chapter-15'
-// Import remaining chapter data files as they are created
-// ... import all chapters
+import { chapter16 } from '../chapters/chapter-16'
+import { chapter17 } from '../chapters/chapter-17'
+import { chapter18 } from '../chapters/chapter-18'
+import { chapter19 } from '../chapters/chapter-19'
+import { chapter20 } from '../chapters/chapter-20'
+import { chapter21 } from '../chapters/chapter-21'
+import { chapter22 } from '../chapters/chapter-22'
+import { chapter23 } from '../chapters/chapter-23'
+import { chapter24 } from '../chapters/chapter-24'
+import { chapter25 } from '../chapters/chapter-25'
+import { chapter26 } from '../chapters/chapter-26'
+import { chapter27 } from '../chapters/chapter-27'
+import { chapter28 } from '../chapters/chapter-28'
+import { chapter29 } from '../chapters/chapter-29'
+import { chapter30 } from '../chapters/chapter-30'
+import { chapter31 } from '../chapters/chapter-31'
+import { chapter32 } from '../chapters/chapter-32'
+import { chapter33 } from '../chapters/chapter-33'
+import { chapter34 } from '../chapters/chapter-34'
+import { chapter35 } from '../chapters/chapter-35'
+import { chapter36 } from '../chapters/chapter-36'
+import { chapter37 } from '../chapters/chapter-37'
+import { chapter38 } from '../chapters/chapter-38'
+// All chapters imported!
 
 const chapters: any[] = [
   chapter1,
@@ -42,7 +64,29 @@ const chapters: any[] = [
   chapter13,
   chapter14,
   chapter15,
-  // ... add all imported chapters
+  chapter16,
+  chapter17,
+  chapter18,
+  chapter19,
+  chapter20,
+  chapter21,
+  chapter22,
+  chapter23,
+  chapter24,
+  chapter25,
+  chapter26,
+  chapter27,
+  chapter28,
+  chapter29,
+  chapter30,
+  chapter31,
+  chapter32,
+  chapter33,
+  chapter34,
+  chapter35,
+  chapter36,
+  chapter37,
+  chapter38,
 ]
 
 export default function ChapterPage({ params }: { params: { chapter: string } }) {

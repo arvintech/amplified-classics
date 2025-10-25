@@ -10,7 +10,7 @@
 
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { ArrowLeft, BookOpen, Clock, Users, Lightbulb } from 'lucide-react'
+import { ArrowLeft, BookOpen, Clock, Users, Lightbulb, Feather } from 'lucide-react'
 import { bookConfig } from './config'
 
 export const metadata: Metadata = {
@@ -196,6 +196,83 @@ export default function BookPage() {
         </div>
       </section>
 
+      {/* Meet the Author */}
+      <section style={{
+        padding: '3rem 2rem',
+        background: 'var(--primary)',
+        borderTop: '1px solid var(--primary)',
+        borderBottom: '1px solid var(--primary)'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '2rem',
+            flexWrap: 'wrap'
+          }}>
+            <div style={{ flex: 1, minWidth: '300px' }}>
+              <div style={{
+                display: 'inline-block',
+                padding: '0.25rem 0.75rem',
+                background: 'rgba(255, 255, 255, 0.2)',
+                fontSize: '0.75rem',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                marginBottom: '1rem',
+                color: 'white'
+              }}>
+                Meet the Author
+              </div>
+              <h2 style={{
+                fontSize: '2rem',
+                fontWeight: '400',
+                marginBottom: '1rem',
+                color: 'white',
+                fontFamily: 'var(--font-heading)'
+              }}>
+                Discover Charlotte Brontë's Story
+              </h2>
+              <p style={{
+                fontSize: '1.125rem',
+                lineHeight: 1.7,
+                color: 'rgba(255, 255, 255, 0.9)',
+                marginBottom: '1.5rem'
+              }}>
+                From the windswept moors of Yorkshire to literary immortality—learn about the remarkable woman behind Jane Eyre. Discover her life, her sisters, her struggles, and her triumph.
+              </p>
+              <Link
+                href={`/books/${bookConfig.slug}/about-the-author`}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.875rem 1.75rem',
+                  background: 'white',
+                  color: 'var(--primary)',
+                  textDecoration: 'none',
+                  fontWeight: '600',
+                  fontSize: '1rem',
+                  border: '2px solid white',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <Users size={20} />
+                Meet Charlotte Brontë
+              </Link>
+            </div>
+            <div style={{
+              fontSize: '6rem',
+              opacity: 0.3,
+              color: 'white'
+            }}>
+              ✍️
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Chapters Section */}
       <section style={{
         padding: '4rem 2rem',
@@ -294,8 +371,8 @@ export default function BookPage() {
                     {part.chapters.map((chapter: any) => {
                       const chapterNum = typeof chapter === 'number' ? chapter : chapter.number
                       const chapterDesc = typeof chapter === 'object' ? chapter.description : null
-                      // Only show links for chapters 1-17 that are completed
-                      const isAvailable = chapterNum <= 17
+                      // All 38 chapters are now complete!
+                      const isAvailable = chapterNum <= 38
                       
                       return (
                         <Link
@@ -397,6 +474,142 @@ export default function BookPage() {
               ))}
             </div>
           )}
+
+          {/* Prominent Author Teaser at End of Chapters */}
+          <div style={{
+            marginTop: '4rem',
+            padding: '3rem',
+            background: 'linear-gradient(135deg, var(--primary) 0%, #2D5A8C 100%)',
+            border: '3px solid var(--primary)',
+            position: 'relative',
+            overflow: 'hidden'
+          }}>
+            {/* Decorative Background */}
+            <div style={{
+              position: 'absolute',
+              top: '-50px',
+              right: '-50px',
+              fontSize: '12rem',
+              opacity: 0.1,
+              color: 'white',
+              pointerEvents: 'none'
+            }}>
+              ✍️
+            </div>
+            
+            <div style={{
+              position: 'relative',
+              zIndex: 1,
+              maxWidth: '800px',
+              margin: '0 auto',
+              textAlign: 'center',
+              color: 'white'
+            }}>
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.5rem 1.25rem',
+                background: 'rgba(255, 255, 255, 0.2)',
+                border: '2px solid rgba(255, 255, 255, 0.3)',
+                fontSize: '0.75rem',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+                marginBottom: '1.5rem'
+              }}>
+                <Feather size={14} />
+                Don't Miss This
+              </div>
+
+              <h2 style={{
+                fontSize: '2.5rem',
+                fontWeight: '300',
+                marginBottom: '1rem',
+                fontFamily: 'var(--font-heading)',
+                letterSpacing: '-0.01em',
+                lineHeight: 1.2
+              }}>
+                Meet the Woman Behind Jane Eyre
+              </h2>
+
+              <p style={{
+                fontSize: '1.25rem',
+                lineHeight: 1.7,
+                opacity: 0.95,
+                marginBottom: '2rem',
+                fontWeight: '400'
+              }}>
+                You've journeyed with Jane from powerless orphan to autonomous woman. Now discover <strong style={{ fontWeight: '600' }}>Charlotte Brontë's</strong> own remarkable story—her life on the Yorkshire moors, her brilliant sisters, her struggles for independence, and the revolutionary vision that gave us Jane's unforgettable voice.
+              </p>
+
+              <div style={{
+                display: 'flex',
+                gap: '1rem',
+                justifyContent: 'center',
+                flexWrap: 'wrap',
+                marginBottom: '1.5rem'
+              }}>
+                <div style={{
+                  padding: '0.75rem 1.25rem',
+                  background: 'rgba(255, 255, 255, 0.15)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  fontSize: '0.9375rem',
+                  fontWeight: '500'
+                }}>
+                  📖 Her Life & Legacy
+                </div>
+                <div style={{
+                  padding: '0.75rem 1.25rem',
+                  background: 'rgba(255, 255, 255, 0.15)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  fontSize: '0.9375rem',
+                  fontWeight: '500'
+                }}>
+                  👭 The Brontë Sisters
+                </div>
+                <div style={{
+                  padding: '0.75rem 1.25rem',
+                  background: 'rgba(255, 255, 255, 0.15)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  fontSize: '0.9375rem',
+                  fontWeight: '500'
+                }}>
+                  ✨ Her Revolutionary Vision
+                </div>
+              </div>
+
+              <Link
+                href={`/books/${bookConfig.slug}/about-the-author`}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '1.125rem 2.5rem',
+                  background: 'white',
+                  color: 'var(--primary)',
+                  textDecoration: 'none',
+                  fontWeight: '700',
+                  fontSize: '1.125rem',
+                  border: '3px solid white',
+                  transition: 'all 0.2s ease',
+                  boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)'
+                }}
+              >
+                <Users size={22} />
+                Discover Charlotte Brontë's Story
+              </Link>
+
+              <p style={{
+                fontSize: '0.9375rem',
+                marginTop: '1.5rem',
+                opacity: 0.85,
+                fontStyle: 'italic'
+              }}>
+                "I am no bird; and no net ensnares me; I am a free human being with an independent will."
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
