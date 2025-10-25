@@ -144,7 +144,7 @@ export default function HomePage() {
             maxWidth: '700px',
             margin: '0 auto 2.5rem'
           }}>
-            Experience timeless literature with modern study guides, Intelligence Amplified analysis, and interactive learning tools designed for students, teachers, and literature enthusiasts
+            Revolutionary <strong>Notice → Explore → Amplify</strong> method that transforms how students engage with classic literature—combining collaborative discovery, expert insights, and Intelligence Amplified analysis in a seamless book-to-web experience
           </p>
 
           <div style={{
@@ -224,6 +224,46 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Key Accomplishments */}
+          <div style={{
+            marginTop: '4rem',
+            padding: '2rem',
+            background: 'transparent',
+            border: '2px solid var(--border-color)',
+            textAlign: 'center'
+          }}>
+            <div style={{
+              fontSize: '0.875rem',
+              fontWeight: '700',
+              color: 'var(--text-secondary)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              marginBottom: '1rem'
+            }}>
+              Platform Highlights
+            </div>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '1.5rem',
+              justifyContent: 'center',
+              fontSize: '0.9375rem',
+              color: 'var(--text-secondary)'
+            }}>
+              <span>✓ Notice→Explore→Amplify Method</span>
+              <span>•</span>
+              <span>✓ QR Code Book Integration</span>
+              <span>•</span>
+              <span>✓ Print-Ready Worksheets</span>
+              <span>•</span>
+              <span>✓ IA Discussion System</span>
+              <span>•</span>
+              <span>✓ 50 Literature Matters Messages</span>
+              <span>•</span>
+              <span>✓ Complete Template System</span>
+            </div>
           </div>
         </div>
       </section>
@@ -716,10 +756,167 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Innovation Showcase */}
+      <section style={{
+        padding: '5rem 1.5rem',
+        background: 'white',
+        borderTop: '1px solid var(--border-color)'
+      }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{
+            textAlign: 'center',
+            marginBottom: '3rem'
+          }}>
+            <div style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.375rem 1rem',
+              background: 'transparent',
+              border: '1px solid var(--primary)',
+              fontSize: '0.75rem',
+              fontWeight: '700',
+              color: 'var(--primary)',
+              marginBottom: '1rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em'
+            }}>
+              <Sparkles size={14} /> What Makes Us Different
+            </div>
+            <h2 style={{
+              fontSize: '2.5rem',
+              fontWeight: '300',
+              marginBottom: '1rem',
+              color: 'var(--text-primary)',
+              letterSpacing: '-0.01em',
+              fontFamily: 'var(--font-heading)'
+            }}>
+              Beyond Digital Books—A Complete System
+            </h2>
+            <p style={{
+              fontSize: '1.125rem',
+              color: 'var(--text-secondary)',
+              maxWidth: '700px',
+              margin: '0 auto',
+              lineHeight: 1.7
+            }}>
+              We've built revolutionary tools and methods that transform classic literature education from intimidating to inspiring
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '2rem',
+            marginBottom: '3rem'
+          }}>
+            {[
+              {
+                badge: 'The Method',
+                title: 'Notice → Explore → Amplify',
+                description: 'A revolutionary 3-phase approach where students discover literary techniques themselves before expert amplification. No more "guess what the teacher is thinking"—collaborative discovery builds genuine understanding and confidence.',
+                icon: '🔍'
+              },
+              {
+                badge: 'The System',
+                title: 'Book + Web Integration',
+                description: 'QR codes in physical books unlock interactive web experiences, printable worksheets, and Intelligence Amplified discussions. Study offline in the book, explore online with dynamic tools. Best of both worlds.',
+                icon: '📚'
+              },
+              {
+                badge: 'The Innovation',
+                title: 'Why Literature Matters',
+                description: '50 rotating messages at the end of every chapter showing STEM students why literature builds irreplaceable skills for tech careers, leadership, and human connection in an AI-driven world.',
+                icon: '💡'
+              },
+              {
+                badge: 'The Vision',
+                title: '100 Rockstar Creators',
+                description: 'Training literature graduates to become content creators using AI tools—scaling to amplify all 75,000+ public domain classics while giving lit grads meaningful, paid work building humanity\'s literary future.',
+                icon: '🚀'
+              }
+            ].map((innovation, idx) => (
+              <div key={idx} style={{
+                padding: '2rem',
+                background: 'var(--card-bg)',
+                border: '2px solid var(--border-color)',
+                borderTop: '4px solid var(--primary)',
+                position: 'relative' as const
+              }}>
+                <div style={{
+                  fontSize: '3rem',
+                  marginBottom: '1rem',
+                  textAlign: 'center'
+                }}>
+                  {innovation.icon}
+                </div>
+                <div style={{
+                  fontSize: '0.75rem',
+                  fontWeight: '700',
+                  color: 'var(--primary)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  marginBottom: '0.75rem',
+                  textAlign: 'center'
+                }}>
+                  {innovation.badge}
+                </div>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  fontWeight: '400',
+                  marginBottom: '1rem',
+                  color: 'var(--text-primary)',
+                  fontFamily: 'var(--font-heading)',
+                  textAlign: 'center',
+                  lineHeight: 1.2
+                }}>
+                  {innovation.title}
+                </h3>
+                <p style={{
+                  fontSize: '1rem',
+                  lineHeight: 1.7,
+                  color: 'var(--text-secondary)',
+                  margin: 0
+                }}>
+                  {innovation.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{
+            padding: '2.5rem',
+            background: 'var(--primary)',
+            color: 'white',
+            textAlign: 'center',
+            border: '2px solid var(--primary)'
+          }}>
+            <h3 style={{
+              fontSize: '1.75rem',
+              fontWeight: '400',
+              marginBottom: '1rem',
+              fontFamily: 'var(--font-heading)'
+            }}>
+              Not a Disruptor, but an Amplifier
+            </h3>
+            <p style={{
+              fontSize: '1.125rem',
+              lineHeight: 1.7,
+              opacity: 0.95,
+              maxWidth: '800px',
+              margin: '0 auto'
+            }}>
+              We don't replace books, teachers, or traditional education—we amplify what already works. Our tools reduce barriers, scaffold understanding, and celebrate the works themselves. <strong style={{ fontWeight: '600' }}>This is Project Gutenberg 2.0 for the AI age.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Experience & Appreciation Section */}
       <section style={{
         padding: '5rem 1.5rem',
-        background: 'white'
+        background: 'var(--card-bg)',
+        borderTop: '1px solid var(--border-color)'
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <h2 style={{
@@ -900,7 +1097,7 @@ export default function HomePage() {
       {/* The Vast World of Classic Literature */}
       <section style={{
         padding: '5rem 1.5rem',
-        background: 'var(--card-bg)',
+        background: 'white',
         borderTop: '1px solid var(--border-color)',
         borderBottom: '1px solid var(--border-color)'
       }}>
