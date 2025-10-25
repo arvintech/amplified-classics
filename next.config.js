@@ -3,10 +3,15 @@ const nextConfig = {
   // M4 Mac optimizations
   experimental: {
     mdxRs: true,
+    // M4 optimizations
     turbo: {
       rules: {
         '*.tsx': {
           loaders: ['swc-loader'],
+          as: '*.js',
+        },
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
           as: '*.js',
         },
       },
@@ -15,6 +20,8 @@ const nextConfig = {
     swcMinify: true,
     // Optimize for Apple Silicon
     esmExternals: true,
+    // Optimize for ARM64
+    optimizeCss: true,
   },
   
   // Performance optimizations
@@ -25,7 +32,7 @@ const nextConfig = {
   
   // Image optimization for M4
   images: {
-    formats: ['image/webp', 'image/avif'],
+    formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
@@ -43,18 +50,20 @@ const nextConfig = {
     }
     
     // Optimize for Apple Silicon
-    config.optimization = {
-      ...config.optimization,
-      splitChunks: {
-        chunks: 'all',
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
+    if (!dev && !isServer) {
+      config.optimization = {
+        ...config.optimization,
+        splitChunks: {
+          chunks: 'all',
+          cacheGroups: {
+            vendor: {
+              test: /[\\/]node_modules[\\/]/,
+              name: 'vendors',
+              chunks: 'all',
+            },
           },
         },
-      },
+      }
     }
     
     return config

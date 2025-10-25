@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Amplified Classics - Interactive Digital Literature Platform",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev -H 0.0.0.0 --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev:m4": "NODE_OPTIONS='--max-old-space-size=8192' next dev -H 0.0.0.0",
+    "dev:m4": "NODE_OPTIONS='--max-old-space-size=8192' next dev -H 0.0.0.0 --turbo",
     "build:m4": "NODE_OPTIONS='--max-old-space-size=8192' next build",
     "start:m4": "NODE_OPTIONS='--max-old-space-size=8192' next start",
     "dev:fast": "NODE_OPTIONS='--max-old-space-size=8192' next dev -H 0.0.0.0 --turbo",

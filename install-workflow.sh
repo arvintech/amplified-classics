@@ -77,6 +77,7 @@ start_session() {
     
     echo ""
     echo -e "${GREEN}✨ Ready to work! Run: npm run dev${NC}"
+    echo -e "${GREEN}🚀 For M4 optimization: npm run dev:m4${NC}"
 }
 
 # Function: End work session
