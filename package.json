@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "Amplified Classics - Interactive Digital Literature Platform",
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
+    "dev": "next dev --turbo -H 0.0.0.0",
+    "dev:fast": "next dev --turbo",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next node_modules/.cache"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
