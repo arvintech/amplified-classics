@@ -8,9 +8,9 @@ import {
   Lightbulb, ChevronDown, ChevronUp, Brain, Sparkles, ShoppingCart, Bookmark 
 } from 'lucide-react'
 import { bookConfig } from '../config'
-import { chapter1 } from '../chapters/chapter-1'
-import { chapter2 } from '../chapters/chapter-2'
-import { chapter3 } from '../chapters/chapter-3'
+import { chapter1 } from '../chapters/chapter-1-v3-pure'
+import { chapter2 } from '../chapters/chapter-2-v3-pure'
+import { chapter3 } from '../chapters/chapter-3-v3-pure'
 import { chapter4 } from '../chapters/chapter-4'
 import { chapter5 } from '../chapters/chapter-5'
 import { chapter6 } from '../chapters/chapter-6'
@@ -31,10 +31,12 @@ import { chapter20 } from '../chapters/chapter-20'
 import { chapter21 } from '../chapters/chapter-21'
 import { chapter22 } from '../chapters/chapter-22'
 import { chapter23 } from '../chapters/chapter-23'
+import { chapter24 } from '../chapters/chapter-24'
+import { chapter25 } from '../chapters/chapter-25'
+import { chapter26 } from '../chapters/chapter-26'
+import { chapter27 } from '../chapters/chapter-27'
 
 // Import remaining chapter data files as they are created
-// import { chapter24 } from '../chapters/chapter-24'
-// import { chapter22 } from '../chapters/chapter-22'
 // ... import all chapters
 
 const chapters: any[] = [
@@ -61,8 +63,10 @@ const chapters: any[] = [
   chapter21,
   chapter22,
   chapter23,
-  // chapter24,
-  // chapter25,
+  chapter24,
+  chapter25,
+  chapter26,
+  chapter27,
   // ... add all imported chapters
 ]
 
@@ -1228,12 +1232,21 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)'
             }}>
-              Thematic Threads
+              Thematic Threads: Tracking Patterns Across the Novel
             </h2>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem',
+              fontStyle: 'italic'
+            }}>
+              These recurring themes connect chapters and show how ideas develop throughout the story.
+            </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {chapterData.thematicThreads.map((thread: any, idx: number) => (
                 <div key={idx} style={{
@@ -1269,7 +1282,7 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)',
               display: 'flex',
@@ -1277,8 +1290,17 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
               gap: '0.75rem'
             }}>
               <Lightbulb size={24} />
-              Discussion Questions
+              Discussion Questions: Tools That Lead You to the Answer
             </h2>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem',
+              fontStyle: 'italic'
+            }}>
+              These questions strategically guide you toward deeper appreciation of what matters most in the text.
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {chapterData.discussionQuestions.map((q: any, idx: number) => (
                 <div key={idx} style={{
@@ -1345,7 +1367,7 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)',
               display: 'flex',
@@ -1353,8 +1375,17 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
               gap: '0.75rem'
             }}>
               <Brain size={24} />
-              Amplified Discussion
+              Amplified Discussion: AI Collaborative Tools
             </h2>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem',
+              fontStyle: 'italic'
+            }}>
+              Created through educator-AI partnership—select which discussions best fit your classroom.
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {chapterData.amplifiedDiscussion.map((discussion: any) => (
                 <div key={discussion.id} style={{
