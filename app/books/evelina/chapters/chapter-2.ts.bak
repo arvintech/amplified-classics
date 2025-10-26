@@ -30,15 +30,15 @@ export const chapter2: ChapterData = {
     ]
   },
   
-  atAGlance: {
-    setting: 'Lady Howard\'s estate, responding to Villars\' concerns; planning the journey to London',
-    narrator: 'Lady Howard, writing to Reverend Villars (epistolary: her response letter)',
-    keyEvent: 'Lady Howard reassures Villars she will protect Evelina and outlines practical arrangements for the London visit, establishing herself and Mrs. Mirvan as surrogate mothers',
-    mood: 'Confident, reassuring, practical — aristocratic authority meeting paternal anxiety with organized competence',
-    importantCharacters: ['Lady Howard (writer)', 'Mrs. Mirvan (protector)', 'Maria (companion)', 'Evelina (subject)', 'Rev. Villars (recipient)'],
-    literaryDevices: ['Contrasting epistolary voices', 'Voice as character', 'Dramatic irony through competing predictions', 'Rhetorical reassurance', 'Foreshadowing through confidence'],
-    centralQuestion: 'Can experienced female mentorship successfully protect innocent Evelina in London society, or is Lady Howard\'s confidence misplaced?'
-  },
+  // atAGlance: { // Temporarily commented out - old format
+  //   setting: 'Lady Howard\'s estate, responding to Villars\' concerns; planning the journey to London',
+  //   narrator: 'Lady Howard, writing to Reverend Villars (epistolary: her response letter)',
+  //   keyEvent: 'Lady Howard reassures Villars she will protect Evelina and outlines practical arrangements for the London visit, establishing herself and Mrs. Mirvan as surrogate mothers',
+  //   mood: 'Confident, reassuring, practical — aristocratic authority meeting paternal anxiety with organized competence',
+  //   importantCharacters: ['Lady Howard (writer)', 'Mrs. Mirvan (protector)', 'Maria (companion)', 'Evelina (subject)', 'Rev. Villars (recipient)'],
+  //   literaryDevices: ['Contrasting epistolary voices', 'Voice as character', 'Dramatic irony through competing predictions', 'Rhetorical reassurance', 'Foreshadowing through confidence'],
+  //   centralQuestion: 'Can experienced female mentorship successfully protect innocent Evelina in London society, or is Lady Howard\'s confidence misplaced?'
+  // },
   
   termsToKnow: [
     {
