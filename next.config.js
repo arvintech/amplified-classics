@@ -1,39 +1,72 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // M4 Apple Silicon Optimizations
+  // M4 Mac optimizations
   experimental: {
     mdxRs: true,
-    // Enable turbo for faster builds on M4
     turbo: {
       rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
+        '*.tsx': {
+          loaders: ['swc-loader'],
           as: '*.js',
         },
       },
     },
+    // Enable SWC for faster compilation on M4
+    swcMinify: true,
+    // Optimize for Apple Silicon
+    esmExternals: true,
   },
   
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  // Performance optimizations
+  compiler: {
+    // Remove console.log in production
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   
-  // Optimize for Apple Silicon M4
-  swcMinify: true, // Use SWC (Rust-based, faster on ARM)
-  
-  // Production optimizations
-  productionBrowserSourceMaps: false,
-  
-  // Optimize images for faster loading
+  // Image optimization for M4
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   
-  // Enable React strict mode for better development
-  reactStrictMode: true,
+  // Webpack optimizations for M4
+  webpack: (config, { dev, isServer }) => {
+    // M4-specific optimizations
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      }
+    }
+    
+    // Optimize for Apple Silicon
+    config.optimization = {
+      ...config.optimization,
+      splitChunks: {
+        chunks: 'all',
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+        },
+      },
+    }
+    
+    return config
+  },
   
-  // Optimize build output
-  output: 'standalone',
+  // Enable compression
+  compress: true,
+  
+  // Optimize bundle
+  poweredByHeader: false,
+  
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 }
 
 module.exports = nextConfig

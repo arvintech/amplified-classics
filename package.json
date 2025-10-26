@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "Amplified Classics - Interactive Digital Literature Platform",
   "scripts": {
-    "dev": "next dev --turbo -H 0.0.0.0",
-    "dev:fast": "next dev --turbo",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "type-check": "tsc --noEmit",
-    "clean": "rm -rf .next node_modules/.cache"
+    "dev:m4": "NODE_OPTIONS='--max-old-space-size=8192' next dev -H 0.0.0.0",
+    "build:m4": "NODE_OPTIONS='--max-old-space-size=8192' next build",
+    "start:m4": "NODE_OPTIONS='--max-old-space-size=8192' next start",
+    "dev:fast": "NODE_OPTIONS='--max-old-space-size=8192' next dev -H 0.0.0.0 --turbo",
+    "build:analyze": "ANALYZE=true npm run build:m4",
+    "dev:profile": "NODE_OPTIONS='--max-old-space-size=8192 --prof' next dev",
+    "clean:m4": "rm -rf .next && rm -rf node_modules/.cache && npm run dev:m4",
+    "perf:m4": "npm run build:m4 && npm run start:m4",
+    "optimize": "./optimize-for-m4.sh",
+    "monitor": "~/monitor-m4.sh",
+    "setup:m4": "./setup-mac-m4.sh"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
@@ -21,16 +27,25 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.0.4",
     "@types/node": "^20.19.23",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "cli-progress": "^3.12.0",
     "docx": "^9.5.1",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
+    "node-gyp": "^10.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "m4": {
+    "optimization": "enabled",
+    "target": "arm64-darwin",
+    "memory": "8192MB",
+    "turbo": true
   }
 }
