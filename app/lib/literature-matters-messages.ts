@@ -111,6 +111,78 @@ export const whyLiteratureMatters = [
 ]
 
 /**
+ * THEN VS. NOW: Victorian Era vs. Modern Standards
+ * 
+ * General one-liners contrasting 19th-century behaviors with modern ethical standards
+ * Focus: What was acceptable then but is unacceptable now, helping students understand social progress
+ */
+export const thenVsNowMatters = [
+  "Child labor was legal then; today we have compulsory education and child labor laws protecting young people.",
+  
+  "Married women couldn't own property then; today we have equal property rights regardless of marital status.",
+  
+  "Domestic violence was 'private family matter' then; today we have restraining orders, shelters, and criminal prosecution.",
+  
+  "Physical punishment of children was discipline then; today we understand trauma and have child protection services.",
+  
+  "Fathers had absolute legal control over children then; today courts prioritize child welfare over parental authority.",
+  
+  "Women needed male permission for banking, business, travel then; today we have legal independence and autonomy.",
+  
+  "Marital rape was legal (wives had no right to refuse) then; today it's a crime in all 50 states.",
+  
+  "Class hierarchy was seen as natural and God-ordained then; today we recognize structural inequality and work toward equity.",
+  
+  "Servants had no labor rights or recourse then; today workers have unions, minimum wage, and legal protections.",
+  
+  "Mental illness was 'madness' with no treatment then; today we have psychiatry, therapy, and compassion.",
+  
+  "Disability made you 'worthless' and expendable then; today we have disability rights and accommodation laws.",
+  
+  "Racism and colonialism were normalized and celebrated then; today we recognize the harm and work toward justice.",
+  
+  "Women couldn't vote, serve on juries, or hold many jobs then; today we have (closer to) equal political and economic rights.",
+  
+  "Unmarried mothers faced total social exile then; today we support single parents and don't shame reproductive choices.",
+  
+  "Marriage was economic transaction, not partnership then; today we prioritize consent, equality, and mutual respect.",
+  
+  "Child marriage (12-15) was common then; today we have minimum age laws protecting young people from coercion.",
+  
+  "Poverty was seen as moral failing deserving punishment then; today we understand systemic causes and provide safety nets.",
+  
+  "LGBTQ+ people faced criminalization and violence then; today we have (evolving) legal protections and social acceptance.",
+  
+  "Education was privilege for wealthy boys then; today we have universal public education for all genders and classes.",
+  
+  "Emotional abuse wasn't recognized as real harm then; today we understand psychological trauma has measurable effects.",
+  
+  "Witnesses had no duty to report abuse then; today many professions are mandated reporters facing legal consequences.",
+  
+  "Forced marriage was legal strategy and parental right then; today it's human trafficking and recognized as abuse.",
+  
+  "Inheritance laws favored eldest sons, leaving others destitute then; today we have more equitable inheritance rights.",
+  
+  "Women's anger was 'hysteria' requiring confinement then; today we validate emotions and understand trauma responses.",
+  
+  "Debtors' prison was acceptable punishment then; today we recognize poverty isn't a crime deserving imprisonment.",
+  
+  "Dueling over honor was respected gentleman's practice then; today violence isn't acceptable conflict resolution.",
+  
+  "Public executions were entertainment then; today we debate ethics of death penalty itself, not its spectacle.",
+  
+  "Orphans and poor children had no protections then; today we have foster care, adoption regulations, child welfare systems.",
+  
+  "Addiction was moral failing deserving shame then; today we understand it as disease needing treatment, not punishment.",
+  
+  "Interfaith and interracial marriage were scandalous/illegal then; today we protect right to marry regardless of difference.",
+  
+  "Workplace safety was employer's choice then; today we have OSHA, workers' comp, and liability for negligence.",
+  
+  "Reading old literature shows us: ethical progress is real, standards evolve, and change is possible—we've done it before."
+]
+
+/**
  * Get a random "Why Literature Matters" message
  * Can be seeded with chapter number for consistent randomization per chapter
  */
@@ -133,5 +205,15 @@ export function getRandomLiteratureMessage(seed?: number): string {
 export function getLiteratureMessageByChapter(chapterNumber: number): string {
   const index = (chapterNumber * 7) % whyLiteratureMatters.length // Multiply by prime for better distribution
   return whyLiteratureMatters[index]
+}
+
+/**
+ * Get general "Then vs. Now" message by chapter number
+ * Each chapter gets a consistent message about Victorian vs. modern behavioral standards
+ * Works for any Victorian-era classic literature
+ */
+export function getThenVsNowMessage(chapterNumber: number): string {
+  const index = (chapterNumber * 7) % thenVsNowMatters.length // Multiply by prime for better distribution
+  return thenVsNowMatters[index]
 }
 

@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter11: ChapterData = {
   number: 11,
@@ -958,7 +958,7 @@ Edgar teaches us: Intent (protecting legitimate needs) doesn't determine outcome
   // WHY LITERATURE MATTERS - Closing Section (REQUIRED)
   // Rotating one-liner with gold gradient styling
   // ===================================================================
-  whyLiteratureMatters: getLiteratureMessageByChapter(11),
+  whyLiteratureMatters: getThenVsNowMessage(11),
   
   // ===================================================================
   // NEXT TIME TEASER

@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter10: ChapterData = {
   number: 10,
@@ -747,7 +747,7 @@ Edgar\'s impossible position reveals civilization\'s paradox: the very rules tha
   // WHY LITERATURE MATTERS
   // Rotating message about literature's value
   // ===================================================================
-  whyLiteratureMatters: 'Literature reveals how good people with real virtues\ncan lose everything through structural impossibilities.',
+  whyLiteratureMatters: getThenVsNowMessage(10),
   
   // ===================================================================
   // NEXT TIME TEASER

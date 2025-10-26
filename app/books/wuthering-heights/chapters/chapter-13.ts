@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter13: ChapterData = {
   number: 13,
@@ -792,7 +792,7 @@ Sometimes the moral response is: "You made a terrible choice. I won\'t enable it
   // WHY LITERATURE MATTERS - Closing Section (REQUIRED)
   // Rotating one-liner with gold gradient styling
   // ===================================================================
-  whyLiteratureMatters: getLiteratureMessageByChapter(13),
+  whyLiteratureMatters: getThenVsNowMessage(13),
   
   // ===================================================================
   // NEXT TIME TEASER

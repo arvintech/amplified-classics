@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter9: ChapterData = {
   number: 9,
@@ -614,7 +614,7 @@ The foliage/rocks metaphor is brilliant precisely because it\'s both right (accu
   // WHY LITERATURE MATTERS
   // Rotating message about literature's value
   // ===================================================================
-  whyLiteratureMatters: 'Literature amplifies what we mean when words fail,\nshowing truths too complex for simple speech.',
+  whyLiteratureMatters: getThenVsNowMessage(9),
   
   // ===================================================================
   // NEXT TIME TEASER

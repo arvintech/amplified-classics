@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter3: ChapterData = {
   number: 3,
@@ -1455,7 +1455,7 @@ Brontë doesn't answer these questions. She forces us to ask them.
   // WHY LITERATURE MATTERS - Closing Section (REQUIRED)
   // Rotating one-liner with gold gradient styling
   // ===================================================================
-  whyLiteratureMatters: getLiteratureMessageByChapter(3),
+  whyLiteratureMatters: getThenVsNowMessage(3),
   
   // ===================================================================
   // NEXT TIME TEASER

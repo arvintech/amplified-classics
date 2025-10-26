@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter5: ChapterData = {
   number: 5,
@@ -2096,7 +2096,7 @@ It shows us liberation exists—just not HERE.
   // WHY LITERATURE MATTERS - Closing Section (REQUIRED)
   // Rotating one-liner with gold gradient styling
   // ===================================================================
-  whyLiteratureMatters: getLiteratureMessageByChapter(5),
+  whyLiteratureMatters: getThenVsNowMessage(5),
   
   // ===================================================================
   // NEXT TIME TEASER

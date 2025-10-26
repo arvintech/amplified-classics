@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter6: ChapterData = {
   number: 6,
@@ -448,7 +448,7 @@ If we believe outcomes reflect individual choices, we blame Heathcliff for his f
   // WHY LITERATURE MATTERS
   // Rotating message about literature's value
   // ===================================================================
-  whyLiteratureMatters: 'Timeless literature teaches you to say exactly what you mean.',
+  whyLiteratureMatters: getThenVsNowMessage(6),
   
   // ===================================================================
   // NEXT TIME TEASER

@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter1: ChapterData = {
   number: 1,
@@ -706,7 +706,7 @@ Then discuss: When do you experience non-linear time? (Remembering trauma, telli
     classroomApplication: 'Can be approached through small group discussion, individual essay, or collaborative diagram mapping narrative layers. Works well combined with the "Mapping Geography" activity—create both a geographic map and a narrative structure map.'
   },
   
-  whyLiteratureMatters: getLiteratureMessageByChapter(1),
+  whyLiteratureMatters: getThenVsNowMessage(1),
   
   nextTimeTeaser: {
     emoji: '🌙',

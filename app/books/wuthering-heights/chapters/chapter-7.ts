@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter7: ChapterData = {
   number: 7,
@@ -549,7 +549,7 @@ Nelly\'s advice seems kind but is actually cruel because it promises what cannot
   // WHY LITERATURE MATTERS
   // Rotating message about literature's value (10-word quip format)
   // ===================================================================
-  whyLiteratureMatters: 'Great literature reveals the invisible forces that shape our lives.',
+  whyLiteratureMatters: getThenVsNowMessage(7),
   
   // ===================================================================
   // NEXT TIME TEASER

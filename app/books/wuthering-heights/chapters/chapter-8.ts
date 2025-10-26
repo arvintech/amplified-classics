@@ -5,7 +5,7 @@
  */
 
 import { ChapterData } from '@/app/lib/types/book.types'
-import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
+import { getThenVsNowMessage } from '@/app/lib/literature-matters-messages'
 
 export const chapter8: ChapterData = {
   number: 8,
@@ -541,7 +541,7 @@ Modern readers recognizing systematic degradation in Heathcliff\'s story should 
   // WHY LITERATURE MATTERS
   // Rotating message about literature's value (10-word quip format)
   // ===================================================================
-  whyLiteratureMatters: 'Literature shows us what shapes people before we judge them.',
+  whyLiteratureMatters: getThenVsNowMessage(8),
   
   // ===================================================================
   // NEXT TIME TEASER
