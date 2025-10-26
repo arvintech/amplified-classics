@@ -213,6 +213,12 @@ New information can challenge our assumptions and force us to confront our own p
       title: 'The Revelation Effect: An Information-Processing Activity',
       description: 'Divide the class into groups and assign each group a different scenario where they receive new information that challenges their assumptions. Have each group discuss how they would process this contradictory evidence.',
       materials: 'Scenario cards, discussion guidelines, revelation analysis sheets'
+    },
+    
+    crossCurricular: {
+      title: 'Psychology: Cognitive Dissonance and Belief Revision',
+      description: 'Explore how new information challenges existing beliefs through concepts like cognitive dissonance, confirmation bias, and evidence-based reasoning.',
+      subjects: ['Psychology', 'Philosophy', 'Critical Thinking']
     }
   },
   

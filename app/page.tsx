@@ -10,6 +10,19 @@ export const metadata: Metadata = {
 
 const books = [
   {
+    id: 'pride-prejudice',
+    title: 'Pride and Prejudice',
+    subtitle: null,
+    author: 'Jane Austen',
+    year: '1813',
+    description: 'Elizabeth Bennet and Mr. Darcy\'s journey from pride and prejudice to love and understanding in Jane Austen\'s most beloved novel—a witty, romantic comedy of manners.',
+    themes: ['Love & Marriage', 'Pride & Prejudice', 'Social Class', 'First Impressions'],
+    status: 'Complete',
+    chapters: 61,
+    quote: '"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."',
+    url: '/books/pride-and-prejudice'
+  },
+  {
     id: 'jane-eyre',
     title: 'Jane Eyre',
     subtitle: 'An Autobiography',
@@ -21,6 +34,19 @@ const books = [
     chapters: 38,
     quote: '"I am no bird; and no net ensnares me: I am a free human being with an independent will."',
     url: '/books/jane-eyre'
+  },
+  {
+    id: 'the-man-who-was-thursday',
+    title: 'The Man Who Was Thursday',
+    subtitle: 'A Nightmare',
+    author: 'G.K. Chesterton',
+    year: '1908',
+    description: 'A philosophical thriller exploring anarchism, order, and the nature of good and evil through a surreal nightmare of conspiracy and revelation.',
+    themes: ['Order vs. Chaos', 'Identity & Performance', 'The Problem of Evil', 'Faith vs. Nihilism'],
+    status: 'Complete',
+    chapters: 15,
+    quote: '"The man who called himself Thursday was walking hither and thither in an unmeaning sort of way, with his chin up in the air and his blue eyes fixed on the heavens."',
+    url: '/books/the-man-who-was-thursday'
   },
   {
     id: 'wuthering-heights',
@@ -60,32 +86,6 @@ const books = [
     chapters: 84,
     quote: '"I would have given the world to have known what they thought of me."',
     url: '/books/evelina'
-  },
-  {
-    id: 'pride-prejudice',
-    title: 'Pride and Prejudice',
-    subtitle: null,
-    author: 'Jane Austen',
-    year: '1813',
-    description: 'Elizabeth Bennet navigates love, family, and society in this sharp social commentary about marriage in Regency England.',
-    themes: ['Marriage & Society', 'Pride & Prejudice', 'Gender & Class', 'Character Growth'],
-    status: 'In Development',
-    chapters: 61,
-    quote: '"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."',
-    url: '/books/pride-and-prejudice'
-  },
-  {
-    id: 'the-man-who-was-thursday',
-    title: 'The Man Who Was Thursday',
-    subtitle: 'A Nightmare',
-    author: 'G.K. Chesterton',
-    year: '1908',
-    description: 'A philosophical thriller exploring anarchism, order, and the nature of good and evil through a surreal nightmare of conspiracy and revelation.',
-    themes: ['Order vs. Chaos', 'Identity & Performance', 'The Problem of Evil', 'Faith vs. Nihilism'],
-    status: 'Complete',
-    chapters: 15,
-    quote: '"The man who called himself Thursday was walking hither and thither in an unmeaning sort of way, with his chin up in the air and his blue eyes fixed on the heavens."',
-    url: '/books/the-man-who-was-thursday'
   }
 ]
 
@@ -1321,7 +1321,7 @@ export default function HomePage() {
           </p>
 
           <Link
-            href="/books/jane-eyre"
+            href="/books/pride-and-prejudice"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -1336,7 +1336,7 @@ export default function HomePage() {
               border: '2px solid white'
             }}
           >
-            Start with Jane Eyre <ArrowRight size={20} />
+            Start with Pride and Prejudice <ArrowRight size={20} />
           </Link>
 
           <div style={{

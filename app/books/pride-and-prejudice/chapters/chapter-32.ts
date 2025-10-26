@@ -229,6 +229,12 @@ Changed understanding can transform our perception of familiar situations and re
       title: 'The Fresh Eye: A Perspective-Changing Activity',
       description: 'Divide the class into groups and assign each group a different scenario where they return to a familiar situation with new understanding. Have each group discuss how their changed perspective would affect their observations and interpretations.',
       materials: 'Scenario cards, discussion guidelines, perspective analysis sheets'
+    },
+    
+    crossCurricular: {
+      title: 'Psychology: Cognitive Reframing and Social Perception',
+      description: 'Explore how changed perspective relates to cognitive psychology concepts like cognitive reframing, social perception, and the role of context in understanding human behavior.',
+      subjects: ['Psychology', 'Sociology', 'Communication Studies']
     }
   },
   

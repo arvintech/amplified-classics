@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { ArrowLeft, BookOpen, Clock, Users, Lightbulb } from 'lucide-react'
+import { ArrowLeft, BookOpen, Clock, Users, Lightbulb, Feather } from 'lucide-react'
 import { bookConfig, bookParts } from './config'
 
 export const metadata: Metadata = {
@@ -172,7 +172,7 @@ export default function PrideAndPrejudicePage() {
                 Key Themes
               </h3>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
                 {bookConfig.themes.map((theme) => (
                   <div key={theme} style={{
                     padding: '0.75rem 1rem',
@@ -185,6 +185,84 @@ export default function PrideAndPrejudicePage() {
                   </div>
                 ))}
               </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Author - Prominent Banner */}
+      <section style={{
+        padding: '3rem 2rem',
+        background: 'var(--primary)',
+        borderTop: '1px solid var(--primary)',
+        borderBottom: '1px solid var(--primary)'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '2rem',
+            flexWrap: 'wrap'
+          }}>
+            <div style={{ flex: 1, minWidth: '300px' }}>
+              <div style={{
+                display: 'inline-block',
+                padding: '0.25rem 0.75rem',
+                background: 'rgba(255, 255, 255, 0.2)',
+                fontSize: '0.75rem',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                marginBottom: '1rem',
+                color: 'white'
+              }}>
+                Meet the Author
+              </div>
+              <h2 style={{
+                fontSize: '2rem',
+                fontWeight: '400',
+                marginBottom: '1rem',
+                color: 'white',
+                fontFamily: 'var(--font-heading)'
+              }}>
+                Discover Jane Austen's Story
+              </h2>
+              <p style={{
+                fontSize: '1.125rem',
+                lineHeight: 1.7,
+                color: 'rgba(255, 255, 255, 0.9)',
+                marginBottom: '1.5rem'
+              }}>
+                From Hampshire parsonage to literary legend—meet the witty, observant woman who never married but understood love and society better than anyone. Discover her life, her romances, her struggles, and her enduring legacy.
+              </p>
+              <Link
+                href={`/books/${bookConfig.slug}/about-the-author`}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.875rem 1.75rem',
+                  background: 'white',
+                  color: 'var(--primary)',
+                  textDecoration: 'none',
+                  fontWeight: '600',
+                  fontSize: '1rem',
+                  border: '2px solid white',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <Feather size={20} />
+                Meet Jane Austen
+              </Link>
+            </div>
+            <div style={{
+              fontSize: '6rem',
+              opacity: 0.3,
+              color: 'white'
+            }}>
+              ✍️
             </div>
           </div>
         </div>

@@ -3,18 +3,7 @@
  * by Jane Austen (1813)
  */
 
-export interface BookConfig {
-  slug: string
-  title: string
-  subtitle?: string
-  author: string
-  published: string
-  genre: string
-  totalChapters: number
-  description: string
-  quote?: string
-  themes: string[]
-}
+import { BookConfig } from '@/app/lib/types/book.types'
 
 export const bookConfig: BookConfig = {
   slug: 'pride-and-prejudice',
@@ -36,7 +25,14 @@ export const bookConfig: BookConfig = {
     'First Impressions',
     'Family & Reputation',
     'Women & Society'
-  ]
+  ],
+  
+  // Contributor Information
+  contributor: {
+    name: 'Amplified Classics Team',
+    role: 'Content Author',
+    email: 'team@amplifiedclassics.com'
+  }
 }
 
 // Pride and Prejudice organized by thematic sections

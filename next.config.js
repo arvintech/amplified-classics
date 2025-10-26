@@ -19,11 +19,6 @@ const nextConfig = {
   // Optimize for Apple Silicon M4
   swcMinify: true, // Use SWC (Rust-based, faster on ARM)
   
-  // Enable compiler optimizations
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-  
   // Production optimizations
   productionBrowserSourceMaps: false,
   
