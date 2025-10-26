@@ -179,7 +179,7 @@ export const chapter5: ChapterData = {
       '🔹 **Family Business Succession**: Siblings fight over control after parent dies; winner uses power to punish others. Estate inheritance disputes where one sibling excludes others from family wealth/position.',
       '🔹 **Step-Family Power Shifts**: When biological parent dies, step-parent or step-siblings sometimes exclude or demote the non-biological family members—"you\'re not really family" made explicit through changed treatment.',
       '🔹 **Institutional Power Revenge**: Anyone who gains authority and uses it to settle personal scores from when they lacked power. The hazed who become hazers, the excluded who exclude others when they gain entrance.'
-    },
+    ],
     
     discussionPrompt: 'Have you witnessed someone gain power and immediately use it for revenge rather than improvement? How does experiencing abuse affect how people wield power when they get it? What would it take to break cycle—to choose not to inflict on others what was inflicted on you? And when someone supports their partner\'s family cruelty without knowing the history, are they complicit?'
   },
