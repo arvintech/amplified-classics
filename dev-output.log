@@ -1,35 +1,108 @@
-
-> amplified-classics@1.0.0 dev
-> next dev -H 0.0.0.0
-
+ ⚠ Port 3000 is in use, trying 3001 instead.
   ▲ Next.js 14.2.33
-  - Local:        http://localhost:3000
-  - Network:      http://0.0.0.0:3000
+  - Local:        http://localhost:3001
+  - Experiments (use with caution):
+    · turbo
+    · optimizeCss
 
  ✓ Starting...
- ✓ Ready in 1606ms
- ○ Compiling /_not-found ...
- ✓ Compiled /_not-found in 2.6s (489 modules)
+ ✓ Ready in 1035ms
+ ○ Compiling / ...
+ ✓ Compiled / in 777ms (511 modules)
+ GET / 200 in 856ms
+ ✓ Compiled /books/evelina in 138ms (505 modules)
+ ✓ Compiled /books/evelina/[chapter] in 179ms (559 modules)
+ ✓ Compiled in 115ms (559 modules)
+ ✓ Compiled in 68ms (559 modules)
+ ✓ Compiled in 61ms (559 modules)
+ ✓ Compiled in 62ms (559 modules)
+ ✓ Compiled in 60ms (559 modules)
+ ✓ Compiled in 62ms (559 modules)
+ ✓ Compiled in 58ms (559 modules)
+ ✓ Compiled in 60ms (559 modules)
+ ✓ Compiled in 54ms (559 modules)
+ ✓ Compiled in 57ms (559 modules)
+ ✓ Compiled in 51ms (559 modules)
+ ✓ Compiled in 50ms (559 modules)
+ ✓ Compiled in 57ms (559 modules)
+ ✓ Compiled in 52ms (559 modules)
+ ✓ Compiled in 59ms (559 modules)
+ ✓ Compiled in 47ms (559 modules)
+ GET /books/evelina/chapter-1 200 in 86ms
+ ✓ Compiled in 116ms (559 modules)
+ ✓ Compiled in 89ms (559 modules)
+ ✓ Compiled in 55ms (559 modules)
+ ✓ Compiled in 187ms (561 modules)
+ ✓ Compiled in 90ms (561 modules)
+ ⨯ app/books/evelina/[chapter]/page.tsx (1114:48) @ replace
+ ⨯ TypeError: parallel.replace is not a function
+    at eval (./app/books/evelina/[chapter]/page.tsx:2038:72)
+    at Array.map (<anonymous>)
+    at ChapterView (./app/books/evelina/[chapter]/page.tsx:2036:90)
+digest: "4063970794"
+[0m [90m 1112 |[39m                   {chapterData[33m.[39mmodernAdaptation[33m.[39mparallels[33m.[39mmap((parallel[33m:[39m string[33m,[39m idx[33m:[39m number) [33m=>[39m {[0m
+[0m [90m 1113 |[39m                     [90m// Remove emoji/icon at the start and parse bold formatting[39m[0m
+[0m[31m[1m>[22m[39m[90m 1114 |[39m                     [36mconst[39m cleanText [33m=[39m parallel[33m.[39mreplace([35m/^[^\w\s]+\s*/[39m[33m,[39m [32m''[39m)[0m
+[0m [90m      |[39m                                                [31m[1m^[22m[39m[0m
+[0m [90m 1115 |[39m                     [36mreturn[39m ([0m
+[0m [90m 1116 |[39m                       [33m<[39m[33mdiv[39m [0m
+[0m [90m 1117 |[39m                         key[33m=[39m{idx} [0m
+ GET /books/evelina/chapter-2 500 in 81ms
+ GET /books/evelina 200 in 46ms
+ GET / 200 in 46ms
+ ✓ Compiled in 155ms (563 modules)
+ ✓ Compiled in 80ms (563 modules)
+ GET / 200 in 67ms
+ GET /books/evelina/chapter-1 200 in 41ms
  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- GET /_next/static/webpack/9476ce9079262448.webpack.hot-update.json 404 in 2745ms
- ✓ Compiled / in 292ms (499 modules)
+ ✓ Compiled /_not-found in 156ms (566 modules)
+ ⨯ app/books/evelina/[chapter]/page.tsx (1114:48) @ replace
+ ⨯ TypeError: parallel.replace is not a function
+    at eval (./app/books/evelina/[chapter]/page.tsx:2040:72)
+    at Array.map (<anonymous>)
+    at ChapterView (./app/books/evelina/[chapter]/page.tsx:2038:90)
+digest: "3455621931"
+[0m [90m 1112 |[39m                   {chapterData[33m.[39mmodernAdaptation[33m.[39mparallels[33m.[39mmap((parallel[33m:[39m string[33m,[39m idx[33m:[39m number) [33m=>[39m {[0m
+[0m [90m 1113 |[39m                     [90m// Remove emoji/icon at the start and parse bold formatting[39m[0m
+[0m[31m[1m>[22m[39m[90m 1114 |[39m                     [36mconst[39m cleanText [33m=[39m parallel[33m.[39mreplace([35m/^[^\w\s]+\s*/[39m[33m,[39m [32m''[39m)[0m
+[0m [90m      |[39m                                                [31m[1m^[22m[39m[0m
+[0m [90m 1115 |[39m                     [36mreturn[39m ([0m
+[0m [90m 1116 |[39m                       [33m<[39m[33mdiv[39m [0m
+[0m [90m 1117 |[39m                         key[33m=[39m{idx} [0m
+ GET /books 404 in 247ms
+ GET /books/evelina/chapter-2 500 in 160ms
+ GET /books/evelina/chapter-1 200 in 24ms
+ GET /books 404 in 17ms
+ ✓ Compiled in 167ms (563 modules)
  ⚠ Fast Refresh had to perform a full reload due to a runtime error.
- GET /_next/static/webpack/9476ce9079262448.webpack.hot-update.json 404 in 159ms
- GET / 200 in 502ms
- GET / 200 in 51ms
- ○ Compiling /books/jane-eyre ...
- ✓ Compiled /books/jane-eyre in 524ms (504 modules)
- ○ Compiling /books/jane-eyre/[chapter] ...
- ✓ Compiled /books/jane-eyre/[chapter] in 708ms (572 modules)
- ✓ Compiled /books/wuthering-heights in 490ms (575 modules)
- ✓ Compiled in 578ms (575 modules)
- ✓ Compiled in 275ms (301 modules)
- ✓ Compiled in 285ms (301 modules)
- GET /books/jane-eyre 200 in 128ms
- ✓ Compiled in 410ms (575 modules)
- GET /books/jane-eyre 200 in 170ms
- ○ Compiling /books/sense-and-sensibility ...
- ✓ Compiled /books/sense-and-sensibility in 566ms (578 modules)
- ✓ Compiled /books/evelina in 339ms (581 modules)
- ✓ Compiled /books/pride-and-prejudice in 244ms (584 modules)
- ✓ Compiled in 934ms (547 modules)
+ GET /books/evelina/chapter-2 200 in 60ms
+ GET /books/evelina/chapter-2 200 in 11ms
+ GET /books/evelina/chapter-1 200 in 14ms
+ GET /books/evelina/chapter-3 200 in 13ms
+ GET /books/evelina 200 in 25ms
+ GET / 200 in 19ms
+ ✓ Compiled /books/pride-and-prejudice/[chapter] in 374ms (693 modules)
+ GET /books/pride-and-prejudice/chapter-1 200 in 591ms
+ ✓ Compiled in 134ms (693 modules)
+ GET /books/evelina/chapter-2 200 in 51ms
+ ✓ Compiled in 117ms (627 modules)
+ ✓ Compiled in 56ms (627 modules)
+ ✓ Compiled in 49ms (627 modules)
+ GET /books/evelina/chapter-1 200 in 66ms
+ ✓ Compiled in 71ms (627 modules)
+ ✓ Compiled in 114ms (627 modules)
+ ✓ Compiled in 60ms (627 modules)
+ ✓ Compiled in 51ms (627 modules)
+ ✓ Compiled in 70ms (627 modules)
+ GET /books/evelina/chapter-3 200 in 83ms
+ ✓ Compiled /books/wuthering-heights in 109ms (630 modules)
+ ✓ Compiled /books/wuthering-heights/[chapter] in 306ms (692 modules)
+ ✓ Compiled in 192ms (692 modules)
+ GET /books/evelina/chapter-1 200 in 62ms
+ ✓ Compiled in 96ms (692 modules)
+ ✓ Compiled in 90ms (692 modules)
+ GET /books/evelina/chapter-1 200 in 47ms
+ ✓ Compiled in 87ms (692 modules)
+ ✓ Compiled in 188ms (694 modules)
+ ✓ Compiled in 98ms (694 modules)
+ ✓ Compiled in 151ms (694 modules)
