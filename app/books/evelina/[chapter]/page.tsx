@@ -8,16 +8,17 @@ import {
   Lightbulb, ChevronDown, ChevronUp, Brain, Sparkles, ShoppingCart, Bookmark 
 } from 'lucide-react'
 import { bookConfig } from '../config'
-// Temporarily commented out - chapters need V3 update
-// import { chapter1 } from '../chapters/chapter-1'
-// import { chapter2 } from '../chapters/chapter-2'
-// import { chapter3 } from '../chapters/chapter-3'
+import { chapter1 } from '../chapters/chapter-1'
+import { chapter2 } from '../chapters/chapter-2'
+import { chapter3 } from '../chapters/chapter-3'
+import { chapter4 } from '../chapters/chapter-4'
 // More chapters will be added as they are created
 
 const chapters: any[] = [
-  // chapter1, // Temporarily disabled - needs V3 format
-  // chapter2, // Temporarily disabled - needs V3 format  
-  // chapter3, // Temporarily disabled - needs V3 format
+  chapter1,
+  chapter2,
+  chapter3,
+  chapter4,
   // Add more chapters here as they are created
 ]
 
@@ -1110,9 +1111,19 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
               
               {chapterData.modernAdaptation.parallels && (
                 <div style={{ marginBottom: '1.5rem', position: 'relative', zIndex: 1 }}>
-                  {chapterData.modernAdaptation.parallels.map((parallel: string, idx: number) => {
-                    // Remove emoji/icon at the start and parse bold formatting
-                    const cleanText = parallel.replace(/^[^\w\s]+\s*/, '')
+                  {chapterData.modernAdaptation.parallels.map((parallel: any, idx: number) => {
+                    // Handle both string format and object format
+                    let displayText: string
+                    if (typeof parallel === 'string') {
+                      // Remove emoji/icon at the start and parse bold formatting
+                      displayText = parallel.replace(/^[^\w\s]+\s*/, '')
+                    } else if (parallel.emoji && parallel.text) {
+                      // Handle object format with emoji and text properties
+                      displayText = `<strong>${parallel.emoji}</strong> ${parallel.text}`
+                    } else {
+                      displayText = String(parallel)
+                    }
+                    
                     return (
                       <div 
                         key={idx} 
@@ -1128,7 +1139,7 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
                           borderLeft: '2px solid rgba(255, 255, 255, 0.3)'
                         }}
                         dangerouslySetInnerHTML={{ 
-                          __html: cleanText.replace(/\*\*(.*?)\*\*/g, '<strong style="color: rgba(255, 255, 255, 1); font-weight: 600;">$1</strong>') 
+                          __html: displayText.replace(/\*\*(.*?)\*\*/g, '<strong style="color: rgba(255, 255, 255, 1); font-weight: 600;">$1</strong>') 
                         }}
                       />
                     )
@@ -1183,12 +1194,20 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '0.5rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)'
             }}>
-              Thematic Threads
+              Thematic Threads: Tracking Patterns Across the Novel
             </h2>
+            <p style={{
+              fontSize: '1rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem'
+            }}>
+              These recurring themes connect chapters and show how ideas develop throughout the story.
+            </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {chapterData.thematicThreads.map((thread: any, idx: number) => (
                 <div key={idx} style={{
@@ -1224,7 +1243,7 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '0.5rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)',
               display: 'flex',
@@ -1232,8 +1251,16 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
               gap: '0.75rem'
             }}>
               <Lightbulb size={24} />
-              Discussion Questions
+              Discussion Questions: Tools That Lead You to the Answer
             </h2>
+            <p style={{
+              fontSize: '1rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem'
+            }}>
+              These questions strategically guide you toward deeper appreciation of what matters most in the text.
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {chapterData.discussionQuestions.map((q: any, idx: number) => (
                 <div key={idx} style={{
