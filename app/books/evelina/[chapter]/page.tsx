@@ -8,15 +8,16 @@ import {
   Lightbulb, ChevronDown, ChevronUp, Brain, Sparkles, ShoppingCart, Bookmark 
 } from 'lucide-react'
 import { bookConfig } from '../config'
-import { chapter1 } from '../chapters/chapter-1'
-import { chapter2 } from '../chapters/chapter-2'
-import { chapter3 } from '../chapters/chapter-3'
+// Temporarily commented out - chapters need V3 update
+// import { chapter1 } from '../chapters/chapter-1'
+// import { chapter2 } from '../chapters/chapter-2'
+// import { chapter3 } from '../chapters/chapter-3'
 // More chapters will be added as they are created
 
 const chapters: any[] = [
-  chapter1,
-  chapter2,
-  chapter3,
+  // chapter1, // Temporarily disabled - needs V3 format
+  // chapter2, // Temporarily disabled - needs V3 format  
+  // chapter3, // Temporarily disabled - needs V3 format
   // Add more chapters here as they are created
 ]
 

@@ -71,17 +71,17 @@ export const chapter1: ChapterData = {
   },
   
   // ==========================================
-  // AT A GLANCE
+  // AT A GLANCE (Temporarily commented out - old format)
   // ==========================================
-  atAGlance: {
-    setting: 'Berry Hill, Dorsetshire, England, 1778 — A quiet rural parsonage before Evelina\'s departure for London',
-    narrator: 'Reverend Arthur Villars, writing to Lady Howard (epistolary format: we read his private letter)',
-    keyEvent: 'Villars receives Lady Howard\'s invitation to bring Evelina to London for the social season and expresses deep anxiety about the dangers this exposure presents',
-    mood: 'Anxious, protective, conflicted — a loving guardian torn between sheltering his ward and recognizing she must eventually enter the world',
-    importantCharacters: ['Reverend Villars (writer)', 'Evelina Anville (described)', 'Lady Howard (recipient)', 'Sir John Belmont (absent father)'],
-    literaryDevices: ['Epistolary form', 'First-person limited perspective', 'Foreshadowing', 'Characterization through voice', 'Exposition through correspondence'],
-    centralQuestion: 'Can innocence and virtue survive in fashionable society without worldly knowledge of social codes and dangers?'
-  },
+  // atAGlance: {
+  //   setting: 'Berry Hill, Dorsetshire, England, 1778 — A quiet rural parsonage before Evelina\'s departure for London',
+  //   narrator: 'Reverend Arthur Villars, writing to Lady Howard (epistolary format: we read his private letter)',
+  //   keyEvent: 'Villars receives Lady Howard\'s invitation to bring Evelina to London for the social season and expresses deep anxiety about the dangers this exposure presents',
+  //   mood: 'Anxious, protective, conflicted — a loving guardian torn between sheltering his ward and recognizing she must eventually enter the world',
+  //   importantCharacters: ['Reverend Villars (writer)', 'Evelina Anville (described)', 'Lady Howard (recipient)', 'Sir John Belmont (absent father)'],
+  //   literaryDevices: ['Epistolary form', 'First-person limited perspective', 'Foreshadowing', 'Characterization through voice', 'Exposition through correspondence'],
+  //   centralQuestion: 'Can innocence and virtue survive in fashionable society without worldly knowledge of social codes and dangers?'
+  // },
   
   // ==========================================
   // TERMS TO KNOW
