@@ -1,18 +1,32 @@
 
 > amplified-classics@1.0.0 dev
-> next dev -H 0.0.0.0
+> next dev -H 0.0.0.0 --turbo
 
  ⚠ Port 3000 is in use, trying 3001 instead.
-  ▲ Next.js 14.2.33
-  - Local:        http://localhost:3001
-  - Network:      http://0.0.0.0:3001
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⚠ Port 3002 is in use, trying 3003 instead.
+ ⚠ Port 3003 is in use, trying 3004 instead.
+  ▲ Next.js 14.2.33 (turbo)
+  - Local:        http://localhost:3004
+  - Network:      http://0.0.0.0:3004
+  - Experiments (use with caution):
+    · optimizeCss
 
  ✓ Starting...
- ✓ Ready in 1709ms
- ○ Compiling /books/jane-eyre/[chapter] ...
- ✓ Compiled /books/jane-eyre/[chapter] in 2.5s (554 modules)
- GET /books/jane-eyre/chapter-1 200 in 3100ms
- ○ Compiling /books/pride-and-prejudice/[chapter] ...
- ✓ Compiled /books/pride-and-prejudice/[chapter] in 674ms (564 modules)
- GET /books/pride-and-prejudice/chapter-1 200 in 1153ms
-[?25h
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+ ✓ Ready in 527ms
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbo
+
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+Watchpack Error (watcher): Error: EMFILE: too many open files, watch
