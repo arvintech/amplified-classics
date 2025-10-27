@@ -30,3 +30,52 @@ Watchpack Error (watcher): Error: EMFILE: too many open files, watch
 Watchpack Error (watcher): Error: EMFILE: too many open files, watch
 Watchpack Error (watcher): Error: EMFILE: too many open files, watch
 Watchpack Error (watcher): Error: EMFILE: too many open files, watch
+npm error code EPERM
+npm error syscall kill
+npm error path /Users/arvinlioanag/Documents/github/amplified-classics
+npm error errno -1
+npm error Error: kill EPERM
+npm error     at ChildProcess.kill (node:internal/child_process:512:26)
+npm error     at process.handleSignal (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/signal-manager.js:14:10)
+npm error     at process.emit (node:events:508:28) {
+npm error   errno: -1,
+npm error   code: 'EPERM',
+npm error   syscall: 'kill',
+npm error   cmd: 'sh',
+npm error   args: [ '-c', 'next dev -H 0.0.0.0 --turbo' ],
+npm error   stdout: null,
+npm error   stderr: null,
+npm error   event: 'dev',
+npm error   script: 'next dev -H 0.0.0.0 --turbo',
+npm error   pkgid: 'amplified-classics@1.0.0',
+npm error   path: '/Users/arvinlioanag/Documents/github/amplified-classics'
+npm error }
+npm error
+npm error The operation was rejected by your operating system.
+npm error It is likely you do not have the permissions to access this file as the current user
+npm error
+npm error If you believe this might be a permissions issue, please double-check the
+npm error permissions of the file and its containing directories, or try running
+npm error the command again as root/Administrator.
+node:internal/child_process:512
+      this.emit('error', new ErrnoException(err, 'kill'));
+                         ^
+
+Error: kill EPERM
+    at ChildProcess.kill (node:internal/child_process:512:26)
+    at handleSessionStop (/Users/arvinlioanag/Documents/github/amplified-classics/node_modules/next/dist/cli/next-dev.js:85:51)
+    at process.<anonymous> (/Users/arvinlioanag/Documents/github/amplified-classics/node_modules/next/dist/cli/next-dev.js:131:27)
+    at process.emit (node:events:508:28)
+Emitted 'error' event on ChildProcess instance at:
+    at ChildProcess.kill (node:internal/child_process:512:12)
+    at handleSessionStop (/Users/arvinlioanag/Documents/github/amplified-classics/node_modules/next/dist/cli/next-dev.js:85:51)
+    at process.<anonymous> (/Users/arvinlioanag/Documents/github/amplified-classics/node_modules/next/dist/cli/next-dev.js:131:27)
+    at process.emit (node:events:508:28) {
+  errno: -1,
+  code: 'EPERM',
+  syscall: 'kill'
+}
+
+Node.js v24.9.0
+npm error Log files were not written due to an error writing to the directory: /Users/arvinlioanag/.npm/_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
