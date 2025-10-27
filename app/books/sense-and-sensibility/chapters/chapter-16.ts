@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter16: ChapterData = {
   number: 16,
-  title: 'Concealed Pain',
+  title: '',
   
   readingTime: 11,
   pages: 4,
@@ -25,7 +25,9 @@ export const chapter16: ChapterData = {
       
       'Elinor\'s strength in supporting others despite her own pain shows the value of emotional regulation. Her ability to maintain dignity and provide comfort reveals how sense serves others while managing personal suffering. However, her concealment also isolates her from support.',
       
-      'The chapter develops Elinor\'s character as she navigates the complex task of managing her own pain while supporting Marianne, revealing the ongoing cost of emotional restraint.'
+      'The chapter develops Elinor\'s character as she navigates the complex task of managing her own pain while supporting Marianne, revealing the ongoing cost of emotional restraint.',
+      
+      'Chapter 16 reveals the hidden burden of being "the strong one"—Elinor\'s competence at managing emotions makes her invisible in her own suffering. While Marianne receives support for dramatic expressions of distress, Elinor\'s private suffering goes unrecognized because she maintains functionality. This demonstrates sense\'s paradox: emotional regulation enables helping others but prevents receiving help, creating unsustainable pattern where the caregiver\'s needs remain unmet precisely because they manage so well.'
     ]
   },
   
@@ -411,6 +413,24 @@ Escaping requires active dismantling:
 **The Deeper Wisdom:**
 
 Elinor's situation teaches that strength is valuable but unsustainable as permanent state without reciprocal support. Being "the strong one" serves families and communities but becomes trap when it prevents vulnerability, isolates from support, and creates expectation of infinite capacity. Healthy dynamics require allowing everyone—even strong people—to struggle sometimes, ensuring support flows in multiple directions, and recognizing that competence at emotional labor indicates skill at managing suffering, not absence of need for support. True strength includes both capability to support others AND wisdom to recognize one's own limitations and needs.`
+    },
+    {
+      id: 'emotional-labor-invisibility',
+      title: 'The Invisible Work: How Emotional Labor Goes Unrecognized and Unrewarded',
+      question: 'What is emotional labor and why does Elinor\'s work supporting others go unrecognized? What are modern parallels?',
+      aiResponse: `Elinor performs intensive emotional labor—managing her own devastation while supporting Marianne, maintaining household stability, presenting composed exterior to society. This work is invisible precisely because it\'s effective: when emotional regulation succeeds, nobody sees the effort required. Modern parallels: mothers who "handle everything" without recognition; office managers who smooth workplace tensions; friends who always listen but rarely share. This labor is gendered, undervalued, and exhausting. It involves suppressing own needs to provide care, managing others\' emotions while concealing one\'s own, and maintaining functionality despite internal struggle. Protection requires: naming emotional labor as real work, ensuring reciprocal support, setting boundaries around caregiving, and taking breaks from supportive roles. For communities: recognize and value emotional labor, check on caregivers proactively, and ensure support flows in multiple directions not just toward "strong ones."`
+    },
+    {
+      id: 'compassion-fatigue-burnout',
+      title: 'When Helping Hurts: Compassion Fatigue and the Limits of Sustained Caregiving',
+      question: 'What is compassion fatigue and how is Elinor at risk? When does supporting others become unsustainable?',
+      aiResponse: `Elinor risks compassion fatigue—exhaustion and decreased empathy from continuously supporting others while neglecting own needs. She consistently prioritizes others\' emotional needs over her own processing, creating unsustainable pattern of constant output without input. Modern parallels: healthcare workers, therapists, teachers managing others\' stress while processing own; parents who never take breaks; friends who are always available but never ask for support. Warning signs: feeling drained after interactions that should be fulfilling, difficulty experiencing empathy despite wanting to care, resentment toward those being helped, physical/emotional exhaustion, neglecting own needs. Protection requires: setting boundaries on availability, ensuring reciprocal relationships where support flows both directions, taking breaks from caregiving roles, processing own emotions rather than constantly suppressing them, and recognizing that self-care isn\'t selfish but necessary for sustained capacity to help. Wisdom: You can\'t pour from empty cup; maintaining own wellbeing enables better support for others.`
+    },
+    {
+      id: 'caregiver-invisibility-paradox',
+      title: 'The Competence Trap: Why Being "The Strong One" Prevents Receiving Needed Support',
+      question: 'Why does Elinor\'s competence make her invisible in her own suffering? How can caregivers receive support they need?',
+      aiResponse: `Elinor demonstrates caregiver\'s invisibility—her very competence at managing creates assumption she doesn\'t need help. Marianne, absorbed in own drama, doesn\'t recognize Elinor\'s pain. Mrs. Dashwood, accustomed to relying on Elinor, doesn\'t question whether she needs support. Society, seeing composed exterior, assumes she\'s unaffected. Modern parallel: colleagues who are always "fine" might not be; "strong friend" who listens but never shares; parent who handles everything but is quietly struggling. The competence trap: better you manage emotions, less support you receive, creating cycle where those who support most effectively receive least support. Breaking pattern requires: caregivers practicing vulnerability and asking for help despite role; communities checking on "strong ones" proactively; recognizing that composed doesn\'t mean fine; offering support even when not requested; and understanding that emotional competence doesn\'t equal infinite capacity. For caregivers: asking for help isn\'t weakness or failure—it\'s wisdom recognizing your humanity and limitations.`
     }
   ],
   

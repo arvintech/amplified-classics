@@ -10,14 +10,15 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter2: ChapterData = {
   number: 2,
-  title: 'Fanny\'s Manipulation',
+  title: '',
   
   readingTime: 8,
   pages: 3,
   
-  // ==========================================
-  // CHAPTER SUMMARY
-  // ==========================================
+  // ===================================================================
+  // SUMMARY
+  // Two-level summary: brief (one sentence) and full (3-4 paragraphs)
+  // ===================================================================
   summary: {
     brief: 'Fanny Dashwood manipulates her husband John, systematically destroying his intention to provide generously for his stepmother and sisters, reducing his planned gift from £3,000 to nothing through careful emotional manipulation and strategic argumentation.',
     
@@ -28,13 +29,16 @@ export const chapter2: ChapterData = {
       
       'Austen uses this chapter to expose how self-interest masks itself as practicality and family concern. Fanny\'s arguments appear reasonable—she speaks of her son Henry\'s future, she acknowledges the mother already has income, she claims to care about the family\'s welfare. However, every argument serves to reduce John\'s generosity until it evaporates entirely. John, who begins with genuine intention to help, becomes complicit in his own manipulation through his passivity and desire to avoid conflict.',
       
-      'The chapter demonstrates Austen\'s satirical skill: she shows how greed can completely dismantle moral obligations through incremental erosion rather than dramatic confrontation. Fanny doesn\'t demand that John break his promise; she merely suggests practical alternatives that sound reasonable but achieve the same result. John doesn\'t actively betray his father\'s wishes; he passively allows his wife to reshape his good intentions into nothing. This pattern of passive complicity and active manipulation will recur throughout the novel as characters navigate between moral ideals and practical self-interest.'
+      'The chapter demonstrates Austen\'s satirical skill: she shows how greed can completely dismantle moral obligations through incremental erosion rather than dramatic confrontation. Fanny doesn\'t demand that John break his promise; she merely suggests practical alternatives that sound reasonable but achieve the same result. John doesn\'t actively betray his father\'s wishes; he passively allows his wife to reshape his good intentions into nothing. This pattern of passive complicity and active manipulation will recur throughout the novel as characters navigate between moral ideals and practical self-interest.',
+      
+      'Building on Chapter 1\'s establishment of the Dashwood women\'s economic vulnerability, Chapter 2 shows the human choices that transform structural inequality into personal crisis. While Chapter 1 exposed the inheritance system that made women dependent on male generosity, Chapter 2 reveals what happens when that generosity fails. The economic dependence established in Chapter 1 becomes acute threat in Chapter 2 as the sisters\' last hope for security—John\'s promised support—evaporates through Fanny\'s manipulation. This progression from systemic injustice to personal betrayal establishes Austen\'s dual critique: both the social structures that create vulnerability and the individual choices that exploit it. The chapter deepens our understanding of how economic systems affect personal relationships, showing that women\'s vulnerability depends not just on laws but on the moral character of those who hold power over them.'
     ]
   },
   
-  // ==========================================
+  // ===================================================================
   // TERMS TO KNOW
-  // ==========================================
+  // Literary devices, vocabulary words, and concepts crucial to understanding
+  // ===================================================================
   termsToKnow: [
     {
       term: 'Incremental Persuasion',
@@ -74,9 +78,10 @@ export const chapter2: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // CHARACTER DEVELOPMENT
-  // ==========================================
+  // ===================================================================
+  // CHARACTERS
+  // Character development for this chapter
+  // ===================================================================
   characters: [
     {
       name: 'Fanny Dashwood',
@@ -120,9 +125,10 @@ export const chapter2: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // KEY QUOTES
-  // ==========================================
+  // 3-5 significant quotations with analysis (50-75 words max)
+  // ===================================================================
   quotes: [
     {
       text: 'Mrs. John Dashwood did not at all approve of what her husband intended to do for his mother and sisters. To take three thousand pounds from the fortune of their dear little boy would be impoverishing him to the most shocking degree.',
@@ -146,9 +152,10 @@ export const chapter2: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // INTELLIGENCE AMPLIFIED ANALYSIS
-  // ==========================================
+  // ===================================================================
+  // IA ANALYSIS (Intelligence Amplifier Analysis)
+  // Deep thematic and technical analysis
+  // ===================================================================
   iaAnalysis: {
     themes: [
       {
@@ -184,9 +191,10 @@ export const chapter2: ChapterData = {
     ]
   },
   
-  // ==========================================
+  // ===================================================================
   // MODERN ADAPTATION
-  // ==========================================
+  // Connect classic text to contemporary life (~200 words)
+  // ===================================================================
   modernAdaptation: {
     setting: 'Imagine a modern family inheritance dispute where a sister convinces her brother to reduce his intended financial support for their stepmother and sisters. She uses "practical" arguments about their own children\'s future security, appeals to financial planning, and suggests incremental reductions that seem reasonable until the original generous intention evaporates completely.',
     
@@ -202,9 +210,11 @@ export const chapter2: ChapterData = {
     discussionPrompt: 'The dynamics of manipulation and passive complicity are timeless. How do we recognize when self-interest is masquerading as practicality or concern? What makes it difficult to resist manipulation, even when we know it\'s wrong? And how do we maintain our integrity in the face of pressure to betray our commitments?'
   },
   
-  // ==========================================
+  // ===================================================================
   // THEMATIC THREADS
-  // ==========================================
+  // Tracking patterns across the novel - recurring themes that connect
+  // chapters and show how ideas develop throughout the story
+  // ===================================================================
   thematicThreads: [
     {
       emoji: '🎭',
@@ -223,9 +233,11 @@ export const chapter2: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // DISCUSSION QUESTIONS
-  // ==========================================
+  // These questions are tools that LEAD YOU TO THE ANSWER - strategically
+  // designed to guide you toward deeper appreciation of what matters most
+  // ===================================================================
   discussionQuestions: [
     {
       title: 'Manipulation Techniques',
@@ -253,9 +265,13 @@ export const chapter2: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // AMPLIFIED DISCUSSION
-  // ==========================================
+  // AI COLLABORATIVE TOOLS - Created through educator-AI partnership where
+  // you bring pedagogical expertise and AI brings comprehensive analysis.
+  // Together: teaching material neither could produce alone.
+  // Teachers: Select which discussions best fit your classroom from the 6.
+  // ===================================================================
   amplifiedDiscussion: [
     {
       id: 'incremental-persuasion',
@@ -761,12 +777,358 @@ We must consider both individual moral choices (John should honor his promise) a
 Austen couldn't directly challenge legal structures. But by making readers care about the Dashwood women, feel their vulnerability, and resent the injustice they face, she creates emotional investment in change. Literature can change hearts and minds in ways that abstract political arguments cannot.
 
 This is why we still read Austen: not just for romance plots, but for sophisticated social critique that reveals injustice through personal stories, making us care about systemic problems by showing us their human costs.`
+    },
+    {
+      id: 'austens-satire-technique',
+      title: 'Austen\'s Satirical Technique: Humor as Social Critique',
+      question: 'How does Austen use satire to critique greed and manipulation in this chapter? What makes her satirical approach more effective than direct moral condemnation?',
+      aiResponse: `**The Art of Satirical Social Critique**
+
+Austen's satirical technique in Chapter 2 demonstrates why she remains one of literature's most effective social critics. Her approach—using humor to expose vice rather than direct moral condemnation—is both more entertaining and more persuasive than straightforward criticism.
+
+**What Is Satire?**
+
+Satire uses humor, irony, exaggeration, or ridicule to criticize and expose flaws in individuals, institutions, or society. It works by making the target appear absurd or ridiculous, revealing underlying truths through comedic exaggeration rather than direct criticism.
+
+**How Austen Uses Satire in Chapter 2:**
+
+**1. Exaggeration That Reveals Truth**
+
+Fanny's melodramatic language is just barely exaggerated enough to be funny while remaining recognizable:
+- "Impoverishing him to the most shocking degree"
+- "A thousand pounds is a prodigious amount!"
+- "Our dear little boy"
+
+These phrases are over-the-top enough to be satirical but close enough to actual manipulative language that readers recognize the pattern. The exaggeration reveals the absurdity of the underlying greed while being realistic enough to critique actual behavior.
+
+**2. Letting Characters Condemn Themselves**
+
+Austen doesn't need to tell us Fanny is greedy—Fanny's own words and reasoning reveal her character. The narrator maintains ironic distance, presenting Fanny's arguments without explicit judgment, allowing readers to reach conclusions independently.
+
+This technique is more powerful than direct condemnation because:
+- Readers feel smart for recognizing the manipulation
+- The critique comes from observation, not preaching
+- Characters condemn themselves through their own words
+- Readers become co-critics rather than passive recipients of moral lessons
+
+**3. The Incremental Absurdity**
+
+The reduction from £3,000 to nothing is presented matter-of-factly, making the absurdity more apparent:
+- £3,000 → "too much"
+- £1,500 → still "too much"
+- £1,000 → "a prodigious amount"
+- £500 → "exceedingly inconvenient"
+- "A present or two" → essentially nothing
+
+By presenting this progression without comment, Austen makes the manipulation obvious through its own absurdity. The mechanical nature of the reduction—each step seeming "reasonable" until the cumulative effect is revealed—exposes the technique while demonstrating how it works.
+
+**4. Ironic Narrator Voice**
+
+Austen's narrator uses subtle irony rather than explicit judgment. Consider the final line: "He thought of it all day long, and for many days successively, and he did not repent."
+
+The neutral, factual tone makes John's moral failure more damning. A moralistic narrator might have condemned him directly; Austen simply notes his lack of repentance, letting the fact speak for itself. The understatement is more powerful than any explicit condemnation could be.
+
+**5. Social Performance vs. Reality**
+
+Austen satirizes the gap between appearance and reality:
+- Fanny appears concerned for her son but is actually greedy
+- John appears to consider his obligations but actually avoids them
+- The conversation appears reasonable but is actually manipulation
+- The outcome appears like careful deliberation but is moral failure
+
+This gap between performance and reality is the heart of Austen's satire: she shows how social propriety masks self-interest, how reasonable language disguises unreasonable behavior, how "practicality" conceals greed.
+
+**Why Satire Works Better Than Direct Criticism:**
+
+**1. Engagement Through Humor**
+
+Satire entertains while it criticizes. Readers laugh at Fanny's exaggerations while recognizing the underlying truth. This engagement makes the critique more memorable and effective than straightforward moral condemnation.
+
+**2. Avoiding Defensiveness**
+
+Direct criticism often triggers defensive reactions. Satire bypasses these defenses by making the critique indirect. Readers laugh at the absurdity before realizing they're witnessing social critique—and by then, they're already invested.
+
+**3. Intellectual Respect**
+
+Satire treats readers as intelligent collaborators capable of recognizing absurdity independently. This respect creates investment: readers want to "get" the satire, making them more receptive to the critique.
+
+**4. Social Acceptability**
+
+In Regency England, direct criticism—especially from a woman—risked dismissal or condemnation. Satire allowed Austen to critique social systems while appearing to write entertaining domestic fiction. The humor made her critique socially acceptable.
+
+**5. Universal Application**
+
+By satirizing specific characters, Austen criticizes universal patterns. Fanny's manipulation techniques appear in every era and culture. The satire transcends its specific historical moment to critique timeless human behavior.
+
+**The Deeper Technique: Making Vice Ridiculous**
+
+Austen's genius lies in making vice appear ridiculous rather than merely wrong:
+
+**Fanny's Greed**: Becomes absurd through her melodramatic language and transparent manipulation
+**John's Weakness**: Becomes pathetic through his passive acceptance and lack of resistance  
+**Self-Interest**: Becomes laughable through its disguise as "practicality" and "concern"
+
+By making these vices ridiculous, Austen accomplishes something direct criticism cannot: she makes them socially unacceptable through mockery rather than moral condemnation. People can defend being "practical" or "concerned about their children," but they can't defend being ridiculous.
+
+**Historical Context:**
+
+Satire has a long tradition as a tool for social critique:
+- **Classical Satire**: Horace and Juvenal satirized Roman society
+- **Medieval Satire**: Chaucer satirized church corruption and social pretension
+- **Augustan Satire**: Pope and Swift used satire to critique 18th-century society
+- **Regency Satire**: Austen perfected subtle domestic satire
+
+Austen's innovation was applying satirical techniques to domestic fiction, creating a new form: the novel of social observation that critiques through comedy rather than melodrama.
+
+**Gender and Satire:**
+
+For female writers in particular, satire provided crucial tools:
+- **Indirect Critique**: Women couldn't directly challenge social structures without risking their reputations
+- **Acceptable Format**: Comedy was more acceptable from women than serious social criticism
+- **Subversive Potential**: Satire allowed radical critique disguised as entertainment
+- **Intellectual Authority**: Satirical skill demonstrated intelligence and cultural knowledge
+
+Austen's satirical technique allowed her to be one of the sharpest social critics of her era while appearing to write "merely" entertaining domestic fiction.
+
+**Modern Application:**
+
+Satire remains powerful today:
+- **Political Satire**: Shows, podcasts, and memes expose political absurdity
+- **Social Satire**: Comedy critiques social norms and inequalities  
+- **Corporate Satire**: "The Office," "Silicon Valley" satirize workplace culture
+- **Media Satire**: "Black Mirror" satirizes technology and society
+
+The technique is the same: make vice and folly appear ridiculous, trusting audiences to recognize absurdity and draw conclusions.
+
+**The Teaching Moment:**
+
+**For Understanding Literature**: Recognizing satire helps readers see how writers critique society indirectly. Look for:
+- Exaggeration that reveals truth
+- Characters who condemn themselves
+- Ironic narrator distance
+- Gaps between appearance and reality
+
+**For Critical Reading**: Satire requires active reading. Ask:
+- What is being satirized?
+- How does humor reveal underlying critique?
+- What makes this funny and why does that matter?
+- What social patterns is the writer exposing?
+
+**For Writing**: Satire is a powerful tool for social commentary:
+- Show absurdity rather than stating wrongness
+- Use humor to bypass defensive reactions
+- Let characters condemn themselves
+- Trust readers to recognize critique
+
+**For Life**: Recognizing satirical patterns helps us identify manipulation and absurdity in real life. When someone's reasoning sounds "off" or when "practical" arguments seem to serve self-interest, we're witnessing the patterns Austen satirizes.
+
+**The Lasting Power:**
+
+Two hundred years later, we still laugh at Fanny's manipulation and John's weakness because the patterns are timeless. Greed still disguises itself as concern. Manipulation still works through incremental persuasion. Weakness still enables wrongdoing through passive complicity.
+
+Austen's satire endures because it exposes universal human patterns through specific examples, using humor to make social critique both entertaining and effective. This is why she remains relevant: not despite her humor but because of it. The laughter is the point—it's how she makes us see the truth.`
+    },
+    {
+      id: 'marital-power-dynamics',
+      title: 'Marital Power Dynamics: Formal Authority vs. Informal Influence',
+      question: 'How does the relationship between John and Fanny reveal the complex power dynamics in Regency marriages? What does this tell us about gender, power, and influence?',
+      aiResponse: `**The Complex Dance of Marital Power**
+
+The dynamic between John and Fanny Dashwood reveals sophisticated understanding of how power operates in marriage—particularly in contexts where formal legal authority and actual psychological influence don't align.
+
+**The Legal Framework:**
+
+In Regency England, married women existed under the legal doctrine of **coverture**:
+- Women had no independent legal identity after marriage
+- All property became husband's upon marriage
+- Wives couldn't make contracts, own property, or control money
+- Husbands had absolute legal authority over wives and children
+
+By law, John has complete authority. Fanny has none.
+
+**The Reality: Informal Power**
+
+Yet this chapter demonstrates Fanny's considerable power over John despite her legal subordination. How?
+
+**1. Psychological Manipulation**
+
+Fanny exercises power through:
+- **Emotional Appeals**: "Think of our dear little boy"
+- **Practical Reasoning**: Making selfishness sound like wisdom
+- **Incremental Persuasion**: Small changes that accumulate  
+- **Strategic Framing**: Presenting self-interest as family concern
+
+These techniques don't require legal authority—they require psychological insight and strategic communication.
+
+**2. Gender Norms and Social Pressure**
+
+Regency masculine ideals created vulnerabilities:
+- **Conflict Avoidance**: Gentlemen avoided domestic confrontation
+- **Marital Harmony**: Challenging one's wife was considered ungentlemanly
+- **Domestic Sphere**: Home was woman's domain; men often deferred
+- **Social Expectations**: Appearing henpecked was shameful, so men often gave in privately
+
+John faces social pressure to avoid confronting Fanny directly, making him vulnerable to manipulation.
+
+**3. The Power of Passivity**
+
+Paradoxically, Fanny's lack of formal authority creates opportunities for informal influence:
+- She cannot command, so she must persuade
+- She cannot force, so she must manipulate
+- She cannot act directly, so she must work through John
+
+These indirect methods are sometimes more effective than direct authority because they're harder to recognize and resist.
+
+**The Gender Complexity:**
+
+This dynamic reveals complex gender realities:
+
+**Men Have Formal Power:**
+- John controls the inheritance legally
+- He has authority to make decisions
+- His word is legally binding
+
+**But Men Can Be Manipulated:**
+- Formal authority doesn't equal actual agency
+- Gender norms create vulnerabilities
+- Emotional manipulation can override legal power
+
+**Women Lack Formal Power:**
+- Fanny cannot directly control finances
+- She has no legal authority
+- Her position depends on her husband
+
+**But Women Can Exercise Influence:**
+- Psychological manipulation provides indirect power
+- Domestic sphere creates opportunities for influence
+- Strategic communication can shape decisions
+
+**This Doesn't Mean Power Is Equal:**
+
+Recognizing women's informal influence doesn't mean power was balanced:
+
+**Fanny's Power Is:**
+- **Contingent**: Depends on John's cooperation
+- **Indirect**: Requires manipulation rather than direct action
+- **Limited**: Only within marriage; widowhood brought vulnerability
+- **Individual**: Not systemic; many women couldn't manipulate effectively
+
+**John's Power Is:**
+- **Structural**: Built into legal and social systems
+- **Direct**: He can act without her consent
+- **Secure**: Not dependent on her cooperation
+- **Collective**: All men benefit from patriarchal structures
+
+The asymmetry matters: Fanny's influence exists within John's authority, not equal to it.
+
+**Austen's Critique:**
+
+Austen critiques multiple dimensions:
+
+**1. The System That Creates Manipulation**
+
+When formal power channels are closed to women, informal manipulation becomes necessary. The legal system that subordinated women paradoxically encouraged manipulative power strategies.
+
+**2. The Misuse of Informal Power**
+
+But Austen doesn't excuse manipulation. Fanny uses her influence selfishly and destructively, showing that informal power can be abused just as formal power can.
+
+**3. The Failure of Men to Use Power Ethically**
+
+John has legal authority and should use it responsibly. His failure to resist Fanny's manipulation is a failure to exercise power ethically. Having authority creates obligation to use it well.
+
+**4. The Vulnerability of Women Without Protectors**
+
+Mrs. Dashwood and her daughters suffer because they lack both formal power (as women) and informal influence (as not-wives of John). Their vulnerability shows the precariousness of women's position.
+
+**Contrast With Other Marriages:**
+
+Austen shows different marital dynamics throughout Sense and Sensibility:
+
+**John and Fanny**: Formal male power, informal female manipulation, moral failure
+**Elinor and Edward** (eventual): Mutual respect, shared values, moral integrity
+**Marianne and Brandon** (eventual): Male generosity, female gratitude evolving to affection
+**Willoughby and Miss Grey**: Economic transaction, no genuine partnership
+
+The variety shows that while legal structures constrain marriages, individual character determines how those structures operate.
+
+**Historical Context:**
+
+These weren't imaginary dynamics:
+
+**Real Patterns**:
+- Women did exercise informal influence in marriages
+- Domestic sphere was recognized as women's domain
+- Emotional and psychological manipulation were real power tools
+- Marital harmony was culturally valued, creating pressure to avoid conflict
+
+**Literary Tradition**:
+- Comedies of manners often featured manipulative wives
+- Conduct books warned against female manipulation
+- Legal treatises acknowledged informal female power
+- Social commentary discussed "petticoat government"
+
+Austen was observing and satirizing real social dynamics.
+
+**Modern Parallels:**
+
+While legal structures have changed, similar patterns persist:
+
+**Formal vs. Informal Power**:
+- Workplace hierarchies vs. social influence
+- Political authority vs. cultural power
+- Legal rights vs. social dynamics
+
+**Gender and Power**:
+- Women gaining formal power but often still using indirect influence
+- Men maintaining structural advantages while facing new expectations
+- Power operating through both formal and informal channels
+
+**Manipulation**:
+- Emotional manipulation still works regardless of legal equality
+- Passive-aggressive behavior as indirect power exercise
+- Strategic communication shaping decisions
+
+**The Lessons:**
+
+**For Understanding Power**:
+Power is complex—not just formal authority but informal influence, not just direct control but indirect persuasion. Understanding both dimensions reveals how power actually operates.
+
+**For Gender Analysis**:
+Neither "men have all the power" nor "women manipulate men" captures the complexity. Legal subordination and informal influence coexist, creating complicated dynamics that require nuanced analysis.
+
+**For Ethics**:
+Both formal power and informal influence can be used ethically or unethically. John should use his authority responsibly; Fanny should use her influence ethically. Both fail, showing that power—in whatever form—carries moral responsibility.
+
+**For Relationships**:
+Healthy relationships require both partners to use whatever power and influence they have ethically and for mutual benefit. Manipulation and passive complicity both undermine partnership.
+
+**The Teaching Moment:**
+
+Austen shows us that power is never simple:
+- Legal structures don't determine all outcomes
+- Formal authority can be undermined by informal influence
+- Gender doesn't determine who wields power effectively
+- Individual character matters within structural constraints
+
+This complexity makes Sense and Sensibility more than romance—it's sophisticated social analysis showing how power operates in intimate relationships within constraining social structures.
+
+**The Modern Warning:**
+
+Understanding these dynamics helps us recognize manipulation in any context:
+- When formal authority is bypassed through informal influence
+- When emotional appeals override rational decisions
+- When gender norms create vulnerabilities
+- When passive complicity enables manipulation
+
+Austen teaches us to see power clearly—not as simple domination but as complex interaction between formal authority, informal influence, social pressure, and individual character. This clarity remains valuable two centuries later because power dynamics, while changing, remain complex and often hidden.`
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // EDUCATOR RESOURCES
-  // ==========================================
+  // Teaching tools and activities
+  // ===================================================================
   educatorResources: {
     writingPrompt: {
       title: 'The Art of Manipulation: Write Your Own Persuasion Scene',
@@ -787,9 +1149,10 @@ This is why we still read Austen: not just for romance plots, but for sophistica
     }
   },
   
-  // ==========================================
-  // CRITICAL THINKING EXERCISE
-  // ==========================================
+  // ===================================================================
+  // CRITICAL THINKING EXERCISE (Optional)
+  // One focused, high-level analytical task
+  // ===================================================================
   criticalThinkingExercise: {
     title: 'The Ethics of Passive Complicity: When Does Inaction Become Wrongdoing?',
     
@@ -816,14 +1179,15 @@ This is why we still read Austen: not just for romance plots, but for sophistica
     classroomApplication: 'This can work as: Individual analytical essay (3-4 pages), Socratic seminar with structured debate, Group project where different groups analyze passive complicity from different ethical perspectives, Mock trial where John is "prosecuted" for passive complicity (students argue both sides). Time required: 2-3 class periods. Works well as capstone assessment for themes of moral responsibility, manipulation, and ethics in Sense and Sensibility.'
   },
   
-  // ==========================================
-  // WHY LITERATURE MATTERS
-  // ==========================================
+  // ===================================================================
+  // WHY LITERATURE MATTERS - Closing Motivation
+  // ===================================================================
   whyLiteratureMatters: getLiteratureMessageByChapter(2),
   
-  // ==========================================
+  // ===================================================================
   // NEXT TIME TEASER
-  // ==========================================
+  // Preview of next chapter
+  // ===================================================================
   nextTimeTeaser: {
     emoji: '🏠',
     title: 'Next: Leaving Norland',

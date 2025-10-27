@@ -26,23 +26,48 @@ Every chapter (2+) includes these sections in order:
 
 1. **Chapter Summary** - Brief + detailed overview
 2. **Terms to Know** - Literary & vocabulary terms
-3. **Character Development** - Growth in this chapter
+3. **Characters** - Character development for this chapter
 4. **Key Quotes** - Important passages with analysis
-5. **Intelligence Amplified Analysis** - Themes
-6. **Literary Techniques** - How author crafts meaning
-7. **Modern Adaptation** - Contemporary parallels
-8. **Thematic Threads** - Ongoing themes
-9. **Discussion Questions** - Open-ended thinking
-10. **Amplified Discussions** - Deep expert analysis
-11. **Educator Resources** - Teaching tools
+5. **IA Analysis** - Intelligence Amplified Analysis with themes & techniques
+6. **Modern Adaptation** - Contemporary parallels
+7. **Thematic Threads** - Ongoing themes tracking patterns
+8. **Discussion Questions** - Open-ended thinking
+9. **Amplified Discussions** - 6 deep expert analyses (REQUIRED)
+10. **Educator Resources** - Teaching tools
+11. **Critical Thinking Exercise** - Optional deep-dive
 12. **Why Literature Matters** - Closing motivation
-13. **Next Time** - Preview teaser
+13. **Next Time Teaser** - Preview of next chapter
 
 ---
 
 ## 📋 Part 1: Content Structure
 
-### Section 1: Chapter Summary ✅ REQUIRED
+### V3 Section Formatting Standards
+
+**All sections MUST use this exact format:**
+
+```typescript
+// ===================================================================
+// SECTION NAME
+// Brief description of section purpose
+// ===================================================================
+```
+
+**Key Requirements:**
+- Exactly **67 equal signs** (`===`) in divider lines
+- Section name in ALL CAPS
+- Descriptive comment on second line
+- Blank line before section content
+
+### Section 1: Summary ✅ REQUIRED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// SUMMARY
+// Two-level summary: brief (one sentence) and full (3-4 paragraphs)
+// ===================================================================
+```
 
 **Purpose:** Orient readers to what happens before analysis
 
@@ -72,6 +97,14 @@ summary: {
 ---
 
 ### Section 2: Terms to Know ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// TERMS TO KNOW
+// Literary devices, vocabulary words, and concepts crucial to understanding
+// ===================================================================
+```
 
 **Purpose:** Build literary vocabulary progressively
 
@@ -104,7 +137,15 @@ termsToKnow: [
 
 ---
 
-### Section 3: Character Development ⭐ RECOMMENDED
+### Section 3: Characters ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// CHARACTERS
+// Character development for this chapter
+// ===================================================================
+```
 
 **Purpose:** Track character arcs chapter by chapter
 
@@ -137,6 +178,14 @@ characters: [
 ---
 
 ### Section 4: Key Quotes ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// KEY QUOTES
+// 3-5 significant quotations with analysis (50-75 words max)
+// ===================================================================
+```
 
 **Purpose:** Train students to speed-read for significance while building appreciation
 
@@ -183,7 +232,15 @@ quotes: [
 
 ---
 
-### Section 5: Intelligence Amplified Analysis ⭐ RECOMMENDED
+### Section 5: IA Analysis (Intelligence Amplifier Analysis) ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// IA ANALYSIS (Intelligence Amplifier Analysis)
+// Deep thematic and technical analysis
+// ===================================================================
+```
 
 **Purpose:** Model literary analysis thinking
 
@@ -235,6 +292,14 @@ iaAnalysis: {
 
 ### Section 7: Modern Adaptation ⭐ RECOMMENDED
 
+**Header Format:**
+```typescript
+// ===================================================================
+// MODERN ADAPTATION
+// Connect classic text to contemporary life (~200 words)
+// ===================================================================
+```
+
 **Purpose:** Make classics relevant by creating authentic contemporary parallels
 
 **Why It Matters:** Students engage deeply when they see their own experiences reflected in classic literature, recognizing that human conflicts transcend time periods. Authentic modern parallels transform "old stories" into urgent, relatable explorations of power, identity, and relationship dynamics students navigate daily.
@@ -275,6 +340,15 @@ modernAdaptation: {
 
 ### Section 8: Thematic Threads ⭐ RECOMMENDED
 
+**Header Format:**
+```typescript
+// ===================================================================
+// THEMATIC THREADS
+// Tracking patterns across the novel - recurring themes that connect
+// chapters and show how ideas develop throughout the story
+// ===================================================================
+```
+
 **Purpose:** Track themes across the entire book
 
 **Why It Matters - Tracking Patterns Across the Novel:** These recurring themes connect chapters and show how ideas develop throughout the story. Thematic threads help readers see patterns and accumulate meaning across chapters—turning scattered observations into coherent understanding. They transform isolated chapter readings into cumulative insight about what the book is really about. Think of them as colored threads woven through the entire novel: once you see the pattern, each chapter adds to your understanding of the whole design.
@@ -301,6 +375,15 @@ thematicThreads: [
 ---
 
 ### Section 9: Discussion Questions ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// DISCUSSION QUESTIONS
+// These questions are tools that LEAD YOU TO THE ANSWER - strategically
+// designed to guide you toward deeper appreciation of what matters most
+// ===================================================================
+```
 
 **Purpose:** Facilitate dialogue and critical thinking
 
@@ -330,9 +413,11 @@ discussionQuestions: [
 
 ---
 
-### Section 10: Amplified Discussions ⭐ RECOMMENDED
+### Section 10: Amplified Discussions ✅ REQUIRED - 6 DISCUSSIONS PER CHAPTER
 
 **Purpose:** Provide expert-level analysis students learn from
+
+**⚠️ CRITICAL REQUIREMENT:** Every chapter MUST have exactly **6 Amplified Discussions**. This is a V3 standard, not optional.
 
 **Why It Matters - AI Collaborative Tools:** These discussions are specifically designed as **collaborative tools between educators and AI**. This is NOT "AI writes it and you use it"—this is genuine partnership where you bring pedagogical expertise, student knowledge, and classroom context, while AI brings comprehensive literary analysis and instant synthesis. Together, you create teaching material neither could produce alone. 
 
@@ -344,9 +429,20 @@ discussionQuestions: [
 
 This section models the sophisticated thinking you want students to develop, while giving teachers the flexibility to deploy it strategically.
 
-**Target:** 6 deep dives, 300-500 words each
+**Target:** EXACTLY 6 discussions per chapter, 300-500 words each (often longer for depth)
 
-**Teaching Note:** Create 6 discussions per chapter—teachers can then select which ones best fit their classroom needs, student level, or time constraints. Not all discussions need to be used; having 6 options gives flexibility and ensures you always have the right tool for the teaching moment.
+**Teaching Note:** Having 6 discussions per chapter gives teachers flexibility—they can select which ones best fit their classroom needs, student level, or time constraints. Not all discussions need to be used in every class; having 6 options ensures you always have the right tool for the teaching moment.
+
+**Header Format:**
+```typescript
+// ===================================================================
+// AMPLIFIED DISCUSSION
+// AI COLLABORATIVE TOOLS - Created through educator-AI partnership where
+// you bring pedagogical expertise and AI brings comprehensive analysis.
+// Together: teaching material neither could produce alone.
+// Teachers: Select which discussions best fit your classroom from the 6.
+// ===================================================================
+```
 
 **Structure:**
 ```typescript
@@ -355,8 +451,7 @@ amplifiedDiscussion: [
     id: 'unique-kebab-case-id',
     title: 'Discussion Topic',
     question: 'Complex driving question',
-    aiResponse: `
-**Main Heading**
+    aiResponse: `**Main Heading**
 
 Opening paragraph addressing the question directly.
 
@@ -379,11 +474,12 @@ Background information...
 
 Contemporary relevance...
 
-**For Discussion:**
+**The Teaching Moment:**
 
-Follow-up questions...
+Pedagogical applications and insights...
     `
   }
+  // ... MUST HAVE 6 TOTAL
 ]
 ```
 
@@ -406,6 +502,14 @@ Follow-up questions...
 ---
 
 ### Section 11: Educator Resources ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// EDUCATOR RESOURCES
+// Teaching tools and activities
+// ===================================================================
+```
 
 **Purpose:** Provide actionable teaching tools
 
@@ -439,6 +543,14 @@ educatorResources: {
 ---
 
 ### Section 12: Critical Thinking Exercise ⚪ OPTIONAL
+
+**Header Format:**
+```typescript
+// ===================================================================
+// CRITICAL THINKING EXERCISE (Optional)
+// One focused, high-level analytical task
+// ===================================================================
+```
 
 **Purpose:** Push beyond comprehension to synthesis
 
@@ -479,6 +591,13 @@ criticalThinkingExercise: {
 
 ### Section 13: Why Literature Matters ✅ REQUIRED
 
+**Header Format:**
+```typescript
+// ===================================================================
+// WHY LITERATURE MATTERS - Closing Motivation
+// ===================================================================
+```
+
 **Purpose:** Close with motivation and perspective
 
 **Structure:**
@@ -502,6 +621,14 @@ whyLiteratureMatters: getLiteratureMessageByChapter(X) // Use actual chapter num
 ---
 
 ### Section 14: Next Time Teaser ⭐ RECOMMENDED
+
+**Header Format:**
+```typescript
+// ===================================================================
+// NEXT TIME TEASER
+// Preview of next chapter
+// ===================================================================
+```
 
 **Purpose:** Create narrative momentum
 
@@ -802,13 +929,17 @@ nextTimeTeaser: {
 ### Content Completeness
 
 - [ ] All 13 sections present (or appropriate subset)
+- [ ] Empty `title: ''` field (no chapter-specific titles)
+- [ ] All section dividers use exactly 67 equal signs (`===`)
+- [ ] All section comments match V3 format exactly
 - [ ] No placeholder text `[like this]` remaining
 - [ ] Chapter number correct everywhere
 - [ ] `whyLiteratureMatters` uses correct chapter number
 - [ ] Summary connects to previous chapters
 - [ ] At least 3 key quotes with analysis
-- [ ] At least 4 amplified discussions (300-500 words each)
-- [ ] Critical thinking exercise is substantial
+- [ ] **EXACTLY 6 amplified discussions** (CRITICAL REQUIREMENT)
+- [ ] Each amplified discussion is 300-500+ words
+- [ ] Critical thinking exercise is substantial (if included)
 - [ ] All markdown formatting correct in `aiResponse` fields
 - [ ] All IDs use kebab-case format
 
@@ -879,34 +1010,44 @@ nextTimeTeaser: {
 ### Common Mistakes to Avoid
 
 ❌ **Don't:**
-1. Repeat Chapter 1 content - build on it
-2. Ignore previous chapters - show connections
-3. Forget to update chapter numbers in code
-4. Write chapters in isolation - show development
-5. Include `seriesOpening` or `speedLearningNotice`
-6. Rush Amplified Discussions - they're the heart
-7. Force modern adaptations - be authentic
-8. Skip quality checklists
-9. Use color-dependent emojis
-10. Leave placeholder text
+1. **Have fewer than 6 Amplified Discussions** - this is REQUIRED
+2. Use inconsistent section dividers (must be exactly 67 `===`)
+3. Forget empty `title: ''` field
+4. Repeat Chapter 1 content - build on it
+5. Ignore previous chapters - show connections
+6. Forget to update chapter numbers in code
+7. Write chapters in isolation - show development
+8. Include `seriesOpening` or `speedLearningNotice`
+9. Rush Amplified Discussions - they're the heart
+10. Force modern adaptations - be authentic
+11. Skip quality checklists
+12. Use color-dependent emojis
+13. Leave placeholder text
+14. Use incorrect section comment format
 
 ✅ **Do:**
-1. Reference earlier events in summaries
-2. Show character/theme development
-3. Build complexity as story progresses
-4. Maintain consistent thematic threads
-5. Update ALL placeholders
-6. Invest time in Amplified Discussions
-7. Make modern connections genuine
-8. Run quality checks before considering done
-9. Test all emojis in grayscale
-10. Proofread everything
+1. **Create exactly 6 Amplified Discussions** - no exceptions
+2. Use exact V3 section divider format (67 `===`)
+3. Set `title: ''` (empty string)
+4. Copy section comments exactly from V3 format
+5. Reference earlier events in summaries
+6. Show character/theme development
+7. Build complexity as story progresses
+8. Maintain consistent thematic threads
+9. Update ALL placeholders
+10. Invest significant time in Amplified Discussions (2-2.5 hours)
+11. Make modern connections genuine
+12. Run quality checks before considering done
+13. Test all emojis in grayscale
+14. Proofread everything
+15. Verify section formatting matches V3 exactly
 
 ### Essential Files to Reference
 
 - **This guide** (CHAPTER-TEMPLATE-V3.md) - Complete reference
+- **V3 Pure Example** (`wuthering-heights/chapters/chapter-1-v3-pure.ts`) - Perfect V3 implementation
 - **ChapterAllTemplate.ts** - Copy for new chapters
-- **Completed example** (`jane-eyre/chapter-13.ts`) - See quality standard
+- **Completed chapters** (`sense-and-sensibility/chapters/chapter-1.ts` through `chapter-6.ts`) - V3 examples
 - **Workflow guide** (CHAPTER_CONSISTENCY_WORKFLOW.md) - Step-by-step process
 
 ---

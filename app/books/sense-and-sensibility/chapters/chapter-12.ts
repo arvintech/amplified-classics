@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter12: ChapterData = {
   number: 12,
-  title: 'Colonel Brandon\'s Secret',
+  title: '',
   
   readingTime: 12,
   pages: 5,
@@ -25,7 +25,9 @@ export const chapter12: ChapterData = {
       
       'The tragic history Colonel Brandon shares adds depth to his character and explains his steady devotion to Marianne. His past suffering reveals the weight of genuine feeling and contrasts with Willoughby\'s surface appeal. The revelation hints at Willoughby\'s character flaws while maintaining suspense.',
       
-      'The chapter creates tension between what readers know and what Marianne experiences, setting up future revelation and drama. Elinor must navigate her knowledge while respecting Marianne\'s autonomy and romantic hopes.'
+      'The chapter creates tension between what readers know and what Marianne experiences, setting up future revelation and drama. Elinor must navigate her knowledge while respecting Marianne\'s autonomy and romantic hopes.',
+      
+      'Brandon\'s revelation that Willoughby seduced and abandoned a vulnerable young woman creates dramatic irony—readers and Elinor now know what Marianne doesn\'t. This establishes the painful dynamic for Part 2: watching Marianne invest completely in a relationship we know to be dangerous while Elinor remains constrained by confidentiality, social convention, and Marianne\'s dismissive certainty. The chapter transforms Elinor from observer into burdened participant, possessing knowledge that creates obligations without providing means to fulfill them.'
     ]
   },
   
@@ -196,8 +198,40 @@ export const chapter12: ChapterData = {
   
   discussionQuestions: [
     {
-      title: 'Secret Knowledge',
-      question: 'How does knowing information Marianne doesn\'t affect Elinor\'s perspective? What are her ethical obligations?'
+      title: 'Burdened Knowledge',
+      question: 'How does Brandon\'s revelation burden Elinor with impossible ethical obligations? What are her competing duties (protect Marianne, respect confidence, honor autonomy)?'
+    },
+    {
+      title: 'Dramatic Irony',
+      question: 'How does knowing about Willoughby\'s past while Marianne doesn\'t create painful tension? What does this reveal about literary technique and reader engagement?'
+    },
+    {
+      title: 'Past as Prophecy',
+      question: 'Does Willoughby\'s past behavior with Eliza reliably predict his future behavior with Marianne? When does past indicate character patterns vs. mistakes we\'ve grown from?'
+    },
+    {
+      title: 'Brandon\'s Depth',
+      question: 'How does Brandon\'s tragic history reframe his quiet devotion to Marianne? What does it reveal about mature love vs. passionate performance?'
+    },
+    {
+      title: 'Intervention Ethics',
+      question: 'Should Elinor tell Marianne despite confidentiality and autonomy concerns? At what point does protecting someone override respecting their choices?'
+    },
+    {
+      title: 'Steady vs. Passionate',
+      question: 'How does Chapter 12 deepen the contrast between Brandon\'s steady affection and Willoughby\'s passionate performance? What does each reveal about character?'
+    },
+    {
+      title: 'Social Constraints',
+      question: 'How do Regency social conventions about discussing male sexuality constrain Elinor\'s ability to warn Marianne? What are modern parallels?'
+    },
+    {
+      title: 'Foreshadowing',
+      question: 'How does Brandon\'s revelation structure the remaining narrative? What disasters can readers now anticipate that Marianne cannot perceive?'
+    },
+    {
+      title: 'Modern Application',
+      question: 'When has burdened knowledge created impossible positions in your life—knowing friend\'s partner is unfaithful, perceiving patterns they can\'t see, possessing information you can\'t easily act on?'
     }
   ],
   
@@ -315,6 +349,24 @@ Fifth, resist pressure to accelerate intimacy or decision-making. Exploitative c
 Seventh, trust pattern evidence over exceptional moments. Willoughby\'s dramatic rescue of Marianne creates powerful origin story that generates ongoing halo effect—every time she doubts, she remembers that romantic moment and trusts him again. However, consistent behavior across time (mysterious circumstances, lack of formal commitment, propriety violations without accountability) reveals more about character than single dramatic gesture. Don\'t let one compelling moment override accumulating evidence of patterns. Eighth, recognize that intense chemistry and passionate connection, while valuable, are separate from character evaluation. You can feel intense attraction to someone with terrible character; you can feel mild initial attraction to someone with exceptional character. Use feelings as one source of information but not as automatic validation of character.
 
 The wisdom Austen offers is learning to value deep character over surface charm, to evaluate potential partners through behavioral evidence rather than initial appeal, and to recognize that the most charming people may be the most dangerous precisely because their charm creates trust without requiring character that merits it. This doesn\'t mean suspicious cynicism toward everyone charismatic—some genuinely warm, ethical people also possess natural charm. It means recognizing charm and character as independent qualities requiring separate evaluation, not assuming charm indicates character, and prioritizing character investigation even when charm makes that investigation feel unnecessary. Marianne learns this truth through devastation when Willoughby\'s charm proves meaningless and Brandon\'s character proves essential. Elinor already understands it, evaluating Edward through his behavior and Brandon through his actions rather than being dazzled by Willoughby\'s performance. The novel invites readers to adopt Elinor\'s approach before expensive lessons teach it through pain.`
+    },
+    {
+      id: 'tragic-backstory-reveals-character',
+      title: 'Backstory as Character Revelation: How Brandon\'s Tragedy Reframes His Quiet Devotion',
+      question: 'How does learning Brandon\'s tragic history change our understanding of his character? What does mature love look like versus passionate performance?',
+      aiResponse: `Brandon\'s revelation transforms him from "boring older suitor" into figure of tragic depth. His past—loving Eliza, watching her forced into abusive marriage, now protecting her abandoned daughter from Willoughby—reframes his quiet devotion as mature love informed by suffering rather than dullness. His steadiness reflects hard-earned wisdom, his concern is prescient recognition of patterns, and his devotion prioritizes Marianne\'s wellbeing over his desires. This contrasts with Willoughby\'s performance: exploiting vulnerability, refusing responsibility, abandoning when convenient. Brandon represents mature love; Willoughby represents exploitative charm. Marianne\'s dismissal of Brandon based on surface characteristics (age, reserve) reveals the cost of valuing performance over character, intensity over reliability, charm over depth.`
+    },
+    {
+      id: 'when-to-intervene',
+      title: 'The Ethics of Intervention: When Protecting Overrides Autonomy',
+      question: 'Should Elinor tell Marianne about Willoughby\'s past? When is intervention justified versus controlling?',
+      aiResponse: `Elinor faces genuine ethical dilemma: protect Marianne from foreseeable harm versus respect her autonomy and Brandon\'s confidence. Arguments for intervention: foreseeable harm, informed consent requires information, sisterly duty, pattern evidence. Arguments against: respecting adult autonomy, maintaining confidence, likely ineffectiveness (Marianne dismisses warnings), incomplete evidence (past doesn\'t prove current intentions). Neither pure intervention nor non-intervention succeeds. Wisdom lies in navigating between: sharing concerns without demanding compliance, providing information without controlling decisions, recognizing limits of responsibility. Elinor chooses modified intervention—expressing concerns without revealing specifics—honoring multiple values imperfectly. Modern parallel: knowing friend\'s partner is dangerous but unable to prove it or convince them.`
+    },
+    {
+      id: 'dramatic-irony-engagement',
+      title: 'How Dramatic Irony Transforms Readers from Observers into Agonized Participants',
+      question: 'How does knowing what Marianne doesn\'t create emotional intensity? What does this reveal about Austen\'s narrative technique?',
+      aiResponse: `Brandon\'s revelation creates dramatic irony—readers know Willoughby betrayed Eliza as he\'ll betray Marianne, but Marianne remains ignorant. This knowledge gap transforms reading from observation into agonized participation: Marianne\'s joy becomes painful (we dread what\'s coming), her vulnerability becomes visible (consuming investment in doomed relationship), her confidence becomes tragic (inversely proportional to accuracy). We experience anticipation (dreading betrayal), helplessness (wanting to warn her), dramatic tension (reading to see *how* not *what*), and moral complexity (navigating same ethical questions as Elinor). Austen uses this technique for reader investment, ethical engagement, character deepening, and philosophical exploration. Modern parallel: watching friend pursue relationship you can predict will fail but being unable to convince them. The irony teaches that knowledge creates burden, foreseeing differs from preventing, being right doesn\'t enable helping, and watching others make mistakes we predict is agonizing but sometimes inevitable.`
     }
   ],
   

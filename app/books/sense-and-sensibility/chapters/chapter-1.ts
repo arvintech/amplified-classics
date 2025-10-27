@@ -9,54 +9,16 @@ import { ChapterData } from '@/app/lib/types/book.types'
 import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-messages'
 
 export const chapter1: ChapterData = {
-  // ==========================================
-  // BASIC INFO
-  // ==========================================
   number: 1,
   title: '', // Sense and Sensibility chapters don't have titles
   
   readingTime: 10,
   pages: 5,
   
-  // ==========================================
-  // SERIES OPENING (Chapter 1 Only)
-  // ==========================================
-  seriesOpening: {
-    title: 'Welcome to Your First Amplified Chapter',
-    introduction: 'This is Chapter 1, so we\'ll take a moment to introduce you to how Amplified Classics works. You\'ll see several special sections designed to deepen your reading experience and understanding. Think of this as your guided tour through the anatomy of every chapter.',
-    features: [
-      {
-        icon: '📖',
-        name: 'Chapter Summary & Analysis',
-        description: 'Get oriented with what happens, who\'s involved, and what quotes matter. These sections help you track the story.'
-      },
-      {
-        icon: '🔍',
-        name: 'Notice → Explore → Amplify',
-        description: 'This is our core teaching method. We point out something interesting, ask you to think about it, then reveal deeper insights. It\'s progressive discovery, not just answers.'
-      },
-      {
-        icon: '💡',
-        name: 'Discussion Questions',
-        description: 'Questions to spark conversation in class or guide your own thinking. These don\'t have single "right" answers—they\'re meant to open interpretation.'
-      },
-      {
-        icon: '🧠',
-        name: 'Critical Thinking Exercises',
-        description: 'One focused exercise per chapter that pushes you beyond comprehension into analysis, evaluation, and synthesis. This is where deeper learning happens.'
-      },
-      {
-        icon: '👩‍🏫',
-        name: 'For Teachers',
-        description: 'Resources for educators including writing prompts, activities, and teaching notes. Students can use these for independent study too.'
-      }
-    ],
-    callToAction: 'Don\'t worry about understanding everything at once. These sections are here when you need them. Read the novel first, then come back and explore. That\'s how amplification works—you can\'t amplify what you haven\'t experienced yet.'
-  },
-  
-  // ==========================================
-  // CHAPTER SUMMARY
-  // ==========================================
+  // ===================================================================
+  // SUMMARY
+  // Two-level summary: brief (one sentence) and full (3-4 paragraphs)
+  // ===================================================================
   summary: {
     brief: 'The Dashwood family faces economic crisis when their father dies, leaving his estate to his son John and his daughters with only a small inheritance, forcing them to depend on the generosity of male relatives in a society where women\'s economic security depends entirely on marriage.',
     
@@ -73,9 +35,10 @@ export const chapter1: ChapterData = {
     ]
   },
   
-  // ==========================================
+  // ===================================================================
   // TERMS TO KNOW
-  // ==========================================
+  // Literary devices, vocabulary words, and concepts crucial to understanding
+  // ===================================================================
   termsToKnow: [
     {
       term: 'Entailment',
@@ -115,9 +78,10 @@ export const chapter1: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // CHARACTER DEVELOPMENT
-  // ==========================================
+  // ===================================================================
+  // CHARACTERS
+  // Character development for this chapter
+  // ===================================================================
   characters: [
     {
       name: 'Elinor Dashwood',
@@ -153,9 +117,10 @@ export const chapter1: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // KEY QUOTES
-  // ==========================================
+  // 3-5 significant quotations with analysis (50-75 words max)
+  // ===================================================================
   quotes: [
     {
       text: 'The family of Dashwood had long been settled in Sussex. Their estate was large, and their residence was at Norland Park, in the centre of their property, where, for many generations, they had lived in so respectable a manner as to engage the general good opinion of their surrounding acquaintance.',
@@ -175,9 +140,10 @@ export const chapter1: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // INTELLIGENCE AMPLIFIED ANALYSIS
-  // ==========================================
+  // ===================================================================
+  // IA ANALYSIS (Intelligence Amplifier Analysis)
+  // Deep thematic and technical analysis
+  // ===================================================================
   iaAnalysis: {
     themes: [
       {
@@ -213,9 +179,10 @@ export const chapter1: ChapterData = {
     ]
   },
   
-  // ==========================================
+  // ===================================================================
   // MODERN ADAPTATION
-  // ==========================================
+  // Connect classic text to contemporary life (~200 words)
+  // ===================================================================
   modernAdaptation: {
     setting: 'Imagine a modern family where the father dies, leaving his business and most of his assets to his son from a previous marriage, while his second wife and daughters receive only small inheritances. The daughters must now depend on their half-brother\'s generosity while navigating a world where their economic security depends on strategic relationships and career choices. The underlying dynamic remains the same: women facing economic vulnerability in a system that prioritizes male heirs and creates dependence on male relatives.',
     
@@ -233,9 +200,11 @@ export const chapter1: ChapterData = {
     discussionPrompt: 'The core dynamics remain unchanged across 200 years: women facing economic vulnerability in systems that prioritize male heirs, families navigating complex inheritance relationships, and social pressure to maintain respectability and security. What does it say about our society that the Dashwood sisters\' situation is still immediately recognizable in modern families, inheritance disputes, and economic relationships? What has changed? What hasn\'t?'
   },
   
-  // ==========================================
+  // ===================================================================
   // THEMATIC THREADS
-  // ==========================================
+  // Tracking patterns across the novel - recurring themes that connect
+  // chapters and show how ideas develop throughout the story
+  // ===================================================================
   thematicThreads: [
     {
       emoji: '⚖️',
@@ -259,9 +228,11 @@ export const chapter1: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // DISCUSSION QUESTIONS
-  // ==========================================
+  // These questions are tools that LEAD YOU TO THE ANSWER - strategically
+  // designed to guide you toward deeper appreciation of what matters most
+  // ===================================================================
   discussionQuestions: [
     {
       title: 'Economic Crisis',
@@ -297,17 +268,13 @@ export const chapter1: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // SPEED LEARNING NOTICE (Chapter 1 Only)
-  // ==========================================
-  speedLearningNotice: {
-    title: '💡 How to Use Amplified Discussion',
-    content: 'Below you\'ll find expandable "Amplified Discussion" sections that explore complex questions about this chapter. Here\'s how to use them effectively for maximum learning: **(1) Try answering the question yourself first**—think it through, form your own interpretation. **(2) Then expand the section and compare**—what did you get right? What did you miss? **(3) Notice the process**—how does expert analysis differ from your initial thinking? Over time, you\'ll internalize these analytical moves. This is teaching you HOW to read literature, not just WHAT to think about this chapter.'
-  },
-  
-  // ==========================================
+  // ===================================================================
   // AMPLIFIED DISCUSSION
-  // ==========================================
+  // AI COLLABORATIVE TOOLS - Created through educator-AI partnership where
+  // you bring pedagogical expertise and AI brings comprehensive analysis.
+  // Together: teaching material neither could produce alone.
+  // Teachers: Select which discussions best fit your classroom from the 6.
+  // ===================================================================
   amplifiedDiscussion: [
     {
       id: 'inheritance-critique',
@@ -536,12 +503,229 @@ This approach resonates with modern concerns about how to make social critique a
 
 **Austen's Technique:**
 Austen's technique is to use personal experience as a lens for exploring broader social issues. She makes abstract problems concrete, emotional, and relatable. Her approach allows her to critique social systems while appearing to accept them, making her commentary both powerful and accessible.`
+    },
+    {
+      id: 'character-introduction-technique',
+      title: 'Introducing Elinor and Marianne: Character Through Contrast',
+      question: 'How does Austen introduce and differentiate Elinor and Marianne in Chapter 1? What does her technique of character introduction reveal about her narrative approach?',
+      aiResponse: `**The Art of Character Introduction**
+
+Austen's introduction of Elinor and Marianne in Chapter 1 is a masterclass in efficient, meaningful character establishment that sets up the novel's central tension:
+
+**1. Immediate Contrast Through Crisis Response**
+
+Austen introduces both sisters through their responses to the same crisis—their father's death and economic displacement. This technique allows immediate comparison:
+
+**Elinor's Response:**
+- "Strength of understanding" and "coolness of judgment"
+- Becomes counselor to her mother despite being only nineteen
+- Maintains composure and focuses on practical solutions
+- Feels deeply but controls emotional expression
+- "Sense" demonstrated through action under pressure
+
+**Marianne's Response:**
+- "Eager in everything"—passionate and unmoderated
+- "Her sorrows, her joys, could have no moderation"
+- Abilities "quite equal to Elinor's" but expressed differently
+- Emotional intensity and romantic idealism
+- "Sensibility" demonstrated through unfiltered feeling
+
+**2. The Technique of Defining Through Opposition**
+
+Austen doesn't describe the sisters in isolation—she defines each in relation to the other. This technique:
+- Makes their differences immediately clear and memorable
+- Suggests that neither approach alone is complete
+- Sets up the novel's exploration of balance
+- Creates dramatic potential through contrasting temperaments
+
+The phrase "quite equal to Elinor's" is crucial: Austen establishes that Marianne is not inferior to Elinor, just different. Sensibility is not weakness; sense is not coldness. Both are valid approaches that need balancing.
+
+**3. Age and Experience as Context**
+
+Austen carefully notes their ages:
+- Elinor: nineteen (unusually young to be family counselor)
+- Marianne: sixteen (age when emotions feel absolute)
+
+These ages contextualize their responses. Elinor's maturity at nineteen shows remarkable development. Marianne's intensity at sixteen feels authentic to adolescent emotional experience. Austen doesn't judge—she contextualizes.
+
+**4. Showing Character Through Action, Not Description**
+
+Notice that Austen doesn't give physical descriptions or lengthy psychological portraits. We learn character through:
+- How they respond to crisis
+- What roles they assume in family
+- How others relate to them (Elinor as mother's counselor)
+- How their approaches differ from each other
+
+This is "show, don't tell" at its finest. Character revealed through behavior under pressure rather than author exposition.
+
+**5. The Economic Context Shapes Character**
+
+Both sisters' approaches are responses to economic vulnerability:
+
+Elinor's sense: Necessary for navigating a world where women's security depends on strategic choices. Her control isn't natural temperament alone—it's adaptation to economic reality.
+
+Marianne's sensibility: Possible because she's still somewhat sheltered by family. Her romantic idealism hasn't yet been tested by full exposure to economic constraints.
+
+Austen suggests character is shaped by both temperament AND circumstances. The sisters embody different responses to the same social/economic position.
+
+**6. Foreshadowing Through Introduction**
+
+The introduction predicts the novel's arc:
+- Elinor will face situations requiring emotional expression she struggles to access
+- Marianne will face situations requiring practical wisdom she lacks
+- Both will learn from each other
+- The balance between sense and sensibility is the goal
+
+**Why This Technique Matters:**
+
+Austen's method of character introduction teaches several things:
+
+**For Writers:** How to establish characters efficiently through contrast, action under pressure, and relationship to circumstances rather than static description.
+
+**For Readers:** How to read character—watch what people do, not just what they say or what narrator tells you.
+
+**For Understanding the Novel:** This opening establishes that Austen privileges neither sense nor sensibility. She presents both as having value and limitations, setting up a dialectic rather than a simple moral.
+
+**Modern Application:**
+
+We still introduce people through contrast ("She's the rational one; he's the emotional one"), but Austen reminds us that contrasts can be complementary rather than hierarchical. Elinor and Marianne are different, not better/worse.
+
+In modern psychology, we'd call this the difference between cognitive and emotional intelligence, between thinking and feeling types. Austen anticipated this understanding by 200 years, showing how different approaches to life have different strengths and costs.
+
+**The Teaching Moment:**
+
+Austen's technique of introducing characters through their different responses to shared crisis is a model for understanding personality. People reveal themselves through how they handle pressure, loss, uncertainty. Watch responses to crisis—that's where character shows most clearly.
+
+The opening also teaches that good fiction presents complex characters without reducing them to single traits. Elinor has sense AND feeling. Marianne has sensibility AND intelligence. The richness is in the complexity, not the simplification.
+
+**Austen's Wisdom:**
+
+By introducing both sisters immediately and defining them through contrast, Austen makes the central question of the novel clear from page one: How do we balance reason and emotion, practical wisdom and authentic feeling, social adaptation and personal integrity?
+
+The answer, suggested even in the introduction, is that we need both—sense to navigate the world, sensibility to remain fully human. Neither alone is sufficient.`
+    },
+    {
+      id: 'austens-irony-narrative-voice',
+      title: 'Austen\'s Ironic Narrative Voice: The Subtle Art of Social Critique',
+      question: 'How does Austen use narrative irony and indirect discourse in Chapter 1 to critique social systems while appearing to accept them?',
+      aiResponse: `**The Power of Narrative Irony**
+
+Austen's narrative voice in Chapter 1 demonstrates her characteristic technique: appearing to accept social conventions while actually exposing their absurdity and injustice. This ironic distance is the key to her social critique:
+
+**1. The Opening's Deceptive Neutrality**
+
+"The family of Dashwood had long been settled in Sussex. Their estate was large, and their residence was at Norland Park..."
+
+This sounds like neutral description, but notice what Austen does:
+- Presents social respectability as fact
+- Then immediately shows how fragile that respectability is
+- The "respectable manner" that earned "general good opinion" depends entirely on economic stability
+- When economics change, everything changes
+
+The neutral tone masks radical critique: social standing isn't about virtue but about money. "Respectability" is economic performance, not moral achievement.
+
+**2. The Irony of Inheritance Description**
+
+"The old gentleman died; his will was read, and like almost every other will, gave as much disappointment as pleasure."
+
+The phrase "like almost every other will" is devastating:
+- Presents systematic injustice as normal
+- The casualness ("almost every other will") normalizes inequality
+- "Disappointment" and "pleasure" treated as equivalent outcomes
+- The irony: this isn't exceptional cruelty but standard practice
+
+Austen's tone suggests: "This is how things work, isn't it?" But the effect is: "Isn't this absurd that we accept this?"
+
+**3. Free Indirect Discourse**
+
+Austen pioneered free indirect discourse—narration that slides between narrator's voice and character's thoughts without clear boundaries. Notice how she describes John Dashwood:
+
+The narrator tells us the family situation, but the framing often reflects how society would view it, not how Austen actually judges it. This creates distance between what's said and what's meant, requiring active reading.
+
+**4. The Irony of Economic Language**
+
+Austen uses precise economic details:
+- £1,000 per daughter
+- The estate value
+- The inheritance calculations
+
+This precision serves multiple purposes:
+- Makes economic vulnerability concrete and undeniable
+- Shows how women's lives are calculated in monetary terms
+- Treats economic reduction of human worth as factual
+- The clinical detail reveals the dehumanizing system
+
+The irony: by stating economic facts neutrally, Austen makes them sound absurd. "You're worth £1,000" as a human assessment should sound shocking—but it was normal.
+
+**5. The Technique of Appearing to Accept**
+
+Throughout Chapter 1, Austen never explicitly says "this inheritance system is unjust." Instead, she:
+- Describes it neutrally
+- Shows its human cost through character experience
+- Allows readers to reach conclusions themselves
+- Maintains plausible deniability about social critique
+
+This technique was crucial for a female author in 1811. Explicit critique would have been dismissed or condemned. Implicit critique—showing reality and trusting readers to judge—was more effective and safer.
+
+**6. Social Observation vs. Social Endorsement**
+
+Key to understanding Austen: she observes and reports social systems without explicitly endorsing them. The famous opening of Pride and Prejudice works the same way: "It is a truth universally acknowledged..." sounds like endorsement but is actually mockery.
+
+In Sense and Sensibility, reporting that society values "respectable manner" and "general good opinion" doesn't mean Austen endorses these values—she's showing how society operates, then revealing the costs.
+
+**7. The Reader's Role**
+
+Austen's ironic voice requires active reading:
+- Don't take narrative statements at face value
+- Notice gaps between what's said and what's meant
+- Watch for neutral descriptions of unjust situations
+- Recognize when irony is operating
+
+This makes readers complicit in critique. By figuring out the irony, readers become co-critics of social systems rather than passive recipients of moral lessons.
+
+**Why This Matters:**
+
+**For Understanding Austen:**
+She's far more radical than she appears. The seemingly conventional surface hides sharp social critique. Readers who miss the irony think she endorses the systems she's actually exposing.
+
+**For Literary Technique:**
+Irony allows critique without direct confrontation. In situations where direct challenge is impossible (women in 1811, anyone in repressive systems), irony becomes a tool of resistance. Say what you mean without saying it directly.
+
+**For Modern Application:**
+We still use this technique: appearing to accept something while actually mocking it, stating absurdities neutrally to reveal their absurdity, letting facts speak for themselves without explicit judgment.
+
+Social media irony, political satire, even memes use Austen's technique: appear to say one thing while meaning another, trust the audience to catch the gap between surface and depth.
+
+**8. The Opening Paragraph as Model**
+
+The entire first paragraph demonstrates this technique:
+- Neutral description of respectability
+- Immediate revelation of that respectability's fragility
+- Economic crisis as social crisis
+- The gap between appearance (respectable) and reality (vulnerable)
+
+Austen establishes her ironic voice immediately, training readers to question everything that sounds like conventional wisdom.
+
+**The Teaching Moment:**
+
+Austen's narrative irony teaches critical reading: don't accept statements at face value, watch for gaps between what's said and what's meant, recognize that neutral description can be critique.
+
+More broadly, it teaches that effective social critique doesn't always require direct confrontation. Sometimes showing reality clearly—without comment—is more powerful than explicit condemnation. Let the facts speak for themselves, trust readers to judge.
+
+**Austen's Genius:**
+
+By perfecting ironic narrative voice, Austen created a technique that allowed her to critique Georgian society while appearing to be a conventional romance novelist. She got her novels published and read widely because they seemed proper—while actually being subversive.
+
+This is why she endures: the surface is entertaining, the depth is radical. You can read Austen for plot and enjoy it. But if you read for irony, you discover one of literature's sharpest social critics, all the more effective for her apparent gentleness.
+
+Chapter 1 establishes this voice immediately: trust nothing at face value, watch for irony, recognize that Austen shows rather than tells, and that her showing reveals what her society preferred to hide.`
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // EDUCATOR RESOURCES
-  // ==========================================
+  // Teaching tools and activities
+  // ===================================================================
   educatorResources: {
     writingPrompt: {
       title: 'Perspective Analysis',
@@ -562,9 +746,10 @@ Austen's technique is to use personal experience as a lens for exploring broader
     }
   },
   
-  // ==========================================
-  // CRITICAL THINKING EXERCISE
-  // ==========================================
+  // ===================================================================
+  // CRITICAL THINKING EXERCISE (Optional)
+  // One focused, high-level analytical task
+  // ===================================================================
   criticalThinkingExercise: {
     title: 'The Ethics of Inheritance Law: Is Entailment Justified?',
     
@@ -592,14 +777,15 @@ Austen's technique is to use personal experience as a lens for exploring broader
     classroomApplication: 'This exercise works well as: (1) Socratic seminar with half the class defending entailment and half defending equal inheritance, then switching sides, (2) Written essay with peer review focused on ethical reasoning, (3) Connection to current events—analyze modern inheritance disputes using the same framework. For advanced classes, introduce philosophical texts (Locke on property rights, Mill on women\'s rights, modern feminist ethics) for comparison. For younger students, focus on personal scenarios: family inheritance disputes, gender equality in families, economic fairness in relationships.'
   },
   
-  // ==========================================
-  // WHY LITERATURE MATTERS (Rotating Message)
-  // ==========================================
+  // ===================================================================
+  // WHY LITERATURE MATTERS - Closing Motivation
+  // ===================================================================
   whyLiteratureMatters: getLiteratureMessageByChapter(1),
   
-  // ==========================================
+  // ===================================================================
   // NEXT TIME TEASER
-  // ==========================================
+  // Preview of next chapter
+  // ===================================================================
   nextTimeTeaser: {
     emoji: '🏠',
     title: 'Next: The New Home',
