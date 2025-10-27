@@ -35,9 +35,13 @@ import { chapter24 } from '../chapters/chapter-24'
 import { chapter25 } from '../chapters/chapter-25'
 import { chapter26 } from '../chapters/chapter-26'
 import { chapter27 } from '../chapters/chapter-27'
-
-// Import remaining chapter data files as they are created
-// ... import all chapters
+import { chapter28 } from '../chapters/chapter-28'
+import { chapter29 } from '../chapters/chapter-29'
+import { chapter30 } from '../chapters/chapter-30'
+import { chapter31 } from '../chapters/chapter-31'
+import { chapter32 } from '../chapters/chapter-32'
+import { chapter33 } from '../chapters/chapter-33'
+import { chapter34 } from '../chapters/chapter-34'
 
 const chapters: any[] = [
   chapter1,
@@ -67,7 +71,13 @@ const chapters: any[] = [
   chapter25,
   chapter26,
   chapter27,
-  // ... add all imported chapters
+  chapter28,
+  chapter29,
+  chapter30,
+  chapter31,
+  chapter32,
+  chapter33,
+  chapter34,
 ]
 
 export default function ChapterPage({ params }: { params: { chapter: string } }) {
