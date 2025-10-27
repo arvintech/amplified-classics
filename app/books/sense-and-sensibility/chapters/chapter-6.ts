@@ -10,11 +10,15 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter6: ChapterData = {
   number: 6,
-  title: 'Invitation to Barton',
+  title: '',
   
   readingTime: 10,
   pages: 4,
   
+  // ===================================================================
+  // SUMMARY
+  // Two-level summary: brief (one sentence) and full (3-4 paragraphs)
+  // ===================================================================
   summary: {
     brief: 'Sir John Middleton invites the Dashwood family to Barton Cottage in Devonshire, offering them a new home and social connections. The sisters respond differently to this invitation, revealing their contrasting attitudes toward change and new opportunities.',
     
@@ -25,10 +29,16 @@ export const chapter6: ChapterData = {
       
       'The sisters respond differently to the invitation, revealing their contrasting temperaments. Elinor appreciates the practical solution it provides and considers their situation rationally. Marianne is more reluctant to leave Norland, clinging to her romantic attachment to their former home. Their different responses establish patterns that will continue throughout the novel.',
       
-      'The chapter sets up the family\'s move to Barton and introduces the social world they will enter. Barton Cottage will become the setting for much of the novel\'s action, and the relationships formed there will be crucial to the sisters\' romantic journeys. The invitation marks a turning point from loss to new possibilities.'
+      'The chapter sets up the family\'s move to Barton and introduces the social world they will enter. Barton Cottage will become the setting for much of the novel\'s action, and the relationships formed there will be crucial to the sisters\' romantic journeys. The invitation marks a turning point from loss to new possibilities.',
+      
+      'Building on the first five chapters\' arc of displacement and vulnerability, Chapter 6 represents a crucial turning point—the possibility of recovery and rebuilding after loss. Where Chapter 1 established the inheritance system that created vulnerability, Chapter 2 showed personal betrayal that deepened it, Chapter 3 revealed the emotional cost of losing home, Chapter 4 introduced romantic possibilities through Edward, and Chapter 5 explored the marriage market paradox, Chapter 6 now offers hope for restoration through Sir John\'s generosity. This invitation represents more than just housing—it offers social rehabilitation, a path back to respectability, and access to the marriage market that their displacement threatened to close. Yet this hope comes with compromise: Barton Cottage is smaller than Norland, Devonshire is distant from Edward, and their new social position depends on a relative\'s generosity rather than their own standing. The chapter reveals Austen\'s nuanced view of women\'s economic dependence: the same system that displaces them (through inheritance laws and male control) can also rescue them (through male generosity and family obligation), but rescue always comes with loss of autonomy and dignity. Sir John\'s genuine kindness contrasts sharply with John and Fanny Dashwood\'s betrayal, showing how individual choices within patriarchal systems can either deepen or alleviate women\'s vulnerability. This chapter completes the opening movement of the novel: from security through loss to tentative rebuilding. The sisters now face forward rather than backward, entering a new phase where their romantic journeys will unfold in a new setting with new possibilities and constraints. Austen shows that displacement, while devastating, isn\'t final—women can rebuild, but rebuilding requires accepting help, adapting to reduced circumstances, and finding dignity within dependence.'
     ]
   },
   
+  // ===================================================================
+  // TERMS TO KNOW
+  // Literary devices, vocabulary words, and concepts crucial to understanding
+  // ===================================================================
   termsToKnow: [
     {
       term: 'Social Generosity',
@@ -68,6 +78,10 @@ export const chapter6: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // CHARACTERS
+  // Character development for this chapter
+  // ===================================================================
   characters: [
     {
       name: 'Sir John Middleton',
@@ -102,7 +116,11 @@ export const chapter6: ChapterData = {
       }
     }
   ],
-
+  
+  // ===================================================================
+  // KEY QUOTES
+  // 3-5 significant quotations with analysis (50-75 words max)
+  // ===================================================================
   quotes: [
     {
       text: 'Sir John was a good looking man about forty. He had formerly visited at Stanhill, but it was too long ago for his young cousins to have any remembrance of him.',
@@ -126,6 +144,10 @@ export const chapter6: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // IA ANALYSIS (Intelligence Amplifier Analysis)
+  // Deep thematic and technical analysis
+  // ===================================================================
   iaAnalysis: {
     themes: [
       {
@@ -152,6 +174,10 @@ export const chapter6: ChapterData = {
     ]
   },
   
+  // ===================================================================
+  // MODERN ADAPTATION
+  // Connect classic text to contemporary life (~200 words)
+  // ===================================================================
   modernAdaptation: {
     setting: 'Imagine a modern family receiving help from a distant relative after experiencing displacement or economic hardship—perhaps a wealthy uncle offering to let the family stay in his rental property at reduced rent after job loss or divorce, or a cousin with connections helping someone find work after economic setback. The assistance is genuine and desperately needed, but comes with unspoken expectations: attending family gatherings, being available for social events, maintaining grateful demeanor, accepting well-meaning but sometimes intrusive advice. The extroverted benefactor constantly invites them to parties, introduces them to his social circle, and tries to set up the daughters with potential partners—all kindly meant but sometimes overwhelming for those who value privacy or are still processing their loss.',
     
@@ -170,21 +196,81 @@ export const chapter6: ChapterData = {
     discussionPrompt: 'How do we balance gratitude for genuine assistance with maintaining independence and boundaries? Sir John\'s generosity is authentic and solves real problems, yet creates dependency and limits autonomy—how different is this from modern scenarios where we need help but resent the loss of independence it creates? When someone with resources helps us during difficulty, do they earn the right to involvement in our lives, or should help come without strings? How do we navigate the complex feelings of needing assistance while wanting autonomy, being grateful while also feeling constrained? And what obligations do we have as helpers—is it enough to provide resources, or are we entitled to social returns like company, participation in our events, input on recipients\' decisions? How has modern individualism changed expectations about family assistance—do we still see helping relatives as social obligation or as optional individual choice? When economic inequality creates such different resources within families, how do we navigate helping relationships that are simultaneously genuine and create problematic power dynamics?'
   },
   
+  // ===================================================================
+  // THEMATIC THREADS
+  // Tracking patterns across the novel - recurring themes that connect
+  // chapters and show how ideas develop throughout the story
+  // ===================================================================
   thematicThreads: [
     {
       emoji: '🏠',
-      name: 'New Home',
-      explanation: 'The move to Barton represents a new beginning. Watch how the sisters adapt to their new circumstances and how Barton shapes their experiences.'
+      name: 'Home and Identity',
+      explanation: 'The move from Norland to Barton represents loss of identity and the challenge of rebuilding. Watch how the sisters struggle with leaving their home, how Marianne clings to place attachment, and how they must create new meaning in reduced circumstances. This thread explores how displacement forces them to discover who they are when stripped of familiar surroundings.'
+    },
+    {
+      emoji: '🤝',
+      name: 'Generosity vs. Selfishness',
+      explanation: 'Sir John\'s authentic generosity contrasts sharply with Fanny\'s calculated selfishness (Chapters 2-3), revealing that character is most clearly shown through how we treat those with less power. Watch how different relatives respond to the Dashwoods\' vulnerability, and how genuine kindness can coexist with self-interest in complex patronage relationships.'
+    },
+    {
+      emoji: '⚖️',
+      name: 'Dependency and Autonomy',
+      explanation: 'Accepting Sir John\'s help creates the paradox of necessary assistance: the Dashwoods need his generosity to survive, yet accepting it creates dependency that limits their autonomy and freedom. Watch how this tension between security and independence plays out, and how accepting help always involves trading some control for protection.'
+    },
+    {
+      emoji: '🔄',
+      name: 'Fresh Starts and Recovery',
+      explanation: 'Chapter 6 marks the turning point from loss to rebuilding—the possibility of recovery after displacement. Watch how the family moves from grief and crisis (Chapters 1-5) to tentative hope and new possibilities, showing that while displacement is devastating, it isn\'t final. Recovery requires accepting help, adapting to reduced circumstances, and finding dignity within dependence.'
     }
   ],
   
+  // ===================================================================
+  // DISCUSSION QUESTIONS
+  // These questions are tools that LEAD YOU TO THE ANSWER - strategically
+  // designed to guide you toward deeper appreciation of what matters most
+  // ===================================================================
   discussionQuestions: [
     {
-      title: 'Generosity',
-      question: 'How does Sir John\'s generosity differ from Fanny\'s treatment? What motivates their different responses?'
+      title: 'Character Contrast',
+      question: 'How does Sir John\'s generous response to the Dashwoods\' crisis contrast with Fanny\'s selfish treatment in Chapters 2-3? What does this reveal about how character is shown through power?'
+    },
+    {
+      title: 'Dependency Paradox',
+      question: 'How does accepting Sir John\'s help create both security and loss of autonomy? What does this reveal about the complex dynamics of assistance and dependency?'
+    },
+    {
+      title: 'Fresh Start',
+      question: 'What makes a "fresh start" both hopeful and painful? How do the sisters respond differently to leaving Norland and starting over at Barton?'
+    },
+    {
+      title: 'Place Attachment',
+      question: 'Why is Marianne\'s reluctance to leave Norland so intense? What does place attachment reveal about how we form identity through location and memory?'
+    },
+    {
+      title: 'Recovery and Rebuilding',
+      question: 'How does Chapter 6 mark a turning point from loss (Chapters 1-5) to rebuilding? What does recovery require from the Dashwood women?'
+    },
+    {
+      title: 'Patronage Dynamics',
+      question: 'How do patronage relationships create both opportunity and constraint? What obligations do the Dashwoods have to Sir John, and how do these affect their freedom?'
+    },
+    {
+      title: 'Sense vs. Sensibility',
+      question: 'How do Elinor\'s practical appreciation and Marianne\'s emotional resistance to the Barton invitation reveal their contrasting temperaments? Which response seems more appropriate?'
+    },
+    {
+      title: 'Modern Parallels',
+      question: 'What modern situations parallel the Dashwoods\' situation of needing help that creates dependency? How do family assistance, workplace dynamics, or institutional aid create similar tensions?'
     }
   ],
   
+  // ===================================================================
+  // AMPLIFIED DISCUSSION
+  // AI COLLABORATIVE TOOLS - Created through educator-AI partnership where
+  // you bring pedagogical expertise and AI brings comprehensive analysis.
+  // Together: teaching material neither could produce alone.
+  // Teachers: Select which discussions best fit your classroom from the 6.
+  // ===================================================================
   amplifiedDiscussion: [
     {
       id: 'generosity-vs-selfishness',
@@ -768,9 +854,725 @@ Marianne's romantic attachment to Norland isn't excessive sentiment but genuine 
 - Wisdom involves both honoring these feelings and adapting to necessary changes
 
 Understanding place attachment helps us appreciate diverse responses to displacement, honor that for some people geographical connection is profound, and recognize that in our mobile modern world, we face ongoing challenges about how to form meaningful attachments while accepting life's necessary transitions.`
+    },
+    {
+      id: 'dependency-autonomy-power',
+      title: 'The Paradox of Necessary Help: Dependency, Gratitude, and Lost Autonomy',
+      question: 'How does accepting Sir John\'s generous help create dependency that limits the Dashwoods\' autonomy? What does this reveal about the complex power dynamics of assistance?',
+      aiResponse: `**When Help Creates Obligation**
+
+The Dashwoods need Sir John's assistance desperately—without it, they have no secure housing and limited prospects. Yet accepting his help creates a relationship of dependency that limits their autonomy and creates ongoing obligations. This paradox—needing help that simultaneously constrains freedom—is fundamental to understanding power, assistance, and social relationships.
+
+**The Nature of Dependency:**
+
+**What They Need:**
+- **Housing**: Secure place to live
+- **Social connections**: Opportunities to meet people and potential partners
+- **Economic stability**: Affordable living situation within their reduced income
+- **Fresh start**: Chance to rebuild lives after displacement
+
+**What Dependency Creates:**
+- **Gratitude obligations**: Must show appreciation appropriately
+- **Social availability**: Expected to attend Sir John's gatherings
+- **Limited refusal**: Can't easily decline invitations or requests
+- **Subordinate position**: They're dependent relations, not equals
+- **Reduced autonomy**: Decisions affected by maintaining patron's goodwill
+
+**The Paradox:**
+
+The help they desperately need creates the very limitations they'd prefer to avoid. They must accept constraints on their freedom to gain the security that would theoretically provide freedom.
+
+**How Dependency Works:**
+
+**1. Unequal Power**
+
+The relationship is inherently unequal:
+- **Sir John controls**: Housing, social access, continued goodwill
+- **Dashwoods depend on**: His continued generosity, his social network, his protection
+- **Power imbalance**: He can withdraw help; they can't demand it
+- **Structural inequality**: His resources create their dependency
+
+This creates relationship where nominal generosity masks real power dynamics.
+
+**2. Gratitude as Currency**
+
+They must "pay" for assistance with:
+- **Expressed appreciation**: Demonstrating gratitude appropriately
+- **Social availability**: Attending events, being good company
+- **Deference**: Treating him with respect due to benefactor
+- **Positive regard**: Maintaining friendly relationship regardless of personal feelings
+
+Gratitude isn't just feeling but performance expected as exchange for help.
+
+**3. Limited Boundaries**
+
+Dependency reduces ability to maintain boundaries:
+- Can they refuse invitations without seeming ungrateful?
+- Can they decline his matchmaking efforts without offense?
+- Can they request privacy without appearing cold?
+- Can they make independent decisions without consulting him?
+
+Their need for his continued goodwill limits their ability to assert preferences that differ from his.
+
+**4. Loss of Agency**
+
+While physically housed at Barton, their agency is constrained:
+- **Social schedule**: Shaped by Sir John's constant planning
+- **Social circle**: Determined by whom he introduces them to
+- **Reputation**: Affected by being known as his dependent relations
+- **Future prospects**: Partly dependent on his social facilitation
+
+They trade autonomy for security—necessary trade but real cost.
+
+**The Complexity of Sir John's Assistance:**
+
+**Is He Exploiting Them?**
+
+This is complicated:
+
+**Arguments He's NOT:**
+- His generosity is genuine and saves them from worse alternatives
+- He doesn't demand excessive services or compromise their dignity
+- His personality is naturally gregarious—he treats everyone this way
+- He provides real benefits without obvious exploitation
+- His motivation seems authentic kindness mixed with self-interest
+
+**Arguments He IS (subtly):**
+- His assistance serves his needs (company, social gatherings)
+- He expects social availability that limits their autonomy
+- His relentless sociability doesn't accommodate their different needs
+- The power imbalance creates obligations they can't easily refuse
+- Their dependency enables his control over their social lives
+
+**The Reality:**
+
+Probably both are true—he's genuinely generous AND the relationship creates problematic dynamics. Most patronage relationships involve this mixture: real kindness that also serves patron's interests and creates power imbalances.
+
+**Modern Parallels:**
+
+**Family Assistance:**
+
+Modern families face similar dynamics:
+- **Parents helping adult children**: Reducing rent or providing housing creates gratitude obligations and potential loss of autonomy—do parents feel entitled to input on life choices?
+- **Sibling financial help**: One sibling with resources helping another during hardship creates power dynamics that may affect relationship equality
+- **Extended family support**: Wealthy relatives helping during difficulty may expect attendance at family events, availability for requests, deference to their advice
+
+**Workplace Dynamics:**
+
+Employment creates similar patterns:
+- **Employer assistance**: Companies providing benefits create employee dependency
+- **Mentorship**: Helpful mentors may expect loyalty, availability, or specific career choices in return
+- **Networking favors**: People who facilitate opportunities may expect reciprocal support
+
+**Institutional Help:**
+
+Social services create complex dynamics:
+- **Welfare assistance**: Provides necessary support while creating bureaucratic control
+- **Scholarships**: Enable education while potentially constraining major/career choices
+- **Housing assistance**: Solves immediate problem while creating dependency on systems
+
+**The Ethical Questions:**
+
+**For Helpers:**
+
+If you provide assistance:
+- Do you earn the right to involvement in recipients' lives?
+- Should help come without expectations, or is reciprocity reasonable?
+- How do you balance genuine generosity with acknowledging your own motivations?
+- What obligations do recipients have to you?
+- How do you avoid using assistance to control others?
+
+**For Recipients:**
+
+If you need help:
+- How much autonomy must you trade for security?
+- What obligations are reasonable in exchange for assistance?
+- How do you maintain dignity and agency while dependent?
+- When is it appropriate to refuse help that comes with too many strings?
+- How do you balance gratitude with boundary-setting?
+
+**For Society:**
+
+Structurally:
+- How do we provide assistance that doesn't create problematic dependency?
+- What social safety nets reduce need for patronage relationships?
+- How do we balance encouraging family/community mutual support with recognizing power dynamics it creates?
+- What rights do people have to assistance without loss of autonomy?
+
+**The Dashwoods' Dilemma:**
+
+They have limited options:
+- **Accept Sir John's help**: Gain security but lose autonomy
+- **Refuse and find alternative**: Likely worse housing, fewer opportunities, continued vulnerability
+- **Accept while trying to maintain boundaries**: Difficult given power imbalance
+
+They choose wisely—accepting help they desperately need. But the text encourages us to recognize the cost: their social lives, privacy, and autonomy are partly sacrificed to gain security.
+
+**Historical Context:**
+
+**Women's Particular Vulnerability:**
+
+Women's limited earning capacity made them especially vulnerable to patronage relationships:
+- Couldn't independently secure housing or income
+- Marriage prospects depended partly on social connections patrons provided
+- Legal status made them dependent on male relatives' or patrons' goodwill
+- Social expectations made refusing assistance difficult
+
+The Dashwoods' dependency reflects broader gender structures that made women vulnerable to these power dynamics.
+
+**Modern Changes:**
+
+While legal structures have changed:
+- Women can earn independent income
+- Legal rights provide more autonomy
+- Social safety nets reduce dependence on individual patrons
+
+Yet economic inequality still creates similar dynamics whenever people need assistance they can't access through markets or rights.
+
+**The Teaching Moment:**
+
+**For Understanding Power:**
+
+Power operates not just through obvious coercion but through:
+- Control of resources others need
+- Creation of dependency relationships
+- Expectations of gratitude and reciprocity
+- Subtle pressure enabled by structural inequality
+
+**For Receiving Help:**
+
+When we need assistance:
+- Recognize the trade-offs between security and autonomy
+- Try to maintain boundaries while acknowledging obligations
+- Be aware of how dependency affects relationship dynamics
+- Accept necessary help while protecting core agency
+
+**For Providing Help:**
+
+When we have resources to help:
+- Acknowledge our own motivations honestly
+- Recognize power dynamics our assistance creates
+- Try to provide help that empowers rather than creates dependency
+- Respect recipients' autonomy even when helping
+- Don't use assistance to control or extract excessive gratitude
+
+**Austen's Wisdom:**
+
+By showing Sir John's genuine generosity while also revealing the dependency it creates, Austen demonstrates that:
+- Assistance is rarely purely altruistic or exploitative—usually both
+- Power dynamics exist even in relationships characterized by kindness
+- Dependency limits autonomy even when necessary and beneficial
+- Gratitude and obligation can coexist uncomfortably
+
+**The Universal Truth:**
+
+Whenever economic or social inequality creates situations where some people must depend on others' assistance, power dynamics emerge that constrain both parties—patrons feel obligated to help yet may expect returns; recipients need help yet resent loss of autonomy.
+
+The Dashwoods' situation reveals this eternal paradox: we need help that we also resent needing, that comes with costs we'd prefer not to pay, from people whose generosity is genuine but also serves their interests. Understanding this complexity helps us navigate both giving and receiving assistance with more awareness, less judgment, and greater compassion for the difficult positions that structural inequality creates for everyone involved.`
+    },
+    {
+      id: 'fresh-start-grief-hope',
+      title: 'Fresh Starts After Loss: Balancing Grief for the Past with Hope for the Future',
+      question: 'How do the sisters balance grieving Norland with embracing the opportunity Barton represents? What does this teach about navigating major life transitions?',
+      aiResponse: `**The Psychology of Beginning Again**
+
+The invitation to Barton creates a classic dilemma of major life transitions: how do you honor grief for what's lost while embracing hope for what's ahead? The sisters' different responses reveal diverse approaches to this psychological challenge, with Elinor leaning toward future-focused adaptation and Marianne clinging to past-oriented grief.
+
+**The Nature of Fresh Starts:**
+
+**What "Fresh Start" Promises:**
+- New home and stability
+- Social connections and opportunities
+- Escape from painful memories and current difficulties
+- Chance to rebuild identity and prospects
+- Possibility of better circumstances
+
+**What "Fresh Start" Requires:**
+- Leaving familiar places and routines
+- Abandoning remaining hopes tied to old situation (for Elinor, proximity to Edward)
+- Accepting that previous life is truly over
+- Investing emotional energy in unfamiliar circumstances
+- Tolerating uncertainty of unknown future
+
+**What "Fresh Start" Feels Like:**
+- Mixture of hope and anxiety
+- Relief and loss simultaneously
+- Excitement about possibilities alongside grief for what's ending
+- Pressure to feel optimistic when still grieving
+- Ambivalence about whether this is opportunity or merely necessity
+
+**The Sisters' Different Responses:**
+
+**Elinor (Future-Focused):**
+
+Elinor tends toward practical acceptance:
+- **Recognizes necessity**: They need housing; Barton provides it
+- **Focuses on benefits**: New social connections, stable situation, fresh environment
+- **Makes practical preparations**: Organizing, planning, facilitating transition
+- **Manages emotions**: Grieves privately while functioning publicly
+- **Looks forward**: Considers how to adapt rather than dwelling on loss
+
+**Strengths:**
+- Enables smooth transition
+- Prevents wallowing in unproductive grief
+- Maintains family morale
+- Facilitates practical adaptation
+
+**Costs:**
+- May suppress genuine grief
+- Risks not processing loss fully
+- Could appear cold or unfeeling
+- Might move forward prematurely
+
+**Marianne (Past-Focused):**
+
+Marianne resists accepting the transition:
+- **Clings to Norland**: Romanticizes what's lost, sees it as irreplaceable
+- **Resents necessity**: Feels pushed into situation rather than choosing it
+- **Expresses grief openly**: Refuses to hide pain or pretend enthusiasm
+- **Resists adaptation**: Doesn't want new home to replace old one
+- **Looks backward**: Focuses on what's lost rather than what's possible
+
+**Strengths:**
+- Honors genuine grief authentically
+- Refuses to minimize what mattered
+- Maintains emotional honesty
+- Recognizes that some losses are profound
+
+**Costs:**
+- Makes transition harder for everyone
+- Prolongs suffering unnecessarily
+- May miss opportunities through resistance
+- Creates difficulty adapting to new circumstances
+
+**The Psychological Challenge:**
+
+**Why This Is Hard:**
+
+Fresh starts after loss require simultaneous, seemingly contradictory processes:
+
+**1. Grieving While Adapting**
+
+You must:
+- Acknowledge and process loss
+- Invest energy in new circumstances
+- Honor past while building future
+- Feel sadness and hope simultaneously
+
+How do you grieve fully while also adapting effectively?
+
+**2. Letting Go While Staying Connected**
+
+You must:
+- Accept that previous life is over
+- Maintain connection to meaningful memories
+- Move forward without betraying the past
+- Build new identity while honoring old self
+
+How do you let go without feeling you're betraying what mattered?
+
+**3. Being Realistic While Staying Hopeful**
+
+You must:
+- Recognize challenges in new situation
+- Maintain optimism about possibilities
+- Avoid either idealization or pessimism
+- Balance enthusiasm with realistic expectations
+
+How do you hope wisely without either denial or despair?
+
+**4. Respecting Different Timelines**
+
+People process transitions differently:
+- Some adapt quickly; others need more time
+- Some focus forward; others need to process backward
+- Some express openly; others grieve privately
+- No single "right" pace or approach
+
+How do families navigate transitions when members have different needs?
+
+**What Healthy Transition Requires:**
+
+**From Psychology:**
+
+Research on transitions and grief suggests healthy adaptation involves:
+
+**1. Acknowledging Loss**
+
+Don't minimize or rush through grief:
+- Loss is real and deserves recognition
+- Grief is necessary, not self-indulgence
+- Processing loss enables eventual adaptation
+- Suppressed grief often emerges later
+
+Marianne's instinct to grieve is healthy; her resistance to adaptation is where it becomes problematic.
+
+**2. Gradual Adaptation**
+
+Don't expect immediate adjustment:
+- Transitions take time
+- Ambivalence is normal
+- Setbacks and difficult days will occur
+- Adaptation happens gradually, not instantly
+
+Elinor's approach risks pushing for adaptation too quickly, not allowing natural grief process.
+
+**3. Holding Both**
+
+The goal isn't choosing between grief and hope but holding both:
+- Grieve what's lost AND explore what's possible
+- Honor past AND build future
+- Feel sadness AND remain open to joy
+- Remember what mattered AND discover new meanings
+
+This psychological flexibility—tolerating ambivalence rather than resolving it prematurely—characterizes healthy adaptation.
+
+**4. Self-Compassion**
+
+Be gentle with yourself and others:
+- Transitions are difficult
+- Different people adapt differently
+- No single "correct" way to feel
+- Allow time and space for complex emotions
+
+**Historical Context:**
+
+**Women's Limited Control:**
+
+For Dashwood women, the transition isn't fully chosen:
+- They didn't choose to leave Norland
+- They can't easily return or change plans
+- Their futures depend on adaptation to circumstances they couldn't control
+- Economic vulnerability makes resistance impractical
+
+This makes their psychological challenge harder—it's easier to embrace fresh starts we choose than those forced upon us.
+
+**Modern Parallels:**
+
+**Forced Transitions:**
+
+Modern people face similar forced fresh starts:
+- **Job loss**: Must adapt to unemployment or career change
+- **Divorce**: Must rebuild life as single person
+- **Health crises**: Must adapt to changed physical circumstances
+- **Economic hardship**: Must adjust to reduced circumstances
+- **Relocation**: Must move for job, family, or financial reasons
+
+All involve balancing grief for what's lost with building new life.
+
+**Chosen Transitions:**
+
+Even chosen transitions create ambivalence:
+- **Career changes**: Exciting but involve leaving colleagues, expertise, identity
+- **Relocations**: New opportunities but loss of community, familiarity
+- **Relationship transitions**: New partnership requires leaving single identity
+- **Life stage shifts**: Parenthood, retirement, etc., involve loss alongside gain
+
+**The Wisdom of Integration:**
+
+Neither sister's approach is ideal; wisdom lies in integration:
+
+**From Marianne**: Honor genuine grief, refuse to minimize what mattered, maintain emotional authenticity, recognize that some losses are profound and quick adaptation would be false.
+
+**From Elinor**: Function despite pain, make practical preparations, remain open to possibilities, recognize that dwelling in grief indefinitely prevents building future.
+
+**Integration**: Grieve authentically while adapting practically. Feel loss deeply while remaining open to new possibilities. Honor past while building future. Accept that transitions are messy, ambivalent processes requiring patience with ourselves and others.
+
+**The Teaching Moment:**
+
+**For Understanding Transitions:**
+
+Major life transitions involve:
+- Simultaneous loss and possibility
+- Complex, contradictory emotions
+- No single "right" way to feel or adapt
+- Different people processing at different paces
+
+**For Personal Development:**
+
+When facing fresh starts:
+- Allow genuine grief rather than rushing to optimism
+- Don't get stuck in resistance or nostalgia
+- Hold both grief and hope simultaneously
+- Be patient with your own process
+- Accept ambivalence as normal
+
+**For Supporting Others:**
+
+When others face transitions:
+- Validate their grief without encouraging wallowing
+- Support adaptation without minimizing loss
+- Allow their process without imposing your timeline
+- Recognize diverse responses as valid
+- Offer both practical help and emotional support
+
+**Austen's Wisdom:**
+
+By showing both Elinor's practical adaptation and Marianne's resistance, Austen reveals that:
+- Healthy transition requires both processing loss and embracing possibility
+- No single approach is sufficient
+- Families need both forward-looking and backward-looking members
+- Wisdom lies in integration, not choosing one approach
+
+**The Universal Challenge:**
+
+How do we honor what we've lost while building what's ahead? How do we grieve authentically while adapting effectively? How do we move forward without betraying the past? How do we balance looking backward with moving forward?
+
+These questions face anyone experiencing major life transitions—the Dashwood sisters' responses model different approaches and remind us that the goal isn't choosing between grief and hope but learning to hold both simultaneously, adapting to new circumstances while honoring what we've lost, building futures while respecting pasts.
+
+The invitation to Barton represents both loss (leaving Norland, leaving proximity to Edward, leaving familiar life) and possibility (new home, new connections, fresh start). How the sisters navigate this duality—with Elinor's practical hope and Marianne's authentic grief—teaches us about the messy, ambivalent, difficult work of major life transitions.
+
+The wisdom: Don't rush through grief to reach hope, but don't dwell in grief and refuse adaptation. Honor loss while embracing possibility. Grieve the past while building the future. Feel the complexity fully rather than resolving it prematurely. That's the psychological work of fresh starts after loss—difficult, necessary, and deeply human.`
+    },
+    {
+      id: 'extrovert-introvert-social-needs',
+      title: 'The Tyranny of the Extrovert: When Social Generosity Ignores Different Needs',
+      question: 'Sir John\'s gregarious generosity doesn\'t account for the sisters\' different social needs. What does this reveal about how extroverts and introverts experience sociability differently?',
+      aiResponse: `**When Helpers Assume Everyone Shares Their Needs**
+
+Sir John is genuinely generous and well-intentioned—he provides housing, facilitates social connections, and creates opportunities for the Dashwood sisters. Yet his relentless sociability, his constant party-planning, and his inability to understand that others might prefer solitude reveal a subtle tyranny: he assumes everyone shares his gregarious nature and that more social activity is always better.
+
+**Sir John's Personality:**
+
+**His Nature:**
+- Extremely extroverted and social
+- Energized by gatherings and company
+- Uncomfortable with solitude or quiet
+- Genuinely believes socializing helps everyone
+- Can't fathom that others might experience social situations differently
+
+**His Behavior:**
+- "For ever forming parties"
+- Constantly introducing people
+- Matchmaking relentlessly
+- Expecting attendance at all gatherings
+- Interpreting refusals as rudeness or unhappiness
+
+**His Assumption:**
+- Social activity = happiness
+- More company = better situation
+- Solitude = loneliness (never preference)
+- His needs are universal needs
+
+**The Sisters' Different Needs:**
+
+**Social Preferences Vary:**
+
+People have diverse social needs:
+- **Extroverts** (like Sir John): Energized by social interaction, drained by solitude
+- **Introverts** (like Marianne in some ways): Energized by solitude, drained by excessive social interaction
+- **Ambiverts** (like Elinor): Somewhere between, needing balance of both
+
+**Marianne's Needs:**
+
+Marianne values:
+- **Solitude for reflection**: Time alone to think, feel, read, walk
+- **Deep conversations**: Meaningful exchanges rather than superficial socializing
+- **Natural beauty**: Solitary walks in landscapes
+- **Aesthetic experience**: Music, poetry, art—often enjoyed privately
+- **Emotional authenticity**: Genuine connection rather than social performance
+
+Sir John's constant parties—eating "cold ham and chicken out of doors"—represent exactly what Marianne doesn't want: superficial socializing, obligatory cheerfulness, forced interaction with strangers.
+
+**The Conflict:**
+
+**What Sir John Provides:**
+- Frequent large gatherings
+- Introductions to many people
+- Constant activity and entertainment
+- Cheerful, outgoing sociability
+
+**What Marianne Needs:**
+- Time alone to process grief and emotions
+- Deep conversations with few intimate friends
+- Privacy to be herself without social performance
+- Freedom to choose when to socialize
+
+**What He Can't Understand:**
+- That his "help" might feel burdensome
+- That refusing invitations isn't rudeness
+- That solitude isn't loneliness
+- That different people have different social needs
+
+**The Power Dynamic:**
+
+This creates problematic situation:
+
+**1. Dependency Limits Refusal**
+
+Because they depend on Sir John:
+- Refusing invitations seems ungrateful
+- Requesting privacy appears antisocial
+- Not attending events might offend benefactor
+- They must perform enthusiasm regardless of actual feelings
+
+**2. His Good Intentions Make Resistance Difficult**
+
+Because he genuinely means well:
+- Criticizing his constant socializing seems churlish
+- He believes he's helping them adapt and meet people
+- His motivation is kind (if misguided)
+- Resistance appears as rejection of generosity
+
+**3. Social Expectations Support Him**
+
+Society validates his approach:
+- Gregariousness seen as generous
+- Sociability interpreted as kindness
+- Solitude viewed suspiciously as unfriendliness
+- His perspective seems obviously correct
+
+**The Result:**
+
+Marianne must either:
+- Attend constant events despite preferring solitude (exhausting, inauthentic)
+- Refuse invitations and seem ungrateful/antisocial (damages relationship, threatens security)
+- Find ways to balance both (requires skill and emotional labor)
+
+**Modern Terminology: Introvert/Extrovert:**
+
+While Austen didn't have this vocabulary, she understood the phenomenon:
+
+**Extroverts:**
+- Gain energy from social interaction
+- Process thoughts by talking
+- Prefer stimulating environments
+- Experience solitude as deprivation
+- Assume others share these needs
+
+**Introverts:**
+- Gain energy from solitude
+- Process thoughts internally
+- Prefer calm environments
+- Experience excessive socialization as draining
+- Need time alone to recharge
+
+**The Tyranny of Extrovert Norms:**
+
+Modern society often privileges extroversion:
+- Open office plans (constant interaction)
+- "Networking" as career requirement
+- Social media rewarding constant sharing
+- Introversion pathologized as shyness or social anxiety
+- Solitude interpreted as loneliness requiring intervention
+
+Like Sir John, extroverted culture often:
+- Assumes socialization is universally beneficial
+- Interprets preference for solitude as problem to fix
+- Doesn't recognize that helping might harm
+- Can't fathom different personalities have different needs
+
+**Historical Context:**
+
+**Social Obligations:**
+
+In Regency England:
+- Women's limited options made social connections crucial
+- Marriage prospects depended partly on being seen socially
+- Refusing social invitations was serious breach of etiquette
+- Solitude was difficult to achieve and maintain
+- Privacy was luxury, not expectation
+
+Sir John's constant socializing wasn't just his preference but also what society expected—he was genuinely trying to help by facilitating social connections the sisters needed.
+
+**Modern Parallels:**
+
+**Workplace:**
+- **Team-building required attendance**: Introverts drained by constant "fun" activities
+- **Open offices**: No private space for concentration
+- **Networking expectations**: Career advancement requires social performance
+- **Meeting culture**: Constant collaboration exhausts some personality types
+
+**Family:**
+- **Extroverted family members**: Can't understand why you don't want to attend every gathering
+- **"But we're helping you get out!"**: Assuming solitude is problem to solve
+- **Obligation to participate**: Refusing seems antisocial or ungrateful
+- **Different needs invalidated**: "You're just shy" or "You need to be more social"
+
+**Social Pressure:**
+- **FOMO culture**: Constant activity presented as ideal
+- **Social media**: Pressure to be constantly connected
+- **"Putting yourself out there"**: Dating, career, friendship advice assuming more is better
+- **Pathologizing introversion**: Treating preference for solitude as social anxiety requiring treatment
+
+**The Wisdom Needed:**
+
+**From Extroverts (Sir Johns):**
+
+If you're naturally social:
+- **Recognize different personalities exist**: Not everyone gains energy from socializing
+- **Don't impose your needs on others**: Your preferences aren't universal
+- **Accept refusals gracefully**: "No" doesn't mean rejection of your friendship
+- **Offer options, not obligations**: Let people choose participation level
+- **Understand that helping requires understanding**: What helps you might drain others
+
+**From Introverts:**
+
+If you need solitude:
+- **Communicate your needs**: Many extroverts genuinely don't understand different requirements
+- **Set boundaries**: Decline invitations when necessary for your wellbeing
+- **Don't mistake preference for moral superiority**: Different doesn't mean better
+- **Recognize social connection has value**: Even if draining, some socializing serves important purposes
+- **Find compromise**: Balance your needs with social obligations
+
+**From Society:**
+
+Structurally:
+- **Validate diverse personality types**: Neither extroversion nor introversion is superior
+- **Create spaces for different needs**: Options for both social connection and solitude
+- **Stop pathologizing introversion**: Preference for solitude isn't disorder
+- **Recognize power dynamics**: When helpers can't understand different needs, their "help" can harm
+
+**The Teaching Moment:**
+
+**For Understanding Personality:**
+
+People genuinely experience social situations differently:
+- What energizes one person exhausts another
+- Social needs vary dramatically
+- Neither preference is deficient
+- Understanding differences reduces judgment
+
+**For Providing Help:**
+
+When helping others:
+- Ask what they need rather than assuming
+- Recognize your needs might differ from theirs
+- Accept that refusing your help isn't rejection
+- Understand that different personalities need different support
+
+**For Receiving Help:**
+
+When someone's help doesn't fit your needs:
+- Communicate clearly about your different requirements
+- Appreciate good intentions while setting boundaries
+- Find ways to accept help that works for your personality
+- Don't mistake different needs for ingratitude
+
+**Austen's Insight:**
+
+By showing Sir John's genuine generosity alongside his inability to understand different social needs, Austen reveals:
+- Good intentions don't guarantee helpful actions
+- Assuming others share our needs can make our "help" burdensome
+- Power dynamics complicate refusing help that doesn't fit
+- Personality differences affect what kinds of support actually support
+
+**The Universal Truth:**
+
+We all tend to assume our needs and preferences are universal—extroverts genuinely believe socializing helps everyone feel better, just as introverts struggle to understand why anyone would want constant company. This assumption—that how we're built is how everyone's built—creates situations where our attempts to help actually burden others.
+
+Sir John isn't malicious—he's genuinely trying to help the Dashwood sisters adapt and find happiness. But his inability to understand that they might prefer fewer parties, more solitude, and less relentless sociability means his generosity comes with exhausting obligations.
+
+The wisdom: When helping others, ask what they need rather than assuming they need what you would need. Recognize that personality differences are real, that diverse social needs are valid, and that sometimes the most generous thing we can do is leave people alone when they need solitude rather than insisting they join our parties.
+
+Two hundred years before modern psychology developed introvert/extrovert concepts, Austen understood this dynamic—showing us a genuinely kind extrovert whose relentless sociability doesn't account for others' different needs, and reminding us that effective generosity requires understanding the specific needs of those we're helping rather than projecting our own needs onto them.`
     }
   ],
   
+  // ===================================================================
+  // EDUCATOR RESOURCES
+  // Teaching tools and activities
+  // ===================================================================
   educatorResources: {
     writingPrompt: {
       title: 'Character Contrast Scene',
@@ -791,6 +1593,10 @@ Understanding place attachment helps us appreciate diverse responses to displace
     }
   },
   
+  // ===================================================================
+  // CRITICAL THINKING EXERCISE (Optional)
+  // One focused, high-level analytical task
+  // ===================================================================
   criticalThinkingExercise: {
     title: 'The Ethics of Generosity and Obligation',
     prompt: 'Analyze the forms of generosity and obligation in this chapter. What are the ethics of family assistance? When is generosity genuine vs. obligatory?',
@@ -808,8 +1614,15 @@ Understanding place attachment helps us appreciate diverse responses to displace
     classroomApplication: 'Essay or discussion. 1-2 class periods.'
   },
   
+  // ===================================================================
+  // WHY LITERATURE MATTERS - Closing Motivation
+  // ===================================================================
   whyLiteratureMatters: getLiteratureMessageByChapter(6),
   
+  // ===================================================================
+  // NEXT TIME TEASER
+  // Preview of next chapter
+  // ===================================================================
   nextTimeTeaser: {
     emoji: '✨',
     title: 'Next: Arrival at Barton',

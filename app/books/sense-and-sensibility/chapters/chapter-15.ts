@@ -9,7 +9,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter15: ChapterData = {
   number: 15,
-  title: 'The Revelation',
+  title: '',
   
   readingTime: 12,
   pages: 5,
@@ -24,7 +24,9 @@ export const chapter15: ChapterData = {
       
       'The chapter explores the tension between Edward\'s character and his actions. He has genuine feeling for Elinor but honorably maintains his commitment to Lucy despite it being ill-advised. His situation reveals how duty and honor can conflict with personal happiness.',
       
-      'The revelation creates dramatic irony as readers understand the full scope of Elinor\'s suffering while Marianne remains oblivious, focusing on her own romance. This contrast highlights how sense manages pain differently than sensibility.'
+      'The revelation creates dramatic irony as readers understand the full scope of Elinor\'s suffering while Marianne remains oblivious, focusing on her own romance. This contrast highlights how sense manages pain differently than sensibility.',
+      
+      'Chapter 15 serves as devastating parallel to Marianne\'s situation—both sisters discover their hopes were based on incomplete information. Where Marianne will learn Willoughby was exploitative, Elinor learns Edward was unavailable all along. However, their suffering differs: Marianne\'s sensibility means public devastation and physical collapse; Elinor\'s sense means private suffering and maintained functionality. The chapter reveals that sense\'s patient tolerance created vulnerability: Elinor invested emotionally while awaiting clarity that Edward couldn\'t provide because of his secret obligation. Her restraint from demanding answers enabled prolonged uncertainty ending in discovered impossibility.'
     ]
   },
   
@@ -199,11 +201,35 @@ export const chapter15: ChapterData = {
   discussionQuestions: [
     {
       title: 'Private Suffering',
-      question: 'Is Elinor\'s emotional restraint healthy or harmful? How does sense cope with heartbreak?'
+      question: 'Is Elinor\'s emotional restraint healthy or harmful? What are the costs and benefits of managing heartbreak privately?'
     },
     {
       title: 'Edward\'s Honor',
-      question: 'Is Edward\'s maintenance of his engagement honorable or unwise? How do we balance duty and happiness?'
+      question: 'Is Edward\'s maintenance of his engagement honorable or unwise? When does duty conflict with genuine feeling?'
+    },
+    {
+      title: 'Secret Engagements',
+      question: 'How does Edward\'s secret engagement create unfair situation for Elinor? What are modern parallels of undisclosed commitments?'
+    },
+    {
+      title: 'Misplaced Hope',
+      question: 'Why does discovering hope was misplaced hurt worse than clear rejection? How can we protect ourselves from investing in impossible outcomes?'
+    },
+    {
+      title: 'Parallel Suffering',
+      question: 'How does Elinor\'s discovery parallel Marianne\'s coming revelation about Willoughby? How do sense and sensibility suffer differently?'
+    },
+    {
+      title: 'Patient Tolerance Costs',
+      question: 'Did Elinor\'s restraint from demanding clarity enable prolonged uncertainty? When does patience become self-harm?'
+    },
+    {
+      title: 'Lucy\'s Role',
+      question: 'How does Lucy Steele\'s character and motives affect the situation? Is she victim or manipulator?'
+    },
+    {
+      title: 'Composed vs. Fine',
+      question: 'What does Elinor\'s private suffering teach about assuming composed people are "fine"? How should we support people who manage pain privately?'
     }
   ],
   
@@ -302,6 +328,30 @@ We face similar dilemmas:
 
 **The Lesson:**
 Ethical decisions require complex evaluation. Neither blind commitment nor impulsive pursuit of happiness creates moral clarity. Wisdom involves carefully assessing consequences, honoring legitimate obligations while avoiding harmful rigidity.`
+    },
+    {
+      id: 'secret-commitments-deception',
+      title: 'The Deception of Technically True: How Secret Commitments Create Unfair Situations',
+      question: 'Did Edward technically deceive Elinor by allowing her investment while secretly engaged? When do omissions become dishonest?',
+      aiResponse: `Edward never lied directly—he avoided declarations, maintained ambiguity, and didn\'t explicitly encourage Elinor\'s hopes. But his secret engagement meant he was never available, making his behavior fundamentally deceptive even without overt lies. Elinor invested emotionally based on incomplete information, interpreting his affection as indicating availability when he was bound elsewhere. Modern parallel: people in relationships who act single, maintain dating profiles while committed, or pursue connections without disclosing commitments. Technically they didn\'t lie ("you never asked"), but withholding material facts creates deceptive situations. Protection: ask direct questions about commitments, recognize that mysterious constraints may indicate undisclosed obligations, and understand that technically correct statements can mislead through omission. If someone wanted you to know they were available, they would clarify rather than maintain ambiguity.`
+    },
+    {
+      id: 'misplaced-hope-hurts-more',
+      title: 'Why Misplaced Hope Hurts Worse: The Compounded Pain of Wasted Investment',
+      question: 'Why does learning hope was misplaced hurt worse than clear rejection? How does this reveal limits of patient waiting?',
+      aiResponse: `Elinor\'s pain compounds: she loses Edward AND learns her patient hope was unfounded AND must accept her emotional investment was wasted on impossible outcome. Clear rejection early would have hurt but allowed earlier healing and redirection. Misplaced hope means suffering loss PLUS realizing you invested more than you would have with accurate information. Modern parallel: discovering partners were never going to commit after years of "working toward" commitment; learning hoped-for promotions were never possible after extended effort. Protection: seek clarity about realistic prospects early, recognize ambiguous situations often indicate someone maintaining optionality, and understand that if someone wanted the outcome you want, they would clarify rather than leave you uncertain. Prolonged ambiguity usually indicates lack of commitment rather than uncertainty requiring patience.`
+    },
+    {
+      id: 'parallel-heartbreaks-different-coping',
+      title: 'Sense vs. Sensibility in Heartbreak: How Sisters\' Different Approaches Create Different Suffering',
+      question: 'How do Elinor and Marianne\'s parallel heartbreaks differ? What does this reveal about costs of each approach?',
+      aiResponse: `Both sisters discover hopes were based on incomplete information—Edward was unavailable, Willoughby was exploitative. But their suffering differs dramatically: Marianne\'s sensibility means public devastation, physical collapse, dramatic expression requiring others\' support and management. Elinor\'s sense means private suffering, maintained functionality, concealed pain requiring no accommodation. Neither approach is clearly better: Marianne gets support but loses dignity and functionality; Elinor maintains composure but bears pain entirely alone without validation or relief. The chapter reveals sense\'s hidden cost: composed people often assumed fine when suffering profoundly. Modern application: recognizing that functional, composed people may need support even when not asking; offering help even to "strong" people; not assuming lack of dramatic expression indicates lack of profound pain.`
+    },
+    {
+      id: 'when-patience-enables-harm',
+      title: 'Patient Tolerance as Self-Harm: When Restraint from Demanding Clarity Enables Prolonged Uncertainty',
+      question: 'Did Elinor\'s restraint from demanding answers enable the prolonged uncertainty that made discovery worse? When does patience become self-harm?',
+      aiResponse: `Elinor\'s sense-based philosophy led her to patient observation and emotional management rather than assertive boundary-setting. She interpreted signals, managed hope without confirmation, maintained availability despite lack of clarity. This restraint meant she never demanded the explicit answers that would have revealed Edward\'s unavailability earlier, enabling prolonged uncertainty ending in discovered impossibility. Her patience—a virtue—became vulnerability. Modern parallel: accepting "it\'s complicated" without demanding explanation, tolerating "not ready to define this" indefinitely, respecting privacy that conceals material facts. Sometimes patience enables others\' evasion rather than honoring their process. Protection: distinguish between genuine complications requiring patience (partner explains specifics and works toward resolution) versus convenient ambiguity serving their optionality (vague constraints without explanation or timeline). If situation remains unclear despite your patience, lack of clarity itself is your answer—they prefer ambiguity to commitment.`
     }
   ],
   

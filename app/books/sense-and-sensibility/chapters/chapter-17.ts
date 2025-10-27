@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter17: ChapterData = {
   number: 17,
-  title: 'Sudden Departure',
+  title: '',
   
   readingTime: 12,
   pages: 5,
@@ -25,7 +25,9 @@ export const chapter17: ChapterData = {
       
       'Elinor observes Marianne\'s suffering with painful recognition of parallels to her own situation with Edward—both sisters loving men whose behavior suggests attachment but whose circumstances create mysterious constraints preventing commitment. However, Elinor manages her uncertainty privately while Marianne\'s expressive temperament means her devastation is visible to entire household, creating different social and emotional consequences for similar romantic predicaments.',
       
-      'The chapter explores the danger of assumptions in romantic relationships. Willoughby never explicitly promised commitment, discussed marriage, or defined relationship status, yet his behavior—daily visits, intimate conversations, romantic gestures, meeting family—created expectations he now violates by leaving without clarity. His departure forces painful questions: Was relationship what it seemed? Did he intend to marry her? Has something changed? The gap between behavioral intimacy and actual commitment creates Marianne\'s agony.'
+      'The chapter explores the danger of assumptions in romantic relationships. Willoughby never explicitly promised commitment, discussed marriage, or defined relationship status, yet his behavior—daily visits, intimate conversations, romantic gestures, meeting family—created expectations he now violates by leaving without clarity. His departure forces painful questions: Was relationship what it seemed? Did he intend to marry her? Has something changed? The gap between behavioral intimacy and actual commitment creates Marianne\'s agony.',
+      
+      'Chapter 17 marks the beginning of Marianne\'s romantic crisis—the testing of sensibility predicted since Chapter 12. Where previous chapters showed escalating commitment despite warning signs, this chapter delivers the first blow: sudden abandonment without explanation. Willoughby\'s departure reveals the vulnerability created by assumptions without explicit commitment—Marianne invested totally based on behavioral intimacy, but he never made formal promises. This creates the worst uncertainty: unable to grieve (maybe he\'ll return?) or maintain hope (why did he leave?). The chapter demonstrates how sensibility\'s certainty collapses when reality contradicts expectations.'
     ]
   },
   
@@ -378,6 +380,24 @@ Ideal communities recognize that people process differently and adapt support ac
 The contrast between Marianne and Elinor teaches that emotional processing approaches involve tradeoffs rather than clear superiority. Expressive processing enables support but creates social vulnerability and dependency. Reserved processing preserves dignity but creates isolation and exhaustion. Neither is universally superior—what matters is whether approach serves individual\'s actual wellbeing given their personality, circumstances, and social context. The goal shouldn\'t be forcing everyone toward single "correct" emotional management style but rather: helping people understand their natural processing style; encouraging awareness of that style\'s tradeoffs; supporting development of flexibility to adjust approach when natural style isn\'t serving wellbeing; and creating communities that accommodate different processing styles rather than demanding conformity to single approach deemed "appropriate."
 
 Both sisters suffer genuinely and intensely. Their different approaches to managing that suffering create different social and personal consequences, but neither eliminates the underlying pain. This suggests that while emotional management matters, there\'s no perfect approach that makes heartbreak easy or eliminates suffering—only different strategies for navigating inevitable difficulties of romantic disappointment, each with own costs and benefits.`
+    },
+    {
+      id: 'sudden-abandonment-trauma',
+      title: 'The Unique Pain of Sudden Abandonment: Why Abrupt Endings Without Explanation Hurt More',
+      question: 'Why does Willoughby\'s sudden departure hurt Marianne so profoundly? What makes abandonment without explanation uniquely painful?',
+      aiResponse: `Willoughby\'s sudden departure—after weeks of daily intimacy suggesting serious intentions—creates unique pain because it violates expectations while denying closure. Yesterday the relationship felt secure; today it\'s incomprehensibly uncertain. This is more painful than clear rejection because: you can\'t grieve (maybe it\'s temporary?), can\'t maintain hope confidently (why did he leave?), can\'t understand what happened (what changed?), and can\'t achieve closure (no explanation provided). Modern parallel: "ghosting" after intense relationships. The abruptness adds injury: no preparation, no gradual cooling, no conversations addressing concerns. Protection requires: recognizing behavioral intimacy without explicit commitment creates vulnerability, having conversations about relationship status and intentions early, and understanding that someone who wanted to provide clarity would—ongoing ambiguity often serves their interests while burdening yours. If someone disappears suddenly after intimacy, their character deficit explains their behavior, not your inadequacy.`
+    },
+    {
+      id: 'behavioral-intimacy-without-commitment',
+      title: 'The Dangerous Gap: When Behavioral Intimacy Creates Expectations Without Actual Commitment',
+      question: 'How did Willoughby create expectations without making commitments? What\'s the difference between behavioral intimacy and actual commitment?',
+      aiResponse: `Willoughby never explicitly promised marriage, discussed engagement, or defined relationship status—yet his behavior (daily visits, intimate conversations, romantic gestures, meeting family, exclusive focus) created expectations of commitment. This gap between behavioral intimacy and actual commitment creates Marianne\'s agony: his actions suggested serious intentions his words never confirmed. Modern parallel: acting like a couple (regular contact, meeting families, sexual intimacy, exclusive behavior) while avoiding relationship definition or future discussion. This serves person maintaining ambiguity—they get relationship benefits without accountability—while burdening person seeking clarity with uncertainty. Protection: have explicit conversations about relationship status and intentions; don\'t assume behavior indicates commitment without verbal confirmation; recognize that if someone wanted to commit they would state it clearly rather than leaving you uncertain; and understand that "let\'s see where this goes" after significant time often means "I want benefits without commitment." Actions matter, but without words confirming intentions, they create dangerous assumptions.`
+    },
+    {
+      id: 'uncertainty-worse-than-rejection',
+      title: 'The Torture of Ambiguity: Why Uncertainty Can Be Worse Than Clear Rejection',
+      question: 'Why is Marianne\'s romantic ambiguity more painful than clear rejection? How does uncertainty prolong suffering?',
+      aiResponse: `Marianne experiences romantic ambiguity crisis—unable to determine whether Willoughby\'s departure represents temporary complication, changed feelings, or deception. This uncertainty is more torturous than clear rejection: with explicit ending you grieve and move forward; with ambiguity you\'re suspended between hope and despair, unable to close the door or walk through it confidently. You can\'t heal (maybe he\'ll return?) or invest elsewhere (but what if he comes back?). Modern examples: "situationships" remaining undefined, partners who won\'t commit but won\'t release you, relationships ending with "I need space" rather than clarity. The ambiguity often serves the person maintaining it—keeping you as option while exploring others, getting benefits without accountability, avoiding uncomfortable honesty. Protection: request explicit clarity; recognize that if someone wanted to provide it they would; set timeline for ambiguity tolerance (not waiting indefinitely); and understand that lack of clarity IS an answer—they prefer your uncertainty to your clarity because your uncertainty serves their interests.`
     }
   ],
   

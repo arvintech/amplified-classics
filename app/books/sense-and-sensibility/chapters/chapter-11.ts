@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter11: ChapterData = {
   number: 11,
-  title: 'Romance Deepens',
+  title: '',
   
   readingTime: 10,
   pages: 4,
@@ -25,7 +25,9 @@ export const chapter11: ChapterData = {
       
       'The chapter develops the contrast between the sisters\' romantic approaches. Marianne\'s passionate certainty contrasts with Elinor\'s patient uncertainty, reflecting their different temperaments and philosophies. Both sisters pursue love according to their natures, setting up the different tests they will face.',
       
-      'The growing intensity of Marianne\'s romance and the continued ambiguity of Edward\'s behavior create suspense about future complications. The chapter maintains the parallel structure while deepening both romantic plots.'
+      'The growing intensity of Marianne\'s romance and the continued ambiguity of Edward\'s behavior create suspense about future complications. The chapter maintains the parallel structure while deepening both romantic plots.',
+      
+      'As Part 2 begins, Chapter 11 shifts from establishment (Part 1, Chapters 1-10) to intensification and testing. Where Part 1 introduced the sisters\' contrasting romantic philosophies and established parallel romantic situations, Part 2 will test these approaches through escalating complications. This chapter deepens both romantic attachments—Marianne\'s consuming romance with Willoughby grows more intense and public, while Elinor\'s patient relationship with Edward becomes more ambiguous and concerning. The parallel structure continues: Marianne invests more completely in relationship characterized by passionate intensity and shared aesthetic tastes, building identity around consuming romance that creates total vulnerability. Elinor maintains patient observation of relationship characterized by ambiguity and concerning signs, managing uncertainty while maintaining dignity and independent functionality. Both sisters are now fully committed to their approaches—Marianne can\'t imagine questioning Willoughby because her entire identity and happiness depend on their relationship\'s success, while Elinor can\'t demand clarity from Edward because her sense-based philosophy privileges patience and restraint over assertive boundary-setting. Chapter 11 represents the calm before the storm: both relationships appear stable (Marianne\'s through passionate intensity, Elinor\'s through patient hope), but Austen has planted signs that both will face severe tests. Willoughby\'s perfect performance and Marianne\'s consuming investment create conditions where betrayal will be devastating. Edward\'s prolonged ambiguity and Elinor\'s patient tolerance create conditions where revelation will be crushing. The chapter functions as final deepening before crisis—allowing readers to see both approaches at their fullest expression before testing reveals their costs and limitations. Part 2\'s arc will demonstrate that neither pure sensibility nor pure sense provides adequate protection, that both sisters must learn from painful experience, and that integration of both approaches represents wisdom neither initially possesses.'
     ]
   },
   
@@ -193,8 +195,36 @@ export const chapter11: ChapterData = {
   
   discussionQuestions: [
     {
+      title: 'Consuming Romance',
+      question: 'How does Marianne\'s consuming focus on Willoughby affect her independence and other relationships? When does romantic investment become problematic loss of identity?'
+    },
+    {
+      title: 'Shared Taste Foundation',
+      question: 'Marianne and Willoughby bond over shared aesthetic tastes. Is this sufficient foundation for lasting relationship? What factors matter more than shared interests?'
+    },
+    {
+      title: 'Part 2 Intensification',
+      question: 'How does Chapter 11 mark the shift from establishment (Part 1) to testing (Part 2)? What complications are being set up?'
+    },
+    {
       title: 'Romantic Intensity',
-      question: 'How does romantic intensity affect judgment? What are the benefits and dangers of passionate connection?'
+      question: 'Is romantic intensity a sign of genuine connection or dangerous infatuation? How can we distinguish between them?'
+    },
+    {
+      title: 'Edward\'s Concerning Signs',
+      question: 'What specific behaviors from Edward should concern Elinor? At what point does patient observation become willful blindness?'
+    },
+    {
+      title: 'Identity in Relationships',
+      question: 'How can we maintain independent identity while being deeply invested in romantic relationships? What does healthy integration vs. consumption look like?'
+    },
+    {
+      title: 'Calm Before Storm',
+      question: 'Chapter 11 is described as "calm before the storm"—what signs foreshadow coming crises for both sisters?'
+    },
+    {
+      title: 'Modern Parallels',
+      question: 'What modern relationship patterns parallel Marianne\'s consuming romance—relationship as identity, social media couple culture, losing friends for partners?'
     }
   ],
   
@@ -308,6 +338,288 @@ Observers should ask: Am I identifying objective concerning patterns or imposing
 The novel will ultimately vindicate Elinor's concerns: Willoughby's intentions aren't honorable, his commitment isn't real, and Marianne's total investment without security creates devastating vulnerability. However, Austen doesn't present this as simple triumph of sense over sensibility or observer over participant. Marianne's internal experience—the genuine passion, the profound connection, the intense joy—was real even though Willoughby's character and commitment were not. Elinor's concerns were valid but incomplete—she perceived Willoughby's unreliability but couldn't fully appreciate the depth of Marianne's feeling or the value of her capacity for intense connection.
 
 The lesson isn't "always trust observers" or "ignore participant experience"—it's that both perspectives carry information. The challenge is integration: experiencing relationships fully while remaining open to external observations, honoring internal feelings while evaluating objective patterns, maintaining passionate investment while keeping judgment active. Neither pure sensibility (feeling without evaluation) nor pure sense (evaluation without feeling) succeeds alone. The wisdom is dialogue between internal experience and external observation, participant feeling and observer perspective, emotional investment and objective evaluation. This dialogue is difficult precisely because it requires holding contrary perspectives simultaneously: trusting feeling while questioning it, investing emotionally while evaluating objectively, experiencing romance while assessing risks. But this difficult integration protects better than either pure trust in feeling or pure skepticism of emotion.`
+    },
+    {
+      id: 'neurochemistry-of-love',
+      title: 'The Science of Romantic Intensity: How Brain Chemistry Creates the "High" of New Love',
+      question: 'Why does early-stage romantic love feel so intense and all-consuming? What does neuroscience reveal about romantic intensity, and how should this inform our romantic decisions?',
+      aiResponse: `**The Neurochemical Truth About "True Love"**
+
+Marianne's consuming intensity with Willoughby—the constant preoccupation, the euphoria in his presence, the distress when separated—reflects neurochemical processes that modern science can explain. Understanding the biology of romantic love doesn't diminish its beauty but helps distinguish temporary neurochemical responses from lasting compatibility.
+
+**The Chemistry of Romantic Love:**
+
+Early-stage romantic love involves specific neurochemical changes:
+- **Increased dopamine**: Creates pleasure, motivation, focused attention on partner
+- **Increased norepinephrine**: Generates excitement, energy, sleeplessness
+- **Decreased serotonin**: Produces obsessive thinking about partner
+- **Activation of reward centers**: Similar patterns to addiction
+
+**What This Feels Like:**
+- Constant thoughts about partner (low serotonin = obsessive thinking)
+- Euphoria when together (dopamine reward)
+- Inability to focus on other things (attention narrowed)
+- Loss of appetite and sleep (norepinephrine arousal)
+- Need for partner's presence (dopamine-driven motivation)
+
+**The Timeline:**
+This intense neurochemical phase typically lasts 12-18 months, then moderates regardless of relationship quality. This isn't failure—it's biology returning to baseline. Sustainable love then depends on compatibility, communication, shared values, and commitment.
+
+**Marianne's Experience:**
+
+Her description of Willoughby matches neurochemical intensity perfectly: "I could not be happy with a man whose taste did not in every point coincide with my own. He must enter into all my feelings; the same books, the same music must charm us both." This reflects the obsessive thinking (low serotonin) and focused attention (high dopamine) of early-stage romantic love. Her inability to moderate feeling—"her sorrows, her joys, could have no moderation"—shows neurochemical flooding overwhelming executive function.
+
+**The Danger:**
+
+The problem isn't the intensity itself—it's mistaking temporary neurochemical response for permanent truth about relationship quality. Because feelings are so powerful, we assume they indicate:
+- Unique suitability ("soul mates")
+- Destined connection ("meant to be")  
+- Lasting compatibility ("perfect match")
+- Trustworthy partner ("he must be good if I feel this strongly")
+
+But neurochemistry doesn't evaluate character, predict compatibility, or assess trustworthiness—it just creates feelings.
+
+**Modern Implications:**
+
+**For Evaluation:**
+- Feel intensity without mistaking it for compatibility assessment
+- Enjoy neurochemical high while also evaluating character and values
+- Recognize that powerful feelings don't indicate relationship quality
+- Wait for neurochemical phase to pass before major commitments
+
+**For Decisions:**
+- Don't make irreversible choices (marriage, children, financial entanglement) during neurochemical phase
+- Evaluate how someone treats others, handles conflict, demonstrates integrity
+- Assess values alignment, life goal compatibility, communication patterns
+- Give time for intensity to moderate and deeper compatibility to reveal
+
+**The Takeaway:**
+
+Romantic intensity is real and beautiful—but it's biology, not destiny. Marianne's mistake is assuming that because Willoughby creates intense neurochemical responses, he must be uniquely suited to her. The intensity feels meaningful, but it doesn't predict his character, commitment, or compatibility. Modern science confirms Austen's wisdom: feel deeply while thinking clearly, enjoy intensity while evaluating character, experience passion while maintaining judgment.`
+    },
+    {
+      id: 'shared-interests-vs-shared-values',
+      title: 'Beyond Shared Playlists: Why Values Matter More Than Interests in Lasting Relationships',
+      question: 'Marianne and Willoughby bond over shared aesthetic tastes. Why isn\'t this sufficient foundation? What factors predict relationship success more reliably than shared interests?',
+      aiResponse: `**The Compatibility Confusion**
+
+Marianne and Willoughby's relationship is built primarily on shared aesthetic tastes—they love the same books, respond identically to music, appreciate landscapes similarly, share romantic sensibilities. This creates powerful sense of connection: "The same books, the same passages were idolized by each." But Austen suggests this foundation, while enjoyable, doesn't predict lasting relationship success.
+
+**Why Shared Interests Create Connection:**
+
+Discovering shared tastes generates:
+- Immediate conversation topics
+- Sense of being understood
+- Enjoyable activities together
+- Feeling of special compatibility
+- Validation of personal preferences
+
+This feels significant, especially early in relationships when compatibility isn't yet established.
+
+**What Shared Interests Don't Predict:**
+
+**1. Character and Integrity**
+Someone can love the same books while:
+- Lying consistently
+- Treating others poorly
+- Being financially irresponsible
+- Lacking commitment
+- Being fundamentally selfish
+
+Willoughby proves this: He appreciates poetry and music while being manipulative, exploitative, and willing to abandon women he's made dependent on him.
+
+**2. Values Alignment**
+Someone can share aesthetic preferences while having completely different:
+- Life priorities
+- Ethical standards
+- Financial values
+- Family commitments
+- Relationship expectations
+
+**3. Relationship Skills**
+Shared interests don't indicate:
+- Communication ability
+- Conflict resolution skills
+- Emotional maturity
+- Commitment capacity
+- Ability to compromise
+
+**What Actually Predicts Success:**
+
+Research on long-term relationship satisfaction identifies factors that matter more than shared interests:
+
+**1. Values Alignment**
+- Life priorities (career vs. family vs. adventure)
+- Financial philosophy (spending vs. saving)
+- Family vision (children, parenting, extended family)
+- Ethical standards (honesty, loyalty, integrity)
+- Life goals (where to live, how to live)
+
+**2. Communication Patterns**
+- Ability to discuss difficult topics
+- Conflict resolution approach
+- Emotional expression and listening
+- Respect during disagreements
+- Willingness to compromise
+
+**3. Character and Behavior**
+- How they treat others (not just you)
+- Consistency between words and actions
+- Response to stress and disappointment
+- Demonstration of integrity
+- Capacity for growth
+
+**4. Attachment and Emotional Skills**
+- Emotional availability
+- Ability to provide support
+- Capacity for intimacy
+- Independence balanced with connection
+- Secure rather than anxious/avoidant patterns
+
+**Modern Dating's Interest Obsession:**
+
+Dating profiles emphasize:
+- Favorite books, movies, music
+- Hobbies and travel preferences
+- Food tastes and lifestyle choices
+
+This creates false sense that matching interests indicates compatibility. But you can share every interest while being fundamentally incompatible in values, communication, or character.
+
+**The Better Questions:**
+
+Instead of "Do we like the same things?" ask:
+- How do they treat service workers, family, friends?
+- How do they handle conflict and stress?
+- Do their actions match their words?
+- What are their life priorities and values?
+- How do they communicate during difficulty?
+
+**The Wisdom:**
+
+Enjoy shared interests—they create joy and connection. But evaluate relationship primarily on values, character, and relational skills. The person who shares all your interests but treats people poorly is worse partner than person with different tastes who communicates well and demonstrates integrity.
+
+Marianne's mistake is assuming shared aesthetic sensibility indicates shared values and character. Willoughby's romantic sensibility masks his selfishness. His appreciation for poetry doesn't make him honorable; his passion for landscape doesn't make him trustworthy; his shared tastes don't make him committed.
+
+**The Takeaway:**
+
+Build relationships on values, character, and compatibility in life vision—not just shared playlists, book lists, or vacation preferences. Shared interests enhance good relationships but can't create them. Someone who shares your values but different interests is better long-term partner than someone who shares your interests but different values.`
+    },
+    {
+      id: 'part-two-testing-begins',
+      title: 'From Establishment to Crisis: How Part 2 Tests Both Sisters\' Romantic Philosophies',
+      question: 'How does Chapter 11 mark the shift from Part 1\'s establishment phase to Part 2\'s testing phase? What complications will challenge both sense and sensibility?',
+      aiResponse: `**The Structural Shift**
+
+Chapter 11 functions as transition and intensification—moving from Part 1's establishment of romantic philosophies to Part 2's testing of those approaches through crisis. Understanding this structural shift helps readers recognize how Austen systematically explores whether sense or sensibility better serves women navigating romance.
+
+**Part 1 (Chapters 1-10): Establishment**
+
+**The Setup:**
+- Economic crisis and displacement (Chapters 1-3)
+- Recovery and new beginnings (Chapters 4-6)
+- Romantic attachments formed (Chapters 7-9)
+- Public display and commitment (Chapter 10)
+
+**What Was Established:**
+- Marianne's sensibility: passionate, immediate, emotionally authentic
+- Elinor's sense: patient, rational, emotionally managed
+- Parallel romantic situations with opposite characteristics
+- Both approaches appearing plausible and functional
+
+**Part 2 (Chapters 11+): Testing**
+
+**The Shift:**
+Chapter 11 marks transition from stable establishment to building crisis:
+- Marianne's romance intensifies (consuming investment)
+- Edward's behavior grows more concerning (increasing ambiguity)
+- Both sisters are now fully committed to their approaches
+- Warning signs appear but are ignored or rationalized
+
+**What Will Be Tested:**
+
+**Marianne's Sensibility:**
+- Does passionate certainty identify worthy partners?
+- Can emotional conviction distinguish performance from authenticity?
+- Does trusting feeling protect or endanger?
+- Will consuming investment create fulfillment or devastation?
+- Can sensibility survive betrayal?
+
+**Elinor's Sense:**
+- Does patient hope reward or punish tolerance?
+- Can rational evaluation protect from skilled deception?
+- Does emotional management enable survival or prevent necessary action?
+- Will patience be rewarded or exploited?
+- Can sense maintain functionality through heartbreak?
+
+**The Parallel Crises Coming:**
+
+Austen has carefully structured parallel tests:
+
+**Willoughby's Betrayal (Tests Sensibility):**
+- Sudden disappearance without explanation
+- Revelation of prior misconduct
+- Marriage to wealthy woman
+- Public rejection of Marianne
+- Complete devastation of consuming romance
+
+**Edward's Secret (Tests Sense):**
+- Revelation of secret engagement to Lucy
+- Prolonged deception through ambiguity
+- Elinor's hopes destroyed by hidden obstacle
+- Patient tolerance proved misplaced
+- Private devastation of quiet hope
+
+**The Parallel Structure Shows:**
+
+Both approaches fail to protect:
+- Marianne's passionate certainty was dangerous blindness
+- Elinor's patient tolerance was costly enabling
+- Sensibility's emotional authenticity missed character flaws
+- Sense's rational evaluation didn't demand necessary honesty
+
+**Chapter 11's Role:**
+
+This chapter is "calm before storm"—final deepening before crisis:
+- Shows both approaches at fullest expression
+- Reveals commitments that make reversal impossible
+- Plants warning signs that will prove significant
+- Positions both sisters for maximum impact from coming revelations
+
+**The Learning Arc:**
+
+Part 2 will force both sisters to learn:
+
+**Marianne Must Learn:**
+- Passionate feeling doesn't reliably identify worthy partners
+- Emotional intensity isn't sufficient foundation
+- Consuming romance creates dangerous vulnerability
+- Judgment must temper sensibility
+- Steady affection (Brandon) beats passionate performance (Willoughby)
+
+**Elinor Must Learn:**
+- Patient tolerance can enable others' evasion
+- Emotional management isn't sufficient protection
+- Ambiguity sometimes indicates actual problems
+- Assertion must complement patience
+- Reserved affection can conceal real obstacles
+
+**The Integration Goal:**
+
+Part 2's testing reveals that neither pure sense nor pure sensibility succeeds:
+- Sensibility without judgment = dangerous vulnerability
+- Sense without assertion = costly passivity
+
+The resolution will require integration:
+- Sensibility's emotional authenticity + Sense's critical judgment
+- Sense's patience + Sensibility's demand for honesty
+- Feeling deeply while thinking clearly
+- Trusting openly while verifying carefully
+
+**The Takeaway:**
+
+Chapter 11 marks crucial transition from establishment to testing. Both sisters are now fully committed to approaches that will be tested through parallel crises. Willoughby will test whether sensibility's passionate trust protects or endangers. Edward will test whether sense's patient tolerance serves or enables. The coming chapters will demonstrate that both approaches have fatal flaws when pursued purely, and that wisdom requires integration neither sister initially possesses.
+
+Part 2's arc shows that romantic navigation requires balance: maintaining sensibility's emotional openness while developing sense's critical evaluation, keeping sense's patient observation while adding sensibility's demand for clarity. Neither sister starts with this integration—both must learn through painful experience that their pure approaches are inadequate.`
     }
   ],
   

@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter10: ChapterData = {
   number: 10,
-  title: 'Social Revelations',
+  title: '',
   
   readingTime: 11,
   pages: 5,
@@ -25,7 +25,9 @@ export const chapter10: ChapterData = {
       
       'The contrasting relationships set up the different tests each sister will face. Marianne\'s passionate romance will be tested by Willoughby\'s eventual betrayal, forcing her to confront the dangers of romantic idealism. Elinor\'s patient relationship will be tested by Edward\'s secret engagement, forcing her to confront the costs of emotional restraint. Both will learn valuable lessons about balancing sense and sensibility.',
       
-      'The chapter concludes Part 1 by showing how the sisters have adapted to their new circumstances at Barton. Both have formed romantic attachments, but their different approaches reflect their contrasting temperaments. The stage is set for the complications and revelations that will test their romantic philosophies in Part 2.'
+      'The chapter concludes Part 1 by showing how the sisters have adapted to their new circumstances at Barton. Both have formed romantic attachments, but their different approaches reflect their contrasting temperaments. The stage is set for the complications and revelations that will test their romantic philosophies in Part 2.',
+      
+      'Building on the first nine chapters\' arc from displacement through romantic attachment, Chapter 10 serves as culmination and transition—completing the establishment phase while setting up the testing phase that will follow. Where Chapters 1-3 showed the family\'s economic crisis and displacement, Chapters 4-6 revealed their recovery at Barton, and Chapters 7-9 introduced their romantic attachments (Brandon/Willoughby for Marianne, Edward for Elinor), Chapter 10 now displays these relationships in full social context, revealing how public performance either reinforces or complicates private feeling. This chapter crystallizes the novel\'s central experiment: two sisters with opposite approaches to romance navigate relationships that will test whether sense or sensibility better serves women\'s romantic judgment. Marianne\'s public passionate displays with Willoughby demonstrate sensibility\'s commitment to emotional authenticity and transparent expression—she believes love should be visible, celebrated, performed for social validation. Elinor\'s private restrained relationship with Edward demonstrates sense\'s commitment to emotional dignity and appropriate reserve—she believes love should be protected, private, shielded from social performance. Both approaches reflect genuine philosophical commitments, not just personality differences. The social setting becomes crucial laboratory for testing these philosophies: Do Marianne\'s public displays create stronger bond or dangerous vulnerability? Does Elinor\'s privacy protect authentic connection or enable Edward\'s evasion? Chapter 10 shows both relationships functioning at their best—Marianne experiencing the fulfillment of romantic ideals through passionate public romance, Elinor maintaining dignity through patient private hope. But the chapter also foreshadows the tests coming: Willoughby\'s performance may be exactly that—performance rather than authentic devotion. Edward\'s ambiguity may conceal not just shyness but actual obstacles. The social context that seems to validate Marianne and frustrate Elinor will prove deceptive in both cases. As Part 1 concludes, Austen has established parallel romantic situations that will test contrasting philosophies under parallel pressures, allowing exploration of whether sense\'s restraint or sensibility\'s expression better equips women to navigate romantic choices that determine their futures.'
     ]
   },
   
@@ -180,12 +182,36 @@ export const chapter10: ChapterData = {
   
   discussionQuestions: [
     {
-      title: 'Romantic Approaches',
-      question: 'How do Elinor and Marianne\'s contrasting approaches to romance reflect their characters? What are the strengths and limitations of each approach?'
+      title: 'Public vs. Private Romance',
+      question: 'Is Marianne\'s public display of affection with Willoughby appropriate, or does it create dangerous expectations? What are the costs and benefits of public versus private romance?'
     },
     {
-      title: 'Social Expression',
-      question: 'Is Marianne\'s public display of affection appropriate? How do social expectations affect romantic expression?'
+      title: 'Romantic Philosophies Tested',
+      question: 'How do social gatherings test both sisters\' romantic philosophies? Which approach proves more successful in public contexts?'
+    },
+    {
+      title: 'Social Reading of Relationships',
+      question: 'How do others interpret the sisters\' relationships based on public behavior? What happens when social perception doesn\'t match private reality?'
+    },
+    {
+      title: 'Performance vs. Authenticity',
+      question: 'Does performing romance for social audiences enhance or undermine authentic connection? Can love be both public and genuine?'
+    },
+    {
+      title: 'Part 1 Conclusion',
+      question: 'Chapter 10 concludes Part 1—what has been established about each sister\'s approach to romance, and what tests lie ahead?'
+    },
+    {
+      title: 'Vulnerability and Dignity',
+      question: 'Does Marianne\'s public passion create vulnerability, or does Elinor\'s private restraint sacrifice authentic expression? Which risk is greater?'
+    },
+    {
+      title: 'Social Media Parallels',
+      question: 'What modern parallels exist to Marianne\'s public displays—posting relationships on social media, couple photos, status updates? How do public performances affect modern relationships?'
+    },
+    {
+      title: 'Foreshadowing',
+      question: 'How does Chapter 10 foreshadow the tests both relationships will face? What warning signs appear in the public/private distinction?'
     }
   ],
   
@@ -384,6 +410,503 @@ This dynamic remains deeply relevant. Friends experiencing romance simultaneousl
 The lesson isn't to avoid this interdependence—it's inevitable and often enriching. The lesson is to recognize it consciously: awareness that our romantic lives are shaped by those close to us, that comparison can distort assessment, that validation hunger can drive poor choices, that genuine support requires transcending implicit competition.
 
 The ideal is mutual support that honors difference—learning from each other's approaches without demanding conformity, providing reality checks without undermining confidence, sharing joy without creating pressure, offering comfort without insisting on similar expression. This is what the sisters are moving toward but haven't achieved: genuine integration where each benefits from the other's perspective without losing her essential self.`
+    },
+    {
+      id: 'social-media-performance-romance',
+      title: 'Instagram Official: How Social Media Intensifies the Public Performance of Private Love',
+      question: 'What parallels exist between Marianne\'s public displays in Regency England and modern social media posting of relationships? How does performing romance for audiences affect authentic connection?',
+      aiResponse: `**When Love Becomes Content**
+
+Marianne's public displays of affection with Willoughby in Chapter 10 create striking parallels to modern social media performances of romance. In both contexts, private relationships become public spectacles, intimate connections performed for social audiences, generating validation, expectations, and pressures that profoundly affect the relationships themselves.
+
+**The Regency Performance:**
+
+**What Marianne Does:**
+- Displays affection openly at social gatherings
+- Behaves as if engaged without formal commitment
+- Performs romantic attachment for community observation
+- Seeks validation through visible connection
+- Creates social expectations through public behavior
+
+**The Social Effect:**
+- Community assumes engagement
+- Reputation becomes tied to relationship outcome
+- Public expectations create pressure
+- Visible attachment generates commentary
+- Private relationship becomes public property
+
+**The Modern Equivalent:**
+
+**What Couples Post:**
+- Couple photos and romantic captions
+- Relationship status updates and declarations
+- Public displays of affection through images
+- Shared experiences documented for audiences
+- Milestone celebrations performed publicly
+
+**The Social Effect:**
+- Followers assume commitment level
+- Identity becomes tied to relationship
+- Public presentation creates expectations
+- Visible attachment generates comments
+- Private connection becomes social performance
+
+**Why People Perform Romance Publicly:**
+
+**1. Validation Hunger**
+Public displays generate likes, comments, hearts—social validation that feels like confirmation of relationship worth. The more positive response, the more "real" or valuable the relationship seems.
+
+**2. Identity Declaration**
+Public coupling announces identity shift from "single" to "partnered," establishing new social position and potentially deterring others from romantic pursuit.
+
+**3. Relationship Security**
+Public commitment feels more secure than private understanding—harder to end what's been publicly declared, creating psychological commitment through social witness.
+
+**4. Authenticity Performance**
+Ironically, people post to demonstrate authenticity—proving genuine happiness, real connection, actual love through visible evidence.
+
+**5. Narrative Control**
+Public posting allows couples to control the narrative—presenting idealized version of relationship rather than messy reality.
+
+**The Costs of Public Performance:**
+
+**1. Authenticity Corruption**
+When relationships exist partly for posting, authentic moments get corrupted. Instead of experiencing fully, couples photograph for documentation. Instead of being present, they're performing for future audiences.
+
+**2. Pressure to Maintain Image**
+Once you've posted perfect relationship, pressure builds to sustain that image. Private difficulties become public failures; normal relationship struggles feel like betrayal of posted happiness.
+
+**3. Comparison Culture**
+Public displays invite comparison—others judge your relationship against theirs, you judge yours against others', creating competitive dynamic that distorts assessment.
+
+**4. Privacy Loss**
+Making romance public invites commentary, judgment, and interference. Family, friends, acquaintances all feel entitled to opinions about relationships they've been shown.
+
+**5. Breakup Amplification**
+What was privately heartbreak becomes public humiliation. You don't just lose partner—you lose the identity, validation, and narrative you'd built publicly.
+
+**Marianne's Pattern in Modern Terms:**
+
+**If Marianne Had Social Media:**
+- Constant couple photos with Willoughby
+- Romantic captions and declarations
+- Shared experiences documented publicly
+- Comments treating them as engaged
+- Identity built on being "his"
+
+**The Risk:**
+When Willoughby disappears, she experiences not just private heartbreak but public humiliation—everyone saw the performance, everyone knows about the betrayal, everyone judges the outcome.
+
+**Elinor's Alternative:**
+
+**Her Approach:**
+- Private relationship with Edward
+- No public declarations
+- Minimal social performance
+- Reserved about romantic feelings
+- Identity independent of relationship
+
+**The Protection:**
+When Edward's engagement is revealed, Elinor's heartbreak remains largely private. Few knew about her hopes, so few witness her disappointment. She maintains dignity through privacy.
+
+**The Modern Application:**
+
+**Healthy Relationship Posting:**
+
+**What Works:**
+- Occasional sharing without making it content focus
+- Genuine moments rather than staged performances
+- Sharing joy without seeking validation
+- Maintaining significant privacy
+- Not making relationship primary identity marker
+
+**Red Flags:**
+- Constant posting as relationship validation
+- Staged performances rather than authentic moments
+- Identity entirely tied to coupled status
+- Posting during conflicts (performing happiness while unhappy)
+- Using posting to prove relationship to self or others
+
+**The Questions to Ask:**
+
+**Before Posting:**
+- Am I sharing genuinely or seeking validation?
+- Am I performing for audiences or expressing authentic joy?
+- Does this feel natural or staged?
+- Am I making private love into public content?
+- Would I share this if no one would see it?
+
+**About Patterns:**
+- Is relationship more real when posted?
+- Do I need social validation to feel secure?
+- Am I creating comparison pressure?
+- Have I lost significant privacy?
+- Is my identity overly tied to coupled status?
+
+**The Balance:**
+
+**Not Complete Privacy:**
+Sharing joy with loved ones is natural and healthy. Complete secrecy can indicate problems—relationships shouldn't be hidden if they're healthy.
+
+**But Not Performance:**
+Performing romance for validation, creating content from intimacy, and building identity entirely on public coupling creates problems that outweigh benefits.
+
+**Elinor's Wisdom:**
+Fundamentally private with occasional appropriate sharing when natural, without making romance into public performance or identity marker.
+
+**Marianne's Modification:**
+Allow authentic sharing without performing for validation, maintaining significant privacy, and keeping core identity independent of relationship status.
+
+**The Takeaway:**
+
+**The Parallel:**
+Marianne's public displays and modern social media posting both make private romance into public performance, creating validation, expectations, and pressures that affect relationships themselves.
+
+**The Risk:**
+Public performance of romance invites judgment, creates comparison, corrupts authenticity, amplifies breakups, and makes private connection into social spectacle.
+
+**The Wisdom:**
+Share joy authentically without performing for validation. Maintain significant privacy while allowing appropriate celebration. Keep core identity independent of relationship status. Remember that what's most real doesn't require public witness.
+
+**Austen's Insight:**
+The most secure love doesn't need public validation. Elinor's private dignity proves more protective than Marianne's public performance. Real connection exists primarily between two people, not between couple and audience. Modern social media amplifies this ancient tension—wisdom still lies in protecting intimacy while allowing authentic joy to be appropriately shared.`
+    },
+    {
+      id: 'part-one-culmination',
+      title: 'End of Part 1: How Austen Establishes Parallel Tests for Sense and Sensibility',
+      question: 'Chapter 10 concludes Part 1—what has Austen established about each sister\'s romantic philosophy, and what tests does she set up for Part 2?',
+      aiResponse: `**The Perfect Setup**
+
+Chapter 10 serves as culmination and transition—completing the establishment of parallel romantic situations while setting up the tests that will unfold in Part 2. Austen has masterfully created laboratory conditions for exploring whether sense or sensibility better serves women's romantic judgment.
+
+**What Part 1 Establishes:**
+
+**Chapters 1-3: The Crisis**
+- Economic displacement through inheritance law
+- Women's economic dependence on male relatives
+- Loss of home, position, security
+- Sisters' contrasting responses to crisis
+- Foundation of vulnerability
+
+**Chapters 4-6: The Recovery**
+- Move to Barton through Sir John's generosity
+- Establishing new life in reduced circumstances
+- Edward's introduction to Elinor
+- Hope for romantic salvation
+- Building new social world
+
+**Chapters 7-9: The Romantic Attachments**
+- Brandon's steady devotion (dismissed by Marianne)
+- Willoughby's passionate performance (embraced by Marianne)
+- Edward's ambiguous reserve (tolerated by Elinor)
+- Contrasting romantic approaches fully established
+- Both sisters now have romantic interests
+
+**Chapter 10: The Public Display**
+- Relationships shown in full social context
+- Marianne's public passionate performance
+- Elinor's private patient restraint
+- Social expectations and interpretations
+- Philosophical commitments fully revealed
+
+**The Parallel Structure:**
+
+Austen creates perfectly parallel romantic situations that will test opposite approaches:
+
+**Marianne's Situation:**
+- **The Man**: Willoughby—passionate, dramatic, performing romance
+- **Her Approach**: Sensibility—trusting feeling, public display, emotional authenticity
+- **The Test**: Will passionate performance prove genuine or deceptive?
+- **The Vulnerability**: Certainty where caution is needed
+- **The Stakes**: Public heartbreak if wrong
+
+**Elinor's Situation:**
+- **The Man**: Edward—reserved, ambiguous, unclear about intentions
+- **Her Approach**: Sense—patient hope, private restraint, rational evaluation
+- **The Test**: Will patient tolerance be rewarded or exploited?
+- **The Vulnerability**: Patience where clarity is needed
+- **The Stakes**: Private devastation if wrong
+
+**What Part 2 Will Test:**
+
+**For Marianne:**
+- Do passionate feelings reliably identify worthy partners?
+- Can emotional conviction distinguish performance from authenticity?
+- Does public display create stronger bond or dangerous vulnerability?
+- Is romantic certainty wisdom or blindness?
+- Will sensibility protect or endanger her?
+
+**For Elinor:**
+- Does patient hope serve or harm in romantic uncertainty?
+- Can mature tolerance become problematic enabling?
+- Does private restraint protect authentic connection or allow evasion?
+- Is rational patience wisdom or passivity?
+- Will sense protect or limit her?
+
+**The Genius of the Setup:**
+
+**1. Opposite Extremes**
+Austen doesn't compare similar approaches—she creates opposite extremes. Marianne has too much romantic clarity; Elinor has too little. Marianne performs publicly; Elinor maintains privacy. This stark contrast allows clean testing of opposite philosophies.
+
+**2. Equal Plausibility**
+At the end of Part 1, both approaches seem plausible. Marianne's passionate romance with Willoughby appears successful—she's found her romantic ideal. Elinor's patient relationship with Edward seems reasonable—she's maintaining dignity while hoping for clarity. Neither approach has obviously failed yet.
+
+**3. Hidden Problems**
+But Austen has planted warning signs in both situations. Willoughby's performance may be exactly that—performance concealing character flaws. Edward's ambiguity may conceal actual obstacles. The tests coming will reveal these hidden problems.
+
+**4. Economic Context**
+Both situations exist within system where women's security depends on romantic choices. The sisters aren't just pursuing happiness—they're navigating economic survival. Their romantic philosophies will be tested under real stakes.
+
+**The Foreshadowing:**
+
+**Willoughby's Danger Signs:**
+- Too perfect match to Marianne's ideals
+- Dramatic beginning through rescue
+- Instant intense connection
+- Public performance rather than private depth
+- Rapid pace preventing evaluation
+- Unknown financial circumstances
+
+**Edward's Concern Signs:**
+- Extended ambiguity without clarification
+- Mysterious obstacles preventing expression
+- Uncomfortable with direct questions
+- No movement toward commitment
+- Information gaps about his situation
+- Elinor's ongoing uncertainty despite time
+
+**What Readers Should Notice:**
+
+By the end of Part 1, attentive readers should recognize that:
+- Marianne's certainty about Willoughby is dangerous—she hasn't questioned or evaluated
+- Elinor's patience with Edward is costly—she's tolerating prolonged uncertainty
+- Both approaches have created vulnerabilities
+- Neither sister has achieved balance—integration is needed
+
+**The Questions Part 2 Will Answer:**
+
+**About Sense:**
+- Does Elinor's patient restraint protect her or delay necessary action?
+- Can rational evaluation distinguish genuine worth from skilled performance?
+- Does emotional self-management enable effective navigation of romance?
+- Will sense prove wisdom or limitation?
+
+**About Sensibility:**
+- Does Marianne's passionate conviction lead to happiness or heartbreak?
+- Can emotional authenticity coexist with necessary judgment?
+- Does trusting feeling protect or endanger in romantic choices?
+- Will sensibility prove valuable or dangerous?
+
+**About Integration:**
+- Can sense and sensibility be balanced?
+- What does healthy romantic navigation look like?
+- How do you feel deeply while thinking clearly?
+- Is integration possible, or must one dominate?
+
+**The Broader Experiment:**
+
+Part 1 establishes Austen's experiment: Which approach better serves women navigating romance in system where security depends on correct romantic choices?
+
+**Hypothesis 1 (Sensibility):**
+Trust passionate feeling, express authentically, commit emotionally, prioritize connection over caution.
+
+**Hypothesis 2 (Sense):**
+Maintain rational evaluation, regulate expression, proceed cautiously, prioritize judgment over feeling.
+
+Part 2 will test both hypotheses through parallel romantic crises, revealing strengths and limitations of each approach.
+
+**The Takeaway:**
+
+**The Setup:**
+Part 1 establishes perfectly parallel romantic situations—opposite approaches, opposite dangers, equal plausibility, hidden problems—creating ideal conditions for testing sense versus sensibility.
+
+**The Tests:**
+Part 2 will reveal that Marianne's passionate certainty about Willoughby was dangerous blindness, while Elinor's patient uncertainty about Edward was costly enabling. Both approaches fail because they're one-sided.
+
+**The Lesson:**
+Integration is necessary. Neither sense alone nor sensibility alone provides adequate protection. Women need both: sensibility's emotional authenticity combined with sense's critical judgment, sense's patience combined with sensibility's demand for clarity, feeling deeply while thinking clearly, trusting openly while verifying carefully.
+
+**Austen's Genius:**
+By creating parallel tests of opposite approaches, Austen can explore the costs and benefits of each while building toward integration. Part 1 establishes the extremes; Part 2 will test them; the resolution will integrate them. This structure allows sophisticated exploration of human nature, romantic navigation, and the balance between reason and emotion that wisdom requires.`
+    },
+    {
+      id: 'reputation-vulnerability-women',
+      title: 'When Love Goes Public: How Reputation Creates Special Vulnerability for Women',
+      question: 'Why does Marianne\'s public display of affection create greater risk for her than for Willoughby? What does this reveal about gendered vulnerability in romantic relationships?',
+      aiResponse: `**The Asymmetry of Risk**
+
+Elinor's concern about Marianne's public displays isn't just about propriety—it's about asymmetric risk. When a relationship performed publicly fails, men and women face different consequences. Marianne's reputation, social standing, and future prospects are at stake in ways that Willoughby's are not.
+
+**The Regency Reality:**
+
+**For Women:**
+- Public romantic attachment without marriage = damaged reputation
+- Failed engagement = "jilted" status affecting future prospects
+- Visible affection implies promises that men may not honor
+- Community judgment focuses on woman's behavior
+- Economic security depends on marriageability
+- Reputation loss threatens livelihood
+
+**For Men:**
+- Public romantic display without marriage = minimal consequence
+- Ending attachment = freedom, not failure
+- Visible affection implies nothing binding
+- Community judgment lenient toward men
+- Economic security independent of marital status
+- Reputation largely unaffected by romantic choices
+
+**Why This Asymmetry Exists:**
+
+**1. Different Standards**
+Sexual double standards meant women's virtue was constantly monitored while men's behavior was largely excused. Women displaying romantic interest risked being seen as "forward," "improper," or lacking restraint. Men displaying same interest were seen as naturally expressing desire.
+
+**2. Economic Dependence**
+Women's economic security depended on marriage. Damaged reputation reduced marriage prospects, threatening economic survival. Men's economic security was independent of marriage, so reputation damage had minimal material consequence.
+
+**3. Patriarchal Control**
+Systems controlling women's sexuality served patriarchal interests—ensuring paternity, maintaining property transfer through legitimate heirs, keeping women economically dependent. Men's sexuality was not similarly controlled.
+
+**4. Social Power**
+Men held social power to define narratives. If relationship failed, man could blame woman ("she was too forward") or simply walk away. Woman couldn't control the story told about her.
+
+**Marianne's Specific Risk:**
+
+**What She Does:**
+- Displays affection openly at social gatherings
+- Behaves as if engaged without formal commitment
+- Allows Willoughby intimate access (riding alone together)
+- Performs attachment for community observation
+
+**The Danger:**
+If Willoughby disappears without proposing, Marianne will be seen as:
+- Jilted (he chose not to marry her)
+- Forward (she displayed attachment inappropriately)
+- Used (he took intimacy without commitment)
+- Damaged goods (less desirable to future prospects)
+
+**Willoughby's Parallel Behavior:**
+If he leaves without proposing, he will be seen as:
+- Free agent (entitled to change his mind)
+- Young man enjoying company (not improper)
+- Uncommitted (no actual promises made)
+- Available (still desirable marriage prospect)
+
+**The Modern Parallel:**
+
+The asymmetry persists, though differently:
+
+**For Women:**
+- Publicly declared relationships that end = judgment about being "dumped"
+- Sexual relationships = potential reputation damage
+- Multiple relationships = "promiscuous" label
+- Relationship social media posts = identity investment
+- Breakups = public failure and judgment
+
+**For Men:**
+- Publicly declared relationships that end = minimal judgment
+- Sexual relationships = positive reputation (experience)
+- Multiple relationships = "player" (often admiring label)
+- Relationship social media posts = less identity investment
+- Breakups = freedom narrative available
+
+**Why It Still Exists:**
+
+**1. Persistent Double Standards**
+Despite progress, cultural double standards about sexuality and relationships persist. Women judged more harshly for sexual choices, relationship patterns, and romantic behavior.
+
+**2. Gendered Judgments**
+Relationship failures blamed differently: women "couldn't keep him" while men "chose to leave." Language itself reflects asymmetric framing.
+
+**3. Identity Differences**
+Women more likely to build primary identity around relationship status; men more likely to maintain independent identity. This makes relationship loss feel more devastating and public for women.
+
+**4. Social Media Amplification**
+Public posting of relationships creates modern version of Marianne's risk—public investment in coupledom that becomes public failure if relationship ends.
+
+**Elinor's Protective Strategy:**
+
+**Why Privacy Protects:**
+
+**For Reputation:**
+- Private attachment can't be publicly known or judged
+- Failed relationship remains private disappointment
+- No community narrative to control or refute
+- Reputation intact regardless of outcome
+
+**For Dignity:**
+- Private heartbreak easier to bear than public
+- No need to perform emotions for observers
+- Control over who knows and how much
+- Autonomy preserved despite disappointment
+
+**For Future:**
+- Prospects unaffected by relationship that wasn't public
+- No "jilted" or "used" narrative
+- Clean slate for future attachments
+- Economic security less threatened
+
+**The Cost of Protection:**
+
+But Elinor's strategy also has costs:
+- Less validation and social support
+- Isolation with grief and uncertainty
+- No community celebration of happiness
+- Missing authentic connection with others
+
+**The Modern Question:**
+
+**Sharing vs. Performing:**
+How much should relationships be shared publicly? The tension between:
+- Natural desire to share joy with loved ones
+- Risk of creating public performance
+- Validation benefits vs. vulnerability costs
+- Authentic sharing vs. strategic protection
+
+**Gender and Risk:**
+How do gendered risks persist in modern contexts?
+- Double standards in sexual judgment
+- Asymmetric breakup narratives
+- Identity investment differences
+- Social media amplifying old patterns
+
+**The Balance:**
+
+**Not Complete Secrecy:**
+Healthy relationships shouldn't be entirely hidden—secrecy can indicate problems, shame, or inappropriate situations.
+
+**But Not Public Performance:**
+Making relationships into public spectacles creates vulnerability, especially for women who face harsher judgment and have more identity invested.
+
+**Elinor's Wisdom:**
+Share appropriately with trusted circle without making romance into public performance. Maintain significant privacy to protect dignity, reputation, and autonomy.
+
+**The Questions:**
+
+**For Evaluation:**
+- Is public display creating vulnerable position?
+- Would relationship end differently affect you if public vs. private?
+- Are you aware of gendered risks in romantic situations?
+- Does privacy protect or isolate?
+
+**For Action:**
+- How much sharing feels natural vs. performed?
+- What level of privacy protects without hiding?
+- How can you balance authentic sharing with self-protection?
+- What gendered double standards should you be aware of?
+
+**The Takeaway:**
+
+**The Asymmetry:**
+Marianne's public displays create greater risk for her than for Willoughby due to gendered double standards, economic dependence, and social power differences. These asymmetries persist in modern contexts through different mechanisms.
+
+**The Protection:**
+Elinor's privacy protects reputation, dignity, and future prospects—but at cost of isolation and reduced validation.
+
+**The Wisdom:**
+Awareness of gendered risks in romantic situations allows strategic choices about public vs. private. Women face different consequences than men for same behaviors, requiring conscious navigation of when to share publicly and when to maintain privacy.
+
+**Austen's Insight:**
+The novel exposes how social systems create asymmetric risks for women in romance. Marianne's public performance makes her vulnerable to judgment and economic harm if Willoughby betrays her. Elinor's privacy protects her from these risks but isolates her with uncertainty. Neither solution is perfect—both respond to unfair system that judges women more harshly than men. Modern women still navigate similar asymmetries, requiring awareness and strategic choices about how much romantic life to make public.`
     }
   ],
   

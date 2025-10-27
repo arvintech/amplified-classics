@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter13: ChapterData = {
   number: 13,
-  title: 'Warning Ignored',
+  title: '',
   
   readingTime: 11,
   pages: 4,
@@ -25,7 +25,9 @@ export const chapter13: ChapterData = {
       
       'The chapter builds dramatic tension as Marianne moves further toward potential heartbreak while Elinor remains powerless to prevent it. Their contrasting approaches—Marianne\'s romantic certainty vs. Elinor\'s cautious concern—highlight the novel\'s central conflict between sensibility and sense.',
       
-      'The growing intensity of Marianne\'s romance combined with Elinor\'s knowledge of concerning information creates suspense about when revelation will occur and how it will affect Marianne.'
+      'The growing intensity of Marianne\'s romance combined with Elinor\'s knowledge of concerning information creates suspense about when revelation will occur and how it will affect Marianne.',
+      
+      'Marianne demonstrates escalating commitment—the more she invests in Willoughby, the harder it becomes to acknowledge concerns. She systematically dismisses warning signs, reframing lack of formal engagement as romantic authenticity and celebrating propriety violations as evidence their love transcends restrictions. This creates a tragic pattern where concerns prompt deeper investment rather than reconsideration. Elinor watches helplessly, knowing the truth but constrained by confidentiality and Marianne\'s certainty. The chapter reveals how romantic certainty can be inversely proportional to accuracy.'
     ]
   },
   
@@ -270,7 +272,37 @@ We still face these challenges:
 - Protecting ourselves while loving
 
 **The Lesson:**
-Authentic love doesn't require blindness. Successful relationships integrate passion with wisdom, maintaining feeling while exercising judgment.`
+Authentic love doesn\'t require blindness. Successful relationships integrate passion with wisdom, maintaining feeling while exercising judgment.`
+    },
+    {
+      id: 'warning-sign-dismissal',
+      title: 'Red Flags Reframed: How We Rationalize Concerning Behavior Instead of Heeding Warnings',
+      question: 'How does Marianne systematically dismiss warning signs about Willoughby? What are modern parallels of explaining away red flags?',
+      aiResponse: `Marianne demonstrates classic pattern of warning sign dismissal—explaining away concerning behaviors rather than taking them seriously. When Elinor questions lack of formal engagement despite intimate behavior, Marianne reframes this as Elinor\'s failure to understand authentic passion. When observers note Willoughby\'s mysterious circumstances, she romanticizes evasiveness as intriguing. When propriety violations occur, she celebrates them as evidence their love transcends restrictions. Each rationalization seems defensible individually but collectively they prevent pattern recognition. Modern parallels: reframing controlling behavior as caring deeply, minimizing frequency of concerning incidents, blaming circumstances rather than character, assuming your situation is exceptional. Protection requires recognizing that patterns matter more than individual incidents, that needing constant excuses for partner\'s behavior itself indicates problems, and that multiple people expressing concerns suggests systematic issues not coincidental difficulties. When you find yourself constantly defending partner or explaining away behaviors, the need for those defenses reveals problems the defenses obscure.`
+    },
+    {
+      id: 'escalating-commitment-trap',
+      title: 'The Sunk Cost Fallacy in Love: Why Past Investment Makes Leaving Harder When It Should Make It Easier',
+      question: 'Why does Marianne\'s massive investment make it harder to acknowledge concerns? How does escalating commitment create dangerous persistence?',
+      aiResponse: `Marianne demonstrates escalating commitment: the more she invests in Willoughby, the harder it becomes to acknowledge concerns that would require reconsidering that investment. She\'s invested emotionally (her entire happiness depends on him), socially (public certainty creates expectations), reputationally (propriety violations damage her options), and identity-wise (she\'s "Willoughby\'s beloved"). Acknowledging problems now would mean admitting this massive investment was mistake, facing loss of not just partner but identity and standing, proving critics right. It\'s psychologically easier to invest more deeply—to become more certain, more defensive, more committed—than face devastating reassessment. This creates tragic pattern: concerns should prompt reconsideration but instead prompt deeper investment. She doubles down when she should pull back, becomes certain when she should become skeptical, isolates when she needs perspective. Modern parallel: staying in relationships longer because you\'ve "already wasted so much time." Wisdom: sunk costs are sunk—previous investment is gone regardless of future decisions. Ask: knowing what I know now, would I enter this relationship today? If no, don\'t stay just because you\'ve already invested.`
+    },
+    {
+      id: 'intelligent-rationalization',
+      title: 'Smart People, Foolish Choices: How Intelligence Can Make Romantic Blindness Worse, Not Better',
+      question: 'If Marianne is intelligent ("sensible and clever"), why can\'t she see Willoughby\'s red flags? Does intelligence protect from bad romantic decisions?',
+      aiResponse: `The novel reveals counterintuitive truth: intelligence doesn\'t automatically protect from romantic blindness—it can make it worse by enabling sophisticated rationalization. Marianne is explicitly described as "sensible and clever," matching Elinor in intellectual capacity. Yet she demonstrates comprehensive blindness to Willoughby\'s concerning patterns. Modern psychology research on motivated reasoning and confirmation bias explains why: when emotionally invested in conclusion, intelligent people use cognitive abilities to defend positions rather than evaluate them objectively. They\'re better at generating plausible rationalizations, constructing sophisticated justifications, finding exception clauses, and reframing contrary evidence. Marianne\'s intelligence enables her to: explain away lack of formal commitment as authentic passion transcending social performance, romanticize evasiveness as intriguing mystery, celebrate propriety violations as evidence of transcendent love, and construct elaborate defenses against all concerns. Her cognitive sophistication makes her blindness more comprehensive, not less. Protection comes not from being smarter but from recognizing emotional investment creates systematic bias, deliberately seeking contrary evidence, taking external observations seriously even when they conflict with internal experience, and building safeguards that provide reality checks when blindness threatens judgment.`
+    },
+    {
+      id: 'why-warnings-fail',
+      title: 'Why "Just Tell Her" Doesn\'t Work: The Paradox of Warnings That Strengthen Attachment',
+      question: 'Why can\'t Elinor simply tell Marianne her concerns and prevent disaster? Why do warnings sometimes backfire by strengthening rather than breaking attachment?',
+      aiResponse: `Elinor faces frustrating reality: she cannot prevent Marianne\'s approaching devastation simply by warning her. When she gently expresses concerns, Marianne dismisses them as failure to understand passionate love. If she revealed Brandon\'s information about Willoughby\'s past, Marianne would likely rationalize ("that was different; we\'re truly in love") or attack the source ("Brandon is jealous"). Warnings might even strengthen attachment through forbidden love appeal, making Marianne defend Willoughby more vigorously, feel more protective of their bond. Psychology research explains why warnings fail: when someone is emotionally invested, contrary information triggers defensive reactions rather than reconsideration. They experience criticism of partner as attack on themselves (having invested identity in relationship), interpret warnings as outsider\'s failure to understand unique situation, and feel need to prove critics wrong by demonstrating relationship\'s validity. This creates paradox: people most needing warnings are most resistant to them; moments when intervention would be most beneficial are moments when it\'s least effective. Modern parallel: friends whose warnings about partner are dismissed as jealousy or misunderstanding. The wisdom: warnings work only when person is psychologically ready to hear them. Sometimes disaster must occur before receptivity exists. This doesn\'t mean never warn—but recognize limits of intervention, respect that people must learn some lessons through experience, and understand that being right about someone\'s situation doesn\'t give you power to prevent their mistakes.`
+    },
+    {
+      id: 'confidence-accuracy-inverse',
+      title: 'The Dangerous Inverse: Why Romantic Certainty Often Correlates Inversely with Relationship Quality',
+      question: 'Why is Marianne most confident about Willoughby precisely when she\'s most endangered? What does this reveal about relationship certainty and accuracy?',
+      aiResponse: `Chapter 13 reveals disturbing pattern: Marianne\'s confidence in Willoughby is inversely proportional to accuracy—she\'s most certain precisely when she\'s most wrong, most dismissive of concerns when she most needs warnings, most publicly committed when she should be most cautious. This inverse relationship between confidence and accuracy isn\'t coincidence but reveals dangerous dynamic: the more evidence accumulates of problems, the more desperately she asserts certainty to defend against acknowledging those problems. Her confidence is defensive rather than grounded—it functions to protect emotional investment rather than reflect accurate assessment. Modern psychology calls this "overconfidence bias"—systematic tendency to be more confident than accurate, especially when emotionally invested in conclusions. In relationships, this creates dangerous pattern: early relationship uncertainty might prompt careful evaluation, but as investment grows, people become more confident even as evidence for that confidence decreases. They stop evaluating critically precisely when evaluation matters most. Warning signs: when you find yourself asserting certainty despite lack of evidence (Willoughby never proposed but Marianne behaves as engaged), when confidence increases despite mounting concerns, when you need to publicly defend relationship repeatedly, when certainty serves to shut down rather than engage with questions. Protection: recognize that healthy confidence is grounded in evidence (formal commitments, behavioral consistency, treatment over time) not defensive assertion protecting investment. Genuine security doesn\'t require constant defense; relationship that needs vigorous ongoing justification reveals problems those justifications obscure.`
     }
   ],
   

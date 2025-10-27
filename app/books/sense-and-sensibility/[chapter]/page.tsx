@@ -1214,12 +1214,21 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)'
             }}>
-              Thematic Threads
+              Thematic Threads: Tracking Patterns Across the Novel
             </h2>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem',
+              fontStyle: 'italic'
+            }}>
+              These recurring themes connect chapters and show how ideas develop throughout the story.
+            </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
               {chapterData.thematicThreads.map((thread: any, idx: number) => (
                 <div key={idx} style={{
@@ -1255,7 +1264,7 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)',
               display: 'flex',
@@ -1263,8 +1272,17 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
               gap: '0.75rem'
             }}>
               <Lightbulb size={24} />
-              Discussion Questions
+              Discussion Questions: Tools That Lead You to the Answer
             </h2>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem',
+              fontStyle: 'italic'
+            }}>
+              These questions strategically guide you toward deeper appreciation of what matters most in the text.
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {chapterData.discussionQuestions.map((q: any, idx: number) => (
                 <div key={idx} style={{
@@ -1331,7 +1349,7 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
             <h2 style={{
               fontSize: '1.75rem',
               fontWeight: '400',
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
               color: 'var(--text-primary)',
               fontFamily: 'var(--font-heading)',
               display: 'flex',
@@ -1339,8 +1357,17 @@ function ChapterView({ chapterData, chapterNum }: { chapterData: any; chapterNum
               gap: '0.75rem'
             }}>
               <Brain size={24} />
-              Amplified Discussion
+              Amplified Discussion: AI Collaborative Tools
             </h2>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1.5rem',
+              fontStyle: 'italic'
+            }}>
+              Created through educator-AI partnership—select which discussions best fit your classroom.
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {chapterData.amplifiedDiscussion.map((discussion: any) => (
                 <div key={discussion.id} style={{

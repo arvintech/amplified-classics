@@ -10,11 +10,15 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter5: ChapterData = {
   number: 5,
-  title: 'Preparing to Leave',
+  title: '',
   
   readingTime: 9,
   pages: 4,
   
+  // ===================================================================
+  // SUMMARY
+  // Two-level summary: brief (one sentence) and full (3-4 paragraphs)
+  // ===================================================================
   summary: {
     brief: 'The Dashwood family prepares to leave Norland, discussing their futures and romantic prospects. The sisters reveal their different hopes and attitudes toward love and security as they face an uncertain future.',
     
@@ -25,10 +29,16 @@ export const chapter5: ChapterData = {
       
       'Elinor and Marianne\'s contrasting attitudes toward marriage and love are developed further. Elinor approaches romance with practical consideration for character and mutual respect, while Marianne holds romantic ideals about passionate love and emotional compatibility. Their different philosophies will be tested throughout the novel.',
       
-      'The chapter also explores Mrs. Dashwood\'s hopes for her daughters\' futures. Her emotional nature and romantic tendencies influence her expectations, showing how family attitudes shape young women\'s ideas about love and marriage. Her discussions with her daughters reveal the balance between romantic hope and practical reality.'
+      'The chapter also explores Mrs. Dashwood\'s hopes for her daughters\' futures. Her emotional nature and romantic tendencies influence her expectations, showing how family attitudes shape young women\'s ideas about love and marriage. Her discussions with her daughters reveal the balance between romantic hope and practical reality.',
+      
+      'Building on the first four chapters\' establishment of the Dashwood women\'s precarious position, Chapter 5 shows how economic displacement affects not just present circumstances but future possibilities. Where Chapter 1 exposed the inheritance system that created vulnerability, Chapter 2 revealed the personal betrayal that deepened it, Chapter 3 showed the emotional cost of losing home and identity, and Chapter 4 introduced Edward as a potential path to romantic salvation, Chapter 5 now explores how reduced circumstances constrain romantic prospects more broadly. The sisters must navigate the marriage market with diminished social capital—without Norland\'s prestige, without substantial dowries, without the connections and opportunities their former position provided. This chapter makes explicit what has been implicit throughout: for women in their position, marriage isn\'t just about love but about survival and security. The pressure to marry well intensifies as alternatives disappear, yet the displacement that creates this pressure simultaneously reduces their ability to attract advantageous matches. Austen reveals the cruel paradox of women\'s economic dependence: the more desperately they need marriage for security, the less attractive they become as potential partners. The chapter deepens the sense versus sensibility contrast as both approaches to romance—Elinor\'s practical consideration and Marianne\'s romantic idealism—face the same harsh economic realities. This establishes the central tension that will drive both sisters\' romantic plots: how to find genuine love and partnership when economic necessity makes every romantic choice a survival decision. The discussions in this chapter aren\'t just about preferences and ideals but about navigating impossible constraints with dignity and hope.'
     ]
   },
   
+  // ===================================================================
+  // TERMS TO KNOW
+  // Literary devices, vocabulary words, and concepts crucial to understanding
+  // ===================================================================
   termsToKnow: [
     {
       term: 'Romantic Prospects',
@@ -68,6 +78,10 @@ export const chapter5: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // CHARACTERS
+  // Character development for this chapter
+  // ===================================================================
   characters: [
     {
       name: 'Mrs. Dashwood',
@@ -103,6 +117,10 @@ export const chapter5: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // KEY QUOTES
+  // 3-5 significant quotations with analysis (50-75 words max)
+  // ===================================================================
   quotes: [
     {
       text: 'No sooner was his father\'s funeral over, than Mrs. John Dashwood, without sending any message to her mother-in-law, arrived with her child and their attendants.',
@@ -126,6 +144,10 @@ export const chapter5: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // IA ANALYSIS (Intelligence Amplifier Analysis)
+  // Deep thematic and technical analysis
+  // ===================================================================
   iaAnalysis: {
     themes: [
       {
@@ -143,6 +165,10 @@ export const chapter5: ChapterData = {
     ]
   },
   
+  // ===================================================================
+  // MODERN ADAPTATION
+  // Connect classic text to contemporary life (~200 words)
+  // ===================================================================
   modernAdaptation: {
     setting: 'Imagine a modern family discussing their daughters\' dating prospects and future relationships while facing economic uncertainty or relocation. Perhaps the parents are going through divorce, forcing a move from comfortable suburbs to a smaller city or different neighborhood. Or a family facing foreclosure, job loss, or economic downgrade. The daughters—one pragmatic about dating and career, the other idealistic about finding "the one"—discuss their romantic futures while grappling with reduced economic circumstances that will affect everything from where they meet potential partners to what kinds of relationships seem possible. The mother, herself economically vulnerable after losing financial security, hopes her daughters will find both love and stability, knowing how precarious life can be without either.',
     
@@ -160,6 +186,11 @@ export const chapter5: ChapterData = {
     discussionPrompt: 'How do economic and social factors still affect romantic possibilities today? While we claim modern relationships prioritize love over economics, do we actually balance both—considering partners\' career prospects, earning potential, debt levels, and economic stability alongside emotional compatibility? How has economic inequality and mobility affected dating patterns—does where we live, what schools we attend, and what jobs we have determine who we meet and what relationships seem possible? When families face economic displacement or uncertainty, how does this reshape not just practical circumstances but romantic hopes and possibilities? Are the Dashwood sisters\' concerns about how reduced circumstances affect their romantic prospects so different from modern anxieties about whether economic struggles, student debt, or career instability make us "less desirable" or limit our options? And how do we balance romantic idealism (Marianne\'s "love conquers all") with economic realism (Elinor\'s recognition that financial security matters) in a world where both seem necessary but often contradictory?'
   },
   
+  // ===================================================================
+  // THEMATIC THREADS
+  // Tracking patterns across the novel - recurring themes that connect
+  // chapters and show how ideas develop throughout the story
+  // ===================================================================
   thematicThreads: [
     {
       emoji: '💑',
@@ -168,6 +199,11 @@ export const chapter5: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // DISCUSSION QUESTIONS
+  // These questions are tools that LEAD YOU TO THE ANSWER - strategically
+  // designed to guide you toward deeper appreciation of what matters most
+  // ===================================================================
   discussionQuestions: [
     {
       title: 'Economic Reality',
@@ -175,6 +211,13 @@ export const chapter5: ChapterData = {
     }
   ],
   
+  // ===================================================================
+  // AMPLIFIED DISCUSSION
+  // AI COLLABORATIVE TOOLS - Created through educator-AI partnership where
+  // you bring pedagogical expertise and AI brings comprehensive analysis.
+  // Together: teaching material neither could produce alone.
+  // Teachers: Select which discussions best fit your classroom from the 6.
+  // ===================================================================
   amplifiedDiscussion: [
     {
       id: 'displacement-identity',
@@ -630,9 +673,794 @@ The marriage market metaphor illuminates how economic systems shaped (and contin
 - What social changes might reduce economic pressure on intimate relationships
 
 Austen doesn't offer simple answers but shows us the complexity of navigating between economic necessity and romantic idealism in systems that make both necessary and neither sufficient. Her wisdom lies in refusing to reduce complexity to simple formulas, instead showing us real people navigating impossible situations with varying degrees of integrity and success.`
+    },
+    {
+      id: 'mother-daughter-transmission',
+      title: 'Generational Transmission: How Mothers Shape Daughters\' Romantic Values',
+      question: 'How does Mrs. Dashwood\'s sensibility influence her daughters, especially Marianne? What does this reveal about how romantic values are transmitted across generations?',
+      aiResponse: `**The Power of Parental Influence**
+
+Chapter 5 reveals how Mrs. Dashwood's emotional nature and romantic ideals shape her daughters' approaches to love, creating patterns that will profoundly affect their romantic journeys. This explores the often-unconscious transmission of values, attitudes, and vulnerabilities from parents to children.
+
+**Mrs. Dashwood's Influence:**
+
+**1. Valuing Sensibility**
+
+The text explicitly notes: "Elinor saw, with concern, the excess of her sister's sensibility; but by Mrs. Dashwood it was valued and cherished."
+
+This is crucial: Mrs. Dashwood doesn't just tolerate or accept Marianne's romantic intensity—she actively values and cherishes it. She:
+- Encourages emotional expressiveness
+- Celebrates passionate feeling
+- Validates romantic idealism
+- Models emotional intensity
+
+By valuing Marianne's excess, she reinforces the very traits that will make Marianne vulnerable to heartbreak.
+
+**2. Emotional Resonance**
+
+Mrs. Dashwood shares Marianne's temperament:
+- Both feel intensely and express openly
+- Both romanticize experience
+- Both prioritize feeling over practicality
+- Both resist emotional restraint
+
+This creates emotional resonance—Marianne sees her temperament reflected and validated by her mother, strengthening her confidence that passionate sensibility is the right approach to life and love.
+
+**3. Contrasting with Elinor**
+
+Mrs. Dashwood's alignment with Marianne implicitly challenges Elinor's approach:
+- Elinor's restraint seems cold by comparison
+- Her practicality appears unromantic
+- Her concerns about excess are dismissed
+- She becomes somewhat isolated in her sensible approach
+
+This creates family dynamics where sensibility is celebrated and sense is tolerated but not fully valued.
+
+**The Mechanism of Transmission:**
+
+**How Values Transfer:**
+
+**1. Modeling**
+
+Children learn by observing parents:
+- Mrs. Dashwood models emotional expressiveness
+- She demonstrates romantic optimism
+- She shows what she values through what she celebrates
+- Marianne internalizes this as "correct" approach
+
+**2. Validation**
+
+Parental approval shapes identity:
+- When Mrs. Dashwood cherishes Marianne's sensibility, she validates Marianne's self-concept
+- This validation makes Marianne confident in her approach
+- Without critical feedback, excess goes unchecked
+- Validation creates resistance to alternative perspectives
+
+**3. Implicit Messages**
+
+Beyond explicit teaching, parents communicate values through:
+- What they celebrate vs. criticize
+- Whom they praise vs. dismiss
+- What traits they reward with attention and approval
+- How they respond to children's behavior
+
+Mrs. Dashwood's responses teach Marianne that passionate feeling deserves celebration while restraint deserves concern.
+
+**4. Narrative Framing**
+
+Parents shape how children interpret experience:
+- Mrs. Dashwood frames sensibility as depth of feeling
+- She interprets restraint as lack of authenticity
+- She teaches Marianne to see romantic intensity as virtue
+- This framing becomes Marianne's lens for understanding herself and others
+
+**The Consequences:**
+
+**For Marianne:**
+
+**Positive:**
+- Emotional authenticity and expressiveness
+- Capacity for deep feeling and passion
+- Resistance to social hypocrisy
+- Genuine romantic idealism
+
+**Negative:**
+- Vulnerability to heartbreak through excess investment
+- Difficulty with emotional moderation
+- Dismissiveness of alternative approaches (like Edward's reserve)
+- Susceptibility to manipulation by those who perform romance (like Willoughby)
+
+**For Elinor:**
+
+Interestingly, Elinor's different temperament creates different relationship with her mother:
+- She receives less validation for her sensible approach
+- She becomes somewhat isolated in family dynamics
+- She takes on burden of practical wisdom without support
+- She must counter maternal influence on Marianne while maintaining family harmony
+
+This creates additional burden for Elinor—she must manage not only her own emotions but also compensate for family's excess sensibility.
+
+**Elinor's Concern:**
+
+"Elinor saw, with concern, the excess of her sister's sensibility"—this observation is telling:
+
+**She Recognizes:**
+- That Marianne's sensibility is excessive, not just different
+- That excess creates vulnerability
+- That her mother's validation reinforces rather than moderates excess
+- That she's powerless to counter maternal influence
+
+**Her Dilemma:**
+- Should she challenge her mother's approach?
+- Would criticism damage family harmony?
+- Can she protect Marianne without undermining maternal relationship?
+- How does she maintain her own sense while surrounded by sensibility?
+
+**Modern Parallels:**
+
+**Parental Modeling Today:**
+
+Modern parents similarly transmit values about relationships:
+- **Cynical parents** may raise cynical children about love
+- **Romantic parents** may encourage idealism that creates vulnerability
+- **Practical parents** may emphasize security over passion
+- **Divorced parents** may transmit either wariness or longing for partnership
+
+**Social Media and Romance:**
+
+Consider modern mothers who:
+- Share romantic media emphasizing grand gestures and dramatic love
+- Validate daughters' romantic disappointments by blaming partners
+- Encourage waiting for "the one" rather than appreciating steady partners
+- Model either practical or romantic approaches to relationships
+
+Like Mrs. Dashwood, modern parents shape children's romantic scripts—sometimes productively, sometimes creating vulnerabilities.
+
+**The Balance:**
+
+**What Children Need:**
+
+Healthy development requires balance:
+- **Validation** of emotional authenticity (Mrs. Dashwood's strength)
+- **Moderation** of excess (what Mrs. Dashwood fails to provide)
+- **Multiple perspectives** (Elinor tries to offer this)
+- **Critical thinking** about romantic ideals (neither fully demonstrates)
+
+**What Parents Owe:**
+
+Parents should:
+- Validate children's temperaments while teaching moderation
+- Share wisdom about potential vulnerabilities
+- Model balanced approaches combining feeling and judgment
+- Help children question cultural scripts rather than absorb them uncritically
+
+**Mrs. Dashwood's Limitation:**
+
+Her failure isn't loving Marianne or valuing sensibility—it's cherishing excess without teaching moderation. She validates Marianne's intensity without helping her develop the judgment to moderate it when necessary.
+
+**The Tragedy:**
+
+Marianne will suffer profoundly from the very sensibility her mother cherished. Willoughby will exploit her romantic idealism, her expectation that passionate expression indicates genuine feeling, her inability to moderate emotional investment.
+
+Mrs. Dashwood's love and validation, offered without wisdom about moderation, inadvertently prepares Marianne for heartbreak.
+
+**The Universal Lesson:**
+
+**For Parents:**
+
+Love your children's temperaments while teaching wisdom about their vulnerabilities. Validation without critical guidance leaves children unprepared for worlds that won't cherish their excess as you do.
+
+**For Children:**
+
+Recognize that parental values—even loving validation—may not adequately prepare you for reality. Develop critical perspective on what you've internalized, questioning whether cherished family values serve you in broader world.
+
+**For Everyone:**
+
+We're all shaped by family culture in ways we rarely recognize consciously. Understanding this influence helps us:
+- Recognize unconscious patterns
+- Question inherited scripts
+- Develop critical distance from family values
+- Choose consciously rather than replicate automatically
+
+**Austen's Wisdom:**
+
+By showing how Mrs. Dashwood's loving validation creates Marianne's vulnerability, Austen reveals that:
+- Love isn't sufficient—wisdom matters too
+- Validation without moderation can harm
+- Parents transmit not just values but vulnerabilities
+- Family culture shapes us profoundly, often unconsciously
+
+The tragedy isn't that Mrs. Dashwood doesn't love Marianne—it's that her love validates excess without teaching moderation, preparing Marianne for passionate intensity without wisdom about its dangers.
+
+This remains urgently relevant: How do we love and validate our children while also teaching them critical wisdom about their vulnerabilities? How do we support their authentic temperaments while preparing them for world that won't always cherish what we cherish?
+
+Elinor's concern is prescient—she sees that cherishing excess creates vulnerability. But she's powerless against maternal influence. Marianne will learn through painful experience what loving validation couldn't teach her: that passion requires judgment, feeling needs moderation, and sensibility unchecked by sense creates suffering.
+
+The question for readers: What have we inherited uncritically from family culture? What validated traits might also be vulnerabilities? How do we develop wisdom about patterns we've internalized as natural or correct?`
+    },
+    {
+      id: 'hope-realism-displacement',
+      title: 'Hope and Realism in Crisis: Navigating Uncertainty After Loss',
+      question: 'How do the Dashwoods balance hope about their futures with realistic assessment of their reduced circumstances? What does this teach about coping with displacement?',
+      aiResponse: `**The Psychology of Hope in Uncertain Times**
+
+Chapter 5 shows a family navigating the difficult balance between maintaining hope about their futures while facing realistic assessment of reduced circumstances. This psychological challenge—how to remain optimistic while being realistic—is universal to anyone facing loss, displacement, or uncertain futures.
+
+**The Dashwoods' Situation:**
+
+**What They've Lost:**
+- Physical home (Norland)
+- Social position (as landed gentry)
+- Economic security (reduced income)
+- Social connections (leaving their network)
+- Familiar patterns (entire life structure disrupted)
+- Future certainty (daughters' prospects diminished)
+
+**What's Uncertain:**
+- Where they'll live and how they'll adapt
+- Whether they'll rebuild social connections
+- If daughters will find suitable marriages
+- How their reduced circumstances will affect everything
+- Whether they can maintain their identity and dignity
+
+**What They Must Do:**
+- Make practical arrangements for moving
+- Adjust expectations to new reality
+- Maintain family morale despite uncertainty
+- Prepare daughters for diminished prospects
+- Find reasons for hope despite losses
+
+This creates profound psychological challenge: How do you cope with loss while facing uncertain future? How much hope is healthy vs. denial? How much realism is wisdom vs. despair?
+
+**Different Approaches:**
+
+**Mrs. Dashwood (Romantic Hope):**
+
+Mrs. Dashwood tends toward optimistic hope:
+- Believes things will work out
+- Maintains romantic expectations for daughters
+- Focuses on emotional connections rather than practical limitations
+- Trusts that love and family will see them through
+
+**Strengths:**
+- Maintains morale during difficult transition
+- Prevents despair and paralysis
+- Keeps family emotionally connected
+- Models resilience through optimism
+
+**Limitations:**
+- May underestimate practical challenges
+- Could set daughters up for disappointment
+- Might not adequately prepare for reality
+- Risks denial rather than adaptation
+
+**Elinor (Practical Realism):**
+
+Elinor tends toward realistic assessment:
+- Recognizes limitations of reduced circumstances
+- Makes practical arrangements based on reality
+- Adjusts expectations to match new situation
+- Plans for probable rather than hoped-for outcomes
+
+**Strengths:**
+- Enables practical preparation
+- Prevents unrealistic expectations
+- Facilitates genuine adaptation
+- Protects from avoidable disappointments
+
+**Limitations:**
+- May dampen hope and morale
+- Could create premature resignation
+- Might miss unexpected opportunities
+- Risks pessimism rather than healthy realism
+
+**Marianne (Emotional Resistance):**
+
+Marianne struggles to accept loss:
+- Grieves intensely for what's lost
+- Resists accepting diminished circumstances
+- Romanticizes past and resents present
+- Has difficulty adjusting expectations
+
+**Strengths:**
+- Honors genuine grief rather than denying loss
+- Refuses to accept loss passively
+- Maintains authentic emotional response
+
+**Limitations:**
+- Makes adaptation harder through resistance
+- Creates suffering through inability to accept
+- May prolong grief unnecessarily
+- Risks getting stuck in past rather than moving forward
+
+**The Psychological Challenge:**
+
+**Why This Is Hard:**
+
+Balancing hope and realism requires:
+
+**1. Accepting Loss Without Despair**
+
+You must acknowledge what's gone without believing everything is lost:
+- Recognize reduced circumstances
+- Grieve genuine losses
+- Accept changes that can't be reversed
+- Still believe good futures possible
+
+This is psychologically demanding—how do you face painful reality without losing hope?
+
+**2. Maintaining Hope Without Denial**
+
+You must remain optimistic without ignoring reality:
+- Believe in positive possibilities
+- Maintain emotional resilience
+- Look for opportunities in new circumstances
+- Not pretend problems don't exist
+
+How do you hope realistically without either denying problems or despairing about them?
+
+**3. Adapting Expectations Without Losing Self**
+
+You must adjust to new reality while maintaining identity:
+- Lower expectations to match circumstances
+- Find meaning in reduced possibilities
+- Maintain dignity despite diminished position
+- Still recognize your inherent worth
+
+How do you adjust expectations without feeling you've lost yourself or settled for less than you deserve?
+
+**4. Planning Practically While Remaining Open**
+
+You must make realistic plans while staying open to unexpected possibilities:
+- Prepare for probable outcomes
+- Don't assume worst-case scenarios
+- Remain flexible to opportunities
+- Balance preparation with openness
+
+How do you plan for reality you can foresee while remaining open to possibilities you can't predict?
+
+**Historical Context:**
+
+**Women's Particular Vulnerability:**
+
+The Dashwood women face challenges specific to their gender and era:
+
+**Limited Control:**
+- Women couldn't earn significant income
+- Marriage prospects depended on male relatives' generosity
+- Legal systems made them dependent
+- Social structures limited agency
+
+**Uncertainty Magnified:**
+- Their futures depended on whom they'd marry
+- They couldn't control their marriage prospects
+- Reduced circumstances severely limited options
+- No way to independently improve their situation
+
+This makes their psychological challenge even harder—how do you maintain hope when you have so little control over your future?
+
+**Modern Parallels:**
+
+**Economic Displacement:**
+
+Modern families face similar challenges:
+- **Job loss**: How do you remain hopeful while being realistic about limited prospects?
+- **Foreclosure**: How do you cope with losing your home while building new future?
+- **Divorce**: How do you grieve loss while remaining open to new possibilities?
+- **Relocation**: How do you adapt to new circumstances while honoring what's lost?
+
+**The Psychology Applies:**
+
+Anyone facing significant loss or uncertain future faces the same balance:
+- **Too much hope** → Denial, inadequate preparation, worse disappointment
+- **Too much realism** → Despair, premature resignation, missing possibilities
+- **Healthy balance** → Acknowledging reality while remaining open to possibilities
+
+**Practical Wisdom:**
+
+**What Helps:**
+
+**1. Distinguish What's Lost from What's Possible**
+
+Clearly differentiate:
+- What's genuinely gone and must be grieved
+- What's uncertain but still possible
+- What new opportunities exist in changed circumstances
+- What core identity remains despite external changes
+
+The Dashwoods must recognize: Norland is gone (loss), but good futures still possible (hope).
+
+**2. Process Grief While Planning Forward**
+
+Allow both simultaneously:
+- Grieve what's lost (Marianne's instinct)
+- Make practical arrangements (Elinor's approach)
+- Maintain hope about future (Mrs. Dashwood's optimism)
+- All are necessary, not contradictory
+
+**3. Adjust Expectations While Maintaining Dignity**
+
+Accept that:
+- Circumstances have changed
+- Some previous expectations unrealistic
+- Dignity comes from character, not position
+- Worth isn't determined by social or economic status
+
+The Dashwoods must lower expectations about social position while maintaining sense of inherent worth.
+
+**4. Support Each Other's Different Styles**
+
+Recognize that:
+- Different people cope differently
+- Optimism and realism both serve functions
+- Grief and planning aren't incompatible
+- Family members need different things at different times
+
+The Dashwoods need: Marianne's authenticity about grief, Elinor's practical planning, Mrs. Dashwood's hopeful optimism—all contribute to family resilience.
+
+**The Teaching Moment:**
+
+**For Understanding Crisis:**
+
+How people cope with loss and uncertainty varies—some need hope, some need realism, most need both. No single approach is right; wisdom lies in integration.
+
+**For Personal Development:**
+
+When facing loss or uncertainty:
+- Honor genuine grief
+- Make realistic assessments
+- Maintain hope about possibilities
+- Adapt expectations without losing self
+- Balance present reality with future potential
+
+**For Supporting Others:**
+
+When others face displacement or uncertainty:
+- Validate their grief
+- Offer practical help
+- Support realistic hope
+- Don't impose your coping style
+- Accept that they may balance hope and realism differently than you would
+
+**Austen's Wisdom:**
+
+By showing three different approaches (Mrs. Dashwood's optimism, Elinor's realism, Marianne's grief), Austen reveals that:
+- No single approach is sufficient
+- Families need different perspectives
+- Hope and realism aren't opposites but complementary
+- Healthy coping requires integration
+
+**The Universal Challenge:**
+
+How do you face painful reality without losing hope? How do you maintain optimism without denying problems? How do you grieve what's lost while building new future? How do you adjust expectations while maintaining dignity?
+
+These questions face anyone experiencing loss, displacement, or uncertainty. The Dashwoods' conversations, as they prepare to leave Norland and face uncertain futures, model the difficult psychological work of balancing grief with hope, realism with optimism, acceptance with resistance.
+
+The lesson: Don't try to choose between hope and realism—you need both. Grieve genuinely, plan practically, hope realistically, adapt flexibly, maintain dignity, support each other's different coping styles. Face reality while remaining open to possibilities. Accept what's lost while believing good futures still possible.
+
+That's the wisdom of Chapter 5—showing a family doing this difficult psychological work together, each contributing different strengths, collectively navigating the balance between hope and realism that anyone facing displacement or uncertainty must find.`
+    },
+    {
+      id: 'family-culture-romantic-values',
+      title: 'Family Culture and Romantic Values: How Environment Shapes Love Scripts',
+      question: 'How does family culture shape the sisters\' different approaches to romance? What does this reveal about how we learn what love "should" look like?',
+      aiResponse: `**The Family as First School of Love**
+
+Chapter 5 reveals how family culture—the attitudes, values, and emotional patterns within families—shapes how individuals approach romance. The Dashwoods demonstrate how the same family can produce different romantic philosophies, and how family dynamics validate certain approaches while marginalizing others.
+
+**Family Culture Defined:**
+
+Family culture includes:
+- **Values**: What the family considers important
+- **Emotional patterns**: How emotions are expressed and managed
+- **Narratives**: Stories the family tells about itself
+- **Validation patterns**: Which traits receive approval vs. concern
+- **Role models**: How parents demonstrate relationships
+- **Implicit messages**: Unspoken but powerful teachings
+
+The Dashwood family culture is:
+- **Emotionally expressive** (sensibility-oriented)
+- **Romantically optimistic** (believing in passionate love)
+- **Socially conscious** (aware of position and propriety)
+- **Female-centered** (father's death leaves mother and daughters)
+- **Economically vulnerable** (displaced, dependent)
+
+This culture shapes but doesn't determine how each sister approaches romance.
+
+**How Elinor Developed Sense:**
+
+Despite growing up in sensibility-oriented family, Elinor developed different approach:
+
+**Possible Factors:**
+
+**1. Birth Order and Responsibility**
+
+As eldest daughter:
+- She must be practical since father's death
+- She carries responsibility for family's wellbeing
+- She can't afford luxury of pure sensibility
+- She becomes counter-balance to mother's and Marianne's romanticism
+
+Responsibility often creates pragmatism—those who must manage practical realities develop practical approaches.
+
+**2. Temperament**
+
+Elinor may have natural inclination toward:
+- Emotional regulation
+- Rational analysis
+- Practical planning
+- Observational wisdom
+
+Temperament isn't entirely learned—some people are naturally more reserved, thoughtful, or controlled.
+
+**3. Relationship with Father**
+
+Though little mentioned, Mr. Dashwood may have modeled:
+- Rational discourse
+- Practical judgment  
+- Emotional restraint
+- Sense-oriented values
+
+Elinor may have identified with father while Marianne identifies with mother.
+
+**4. Response to Family Excess**
+
+Sometimes family excess creates opposite response:
+- Seeing mother's and sister's sensibility, Elinor recognizes need for balance
+- She becomes the sensible one because family needs it
+- She counter-balances rather than replicates family pattern
+
+**The Result:**
+
+Elinor approaches romance with:
+- **Character over charisma**: Valuing substance rather than performance
+- **Gradual development**: Trusting accumulated evidence over instant chemistry
+- **Realistic assessment**: Maintaining judgment while developing feelings
+- **Emotional regulation**: Managing feelings appropriately for context
+
+**How Marianne Absorbed Sensibility:**
+
+Marianne fully embraces family's sensibility-orientation:
+
+**Factors:**
+
+**1. Maternal Validation**
+
+"Mrs. Dashwood...valued and cherished" Marianne's sensibility:
+- Mother celebrates her romantic intensity
+- Validation reinforces natural temperament
+- No critical feedback moderates excess
+- Mother-daughter resonance strengthens approach
+
+**2. Temperament**
+
+Marianne may naturally tend toward:
+- Emotional intensity
+- Passionate expression
+- Romantic idealism
+- Aesthetic sensitivity
+
+Her temperament aligns with and amplifies family culture.
+
+**3. Cultural Absorption**
+
+Marianne absorbs Romantic-era values:
+- Privileging feeling over reason
+- Valuing passionate intensity
+- Celebrating aesthetic and emotional refinement
+- Resisting conventional restraint
+
+She internalizes cultural movement's values through family transmission and wider culture.
+
+**4. Youth and Position**
+
+As younger daughter:
+- Less responsibility than Elinor
+- More freedom for emotional expression
+- Can afford luxury of sensibility
+- No pressure to counter-balance family patterns
+
+**The Result:**
+
+Marianne approaches romance with:
+- **Passionate intensity**: Expecting overwhelming feeling
+- **Romantic scripts**: Love should match idealized narratives
+- **Expressive authenticity**: Genuine feeling must be displayed
+- **Aesthetic judgment**: Partners must appreciate poetry, nature, music
+
+**Family Dynamics:**
+
+**Who Gets Validated:**
+
+The text reveals validation patterns:
+- **Marianne**: Her sensibility is "valued and cherished"
+- **Elinor**: Her sense creates "concern" in mother
+- **Mrs. Dashwood**: Aligns with Marianne, creating alliance
+- **Elinor**: Somewhat isolated in her sensible approach
+
+This creates family dynamic where:
+- Sensibility is celebrated
+- Sense is tolerated but questioned
+- Emotional alliance exists between mother and Marianne
+- Elinor becomes somewhat outsider to family's emotional core
+
+**Impact on Sisters:**
+
+This dynamic affects both:
+
+**For Marianne:**
+- Confidence that her approach is correct
+- Resistance to alternative perspectives
+- Support for romantic idealism
+- Validation of excess
+
+**For Elinor:**
+- Some isolation from family emotional life
+- Taking on burden of practical wisdom alone
+- Questioning whether her sense makes her cold
+- Having to maintain approach without familial support
+
+**What They Learn About Love:**
+
+**Implicit Teachings:**
+
+Through family culture, both learn:
+
+**From Mother:**
+- How to be emotionally (sensibility)
+- What to value in relationships
+- How much to prioritize feeling vs. practicality
+- What makes love "real" or valuable
+
+**From Each Other:**
+- Comparison reveals alternative approaches
+- Contrast creates awareness of choice
+- Dialogue explores different philosophies
+- Competition for validation shapes confidence
+
+**From Family Dynamics:**
+- Which approach wins approval
+- What traits are celebrated vs. questioned
+- How emotional expression is received
+- What standards apply to romantic choices
+
+**Modern Parallels:**
+
+**Family Culture Today:**
+
+Modern families similarly transmit romantic values:
+
+**1. Parental Relationships Model Love**
+
+Children observe:
+- How parents show affection
+- How they handle conflict
+- Whether they prioritize independence or togetherness
+- How they balance romance and practicality
+
+**2. Family Values Shape Expectations**
+
+Families teach:
+- Whether relationships should be passionate or stable
+- How much to prioritize love vs. practical considerations
+- Whether to trust feelings or judgment
+- What makes someone a "good match"
+
+**3. Validation Patterns Shape Confidence**
+
+Which romantic choices receive approval:
+- Partners who are ambitious vs. artistic
+- Relationships that are practical vs. passionate
+- Matches that are socially appropriate vs. personally fulfilling
+- Choices that prioritize security vs. romance
+
+**4. Sibling Dynamics Create Comparison**
+
+Siblings often develop contrasting approaches:
+- One becomes romantic, other practical
+- One adventurous, other cautious  
+- One prioritizes passion, other compatibility
+- Contrast creates individual identity
+
+**Examples:**
+
+**Family A (Sensibility-Oriented):**
+- Parents demonstrate passionate, dramatic relationship
+- Emotional expression celebrated
+- Romantic choices validated over practical ones
+- Children learn: real love is intense and overwhelming
+
+**Family B (Sense-Oriented):**
+- Parents demonstrate stable, practical partnership
+- Emotional restraint valued
+- Practical choices validated over romantic ones
+- Children learn: real love is steady and reliable
+
+**Family C (Mixed, Like Dashwoods):**
+- One parent more romantic, other more practical
+- Children divide: some follow each parent's approach
+- Siblings develop contrasting philosophies
+- Family culture includes tension between sense and sensibility
+
+**The Complexity:**
+
+**Not Deterministic:**
+
+Family culture influences but doesn't determine:
+- Elinor develops sense despite sensibility-oriented family
+- Same family produces different approaches
+- Temperament, birth order, relationships, and choices all matter
+- People can develop awareness and choose consciously
+
+**But Powerful:**
+
+Still, family influence is profound:
+- Most people replicate family patterns unconsciously
+- Validation shapes what feels "normal" or "right"
+- Early modeling affects lifelong patterns
+- Family culture becomes internalized lens
+
+**Breaking Patterns Requires:**
+- Awareness of what you've internalized
+- Critical distance from family values
+- Conscious choice about what to keep vs. change
+- Sometimes painful recognition that loving family transmitted limitations
+
+**The Teaching Moment:**
+
+**For Self-Awareness:**
+
+Ask yourself:
+- What did my family teach about love (explicitly and implicitly)?
+- Which parent did I identify with romantically?
+- What romantic choices won approval vs. concern?
+- How have I replicated vs. resisted family patterns?
+- What unconscious scripts am I following?
+
+**For Understanding Others:**
+
+Recognize that:
+- People's romantic approaches reflect family cultures
+- Different families teach different values
+- No approach is inherently right—all reflect cultural learning
+- Understanding origin helps navigate differences
+
+**For Relationships:**
+
+When partners have different approaches (like Elinor and Edward vs. Marianne and eventual partners):
+- Recognize you learned different scripts
+- Neither is inherently correct
+- Understanding origin reduces judgment
+- Integration may be possible
+
+**Austen's Wisdom:**
+
+By showing how same family produces different romantic philosophies (Elinor's sense vs. Marianne's sensibility), Austen reveals:
+- Family culture is powerful but not deterministic
+- People can develop awareness and make choices
+- Validation patterns shape confidence about approaches
+- Understanding family influence helps understand ourselves
+
+**The Universal Truth:**
+
+We all learn about love first from our families—through parental relationships, family values, validation patterns, and sibling dynamics. This learning is mostly unconscious but profoundly shapes our romantic expectations, choices, and patterns.
+
+Wisdom requires:
+- Recognizing what we've inherited
+- Distinguishing cultural learning from universal truth
+- Choosing consciously what to keep vs. change
+- Understanding that our romantic"normal" reflects our family's particular culture
+
+The Dashwood sisters show us this process—how family culture shapes romantic values, how siblings within same family can develop different approaches, how validation patterns affect confidence, and how awareness of influence enables conscious choice.
+
+The question for readers: What has your family taught you about love? Are you following their script consciously or unconsciously? Does their approach serve you, or do you need to develop different philosophy?`
     }
   ],
   
+  // ===================================================================
+  // EDUCATOR RESOURCES
+  // Teaching tools and activities
+  // ===================================================================
   educatorResources: {
     writingPrompt: {
       title: 'Family Discussion Scene',
@@ -653,6 +1481,10 @@ Austen doesn't offer simple answers but shows us the complexity of navigating be
     }
   },
   
+  // ===================================================================
+  // CRITICAL THINKING EXERCISE (Optional)
+  // One focused, high-level analytical task
+  // ===================================================================
   criticalThinkingExercise: {
     title: 'Economic Determinism in Romance',
     prompt: 'Analyze how economic vulnerability shapes romantic possibilities. To what extent are romantic choices determined by economics vs. individual agency?',
@@ -670,8 +1502,15 @@ Austen doesn't offer simple answers but shows us the complexity of navigating be
     classroomApplication: 'Essay or discussion. 1-2 class periods.'
   },
   
+  // ===================================================================
+  // WHY LITERATURE MATTERS - Closing Motivation
+  // ===================================================================
   whyLiteratureMatters: getLiteratureMessageByChapter(5),
   
+  // ===================================================================
+  // NEXT TIME TEASER
+  // Preview of next chapter
+  // ===================================================================
   nextTimeTeaser: {
     emoji: '🏠',
     title: 'Next: Barton Cottage',

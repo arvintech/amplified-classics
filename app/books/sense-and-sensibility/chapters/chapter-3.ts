@@ -10,14 +10,15 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter3: ChapterData = {
   number: 3,
-  title: 'Leaving Norland',
+  title: '',
   
   readingTime: 12,
   pages: 5,
   
-  // ==========================================
-  // CHAPTER SUMMARY
-  // ==========================================
+  // ===================================================================
+  // SUMMARY
+  // Two-level summary: brief (one sentence) and full (3-4 paragraphs)
+  // ===================================================================
   summary: {
     brief: 'The Dashwood sisters must leave Norland as Fanny takes possession of their home. Elinor demonstrates practical wisdom and emotional restraint, while Marianne shows passionate grief and resentment. Their contrasting responses to loss establish deeper patterns of character that will shape their entire journey.',
     
@@ -28,13 +29,16 @@ export const chapter3: ChapterData = {
       
       'The chapter also reveals the social context of their displacement. They must leave their home because Fanny, as the wife of the heir, has rights to Norland. This social and legal reality shapes their emotional responses and practical options. Their departure from Norland represents not just a change of residence but a fundamental shift in their social and economic position. They move from being mistresses of a large estate to being dependent relations in a smaller cottage, facing an uncertain future in a society where women\'s security depends on marriage.',
       
-      'Through the sisters\' contrasting approaches to crisis, Austen establishes patterns that will recur throughout the novel. Elinor\'s combination of practical wisdom and emotional restraint will be tested by her own romantic disappointment. Marianne\'s passionate sensibility will lead her into dangerous romantic attachments before she learns to balance feeling with judgment. The chapter sets up their parallel journeys toward maturity, showing how both sense and sensibility have value but must be balanced for happiness.'
+      'Through the sisters\' contrasting approaches to crisis, Austen establishes patterns that will recur throughout the novel. Elinor\'s combination of practical wisdom and emotional restraint will be tested by her own romantic disappointment. Marianne\'s passionate sensibility will lead her into dangerous romantic attachments before she learns to balance feeling with judgment. The chapter sets up their parallel journeys toward maturity, showing how both sense and sensibility have value but must be balanced for happiness.',
+      
+      'Building on the first two chapters\' establishment of systemic injustice (Chapter 1\'s inheritance laws) and personal betrayal (Chapter 2\'s broken promises), Chapter 3 shows the emotional and psychological consequences of economic displacement. The Dashwood women now experience the reality of losing not just financial security but their very home and identity. Where Chapter 1 established the legal framework that created vulnerability and Chapter 2 showed human choices that exploited it, Chapter 3 reveals the lived experience of displacement—how it feels to lose one\'s place in the world. The sisters\' contrasting responses establish a pattern that will shape their entire story: Elinor will navigate challenges through practical wisdom and emotional control, while Marianne will respond with passionate intensity and romantic idealism. This chapter transforms abstract economic vulnerability into concrete emotional crisis, showing how social systems and personal choices (Chapters 1-2) culminate in profound loss and necessary adaptation. Austen\'s genius lies in showing that displacement isn\'t just about losing a house—it\'s about losing identity, security, and belonging, forcing the sisters to discover who they are when stripped of the social position that defined them.'
     ]
   },
   
-  // ==========================================
+  // ===================================================================
   // TERMS TO KNOW
-  // ==========================================
+  // Literary devices, vocabulary words, and concepts crucial to understanding
+  // ===================================================================
   termsToKnow: [
     {
       term: 'Emotional Restraint',
@@ -74,9 +78,10 @@ export const chapter3: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // CHARACTER DEVELOPMENT
-  // ==========================================
+  // ===================================================================
+  // CHARACTERS
+  // Character development for this chapter
+  // ===================================================================
   characters: [
     {
       name: 'Elinor Dashwood',
@@ -120,9 +125,10 @@ export const chapter3: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // KEY QUOTES
-  // ==========================================
+  // 3-5 significant quotations with analysis (50-75 words max)
+  // ===================================================================
   quotes: [
     {
       text: 'Elinor, too, was deeply afflicted; but still she could struggle, she could exert herself. She could consult with her brother, could receive her sister-in-law on her arrival, and treat her with proper attention.',
@@ -146,9 +152,10 @@ export const chapter3: ChapterData = {
     }
   ],
   
-  // ==========================================
-  // INTELLIGENCE AMPLIFIED ANALYSIS
-  // ==========================================
+  // ===================================================================
+  // IA ANALYSIS (Intelligence Amplifier Analysis)
+  // Deep thematic and technical analysis
+  // ===================================================================
   iaAnalysis: {
     themes: [
       {
@@ -184,9 +191,10 @@ export const chapter3: ChapterData = {
     ]
   },
   
-  // ==========================================
+  // ===================================================================
   // MODERN ADAPTATION
-  // ==========================================
+  // Connect classic text to contemporary life (~200 words)
+  // ===================================================================
   modernAdaptation: {
     setting: 'Imagine a modern family where the parents divorce and the mother and daughters must leave their family home. One daughter maintains composure, makes practical arrangements, and focuses on the future. The other daughter grieves openly, feels the loss intensely, and refuses consolation. Their different approaches to the same crisis reveal contrasting philosophies of coping with loss and change.',
     
@@ -202,9 +210,11 @@ export const chapter3: ChapterData = {
     discussionPrompt: 'We still struggle with how to cope with loss and change. Should we express emotion openly like Marianne, or maintain composure like Elinor? What are the costs and benefits of each approach? How do we balance authentic feeling with practical necessity in times of crisis?'
   },
   
-  // ==========================================
+  // ===================================================================
   // THEMATIC THREADS
-  // ==========================================
+  // Tracking patterns across the novel - recurring themes that connect
+  // chapters and show how ideas develop throughout the story
+  // ===================================================================
   thematicThreads: [
     {
       emoji: '⚖️',
@@ -223,9 +233,11 @@ export const chapter3: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // DISCUSSION QUESTIONS
-  // ==========================================
+  // These questions are tools that LEAD YOU TO THE ANSWER - strategically
+  // designed to guide you toward deeper appreciation of what matters most
+  // ===================================================================
   discussionQuestions: [
     {
       title: 'Emotional Expression',
@@ -253,9 +265,13 @@ export const chapter3: ChapterData = {
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // AMPLIFIED DISCUSSION
-  // ==========================================
+  // AI COLLABORATIVE TOOLS - Created through educator-AI partnership where
+  // you bring pedagogical expertise and AI brings comprehensive analysis.
+  // Together: teaching material neither could produce alone.
+  // Teachers: Select which discussions best fit your classroom from the 6.
+  // ===================================================================
   amplifiedDiscussion: [
     {
       id: 'emotional-expression',
@@ -539,12 +555,389 @@ Beyond historical context, the chapter explores universal experiences:
 Home represents more than shelter—it's identity, security, memory, and belonging. For those (especially women) whose connection to home depends on others' generosity, displacement means losing not just a house but fundamental aspects of self. The sisters must learn to maintain identity and create belonging despite circumstances beyond their control.
 
 This theme resonates today: in a world where economic insecurity, displacement, and mobility are common, questions about home, belonging, and identity remain urgently relevant.`
+    },
+    {
+      id: 'character-contrast-technique',
+      title: 'Character Through Contrast: Austen\'s Technique of Defining by Opposition',
+      question: 'How does Austen use the sisters\' contrasting responses to define and develop both characters? What does this technique reveal about character development?',
+      aiResponse: `**The Art of Character Definition Through Contrast**
+
+Austen's technique of defining characters through contrast is masterful—she doesn't describe Elinor and Marianne in isolation but establishes each in relation to the other. This approach serves multiple purposes and reveals sophisticated understanding of how character works.
+
+**How the Technique Works:**
+
+**1. Immediate Comparison**
+
+By placing the sisters in the same crisis (leaving Norland), Austen creates a controlled experiment: two people facing identical circumstances with different responses. This allows readers to see that responses to crisis reveal character rather than circumstances determining behavior.
+
+The same loss produces:
+- **Elinor**: Practical arrangements, controlled emotions, social composure
+- **Marianne**: Passionate grief, open expression, romantic intensity
+
+The contrast makes each approach more visible. If we only saw Elinor, her restraint might seem normal. If we only saw Marianne, her passion might seem normal. Together, they reveal that neither is universal—both are choices about how to process emotion and navigate crisis.
+
+**2. Neither Appears Superior**
+
+Crucially, Austen doesn't privilege one approach over the other initially. Both have advantages and costs:
+
+**Elinor's Restraint:**
+- **Advantages**: Social functioning, practical decision-making, support for others
+- **Costs**: Emotional isolation, suppressed grief, burden of appearing strong
+
+**Marianne's Expression:**
+- **Advantages**: Emotional authenticity, acknowledged feeling, cathartic release  
+- **Costs**: Social dysfunction, impractical approach, alienating others
+
+By showing both benefits and limitations, Austen invites analysis rather than judgment. The question isn't "which is right?" but "what does each reveal about human nature and social expectations?"
+
+**3. Complexity Through Context**
+
+The contrast reveals complexity in both characters:
+
+**Elinor Isn't Cold**: "Elinor, too, was deeply afflicted" emphasizes that her composure doesn't indicate lack of feeling. She feels deeply but manages emotion differently.
+
+**Marianne Isn't Irrational**: "Marianne's abilities were, in many respects, quite equal to Elinor's. She was sensible and clever" establishes that passion doesn't equal lack of intelligence.
+
+The contrast prevents simplistic readings—neither is purely rational or purely emotional, cold or warm, strong or weak. They're intelligent people with different temperamental approaches to emotion.
+
+**4. Mutual Definition**
+
+Each sister defines the other through opposition:
+- We understand Elinor's restraint better because we see Marianne's expression
+- We understand Marianne's passion better because we see Elinor's composure
+- Neither makes full sense without the other
+
+This mutual definition creates a dialectic rather than a hierarchy. The novel's title emphasizes this: "Sense and Sensibility," not "Sense versus Sensibility" or "Sense over Sensibility." The conjunction "and" suggests both are necessary.
+
+**5. Development Through Contrast**
+
+The contrast sets up character development:
+- **Elinor will learn**: That perfect restraint has costs, that appropriate emotional expression is healthy, that protecting others by suppressing self has limits
+- **Marianne will learn**: That pure passion has dangers, that some restraint protects wellbeing, that mature feeling includes judgment
+
+Their development will involve learning from each other, moving toward integration of sense and sensibility rather than abandoning their natural temperaments.
+
+**Why This Technique Matters:**
+
+**For Character Development:**
+
+Contrast makes character visible. In real life, we often don't recognize our own temperamental patterns because they seem normal to us. Seeing contrasting approaches helps us understand that choices exist about how to process and express emotion.
+
+**For Thematic Exploration:**
+
+The technique allows Austen to explore the central theme (sense vs. sensibility) through embodied examples rather than abstract discussion. We don't just hear about these approaches—we see them in action through characters we care about.
+
+**For Reader Engagement:**
+
+Contrast creates investment. Readers naturally compare the sisters, consider which approach they identify with, and reflect on their own emotional styles. This personal engagement makes the theme immediately relevant rather than merely intellectual.
+
+**For Avoiding Didacticism:**
+
+By showing both approaches without initially privileging either, Austen avoids preachiness. She's not lecturing about the "right" way to process emotion—she's exploring different approaches and their consequences, trusting readers to draw conclusions.
+
+**Historical Context:**
+
+**Cultural Debate:**
+
+This contrast reflects actual cultural tensions in Austen's time:
+- **Enlightenment Values**: Emphasized reason, restraint, social order, emotional control
+- **Romantic Movement**: Emphasized emotion, authenticity, individual feeling, passionate expression
+
+Elinor and Marianne embody these competing cultural forces. Austen navigates between them, suggesting both have value and neither alone suffices.
+
+**Gender Expectations:**
+
+Women faced particular pressure regarding emotional expression:
+- **Social Expectation**: Control emotions, maintain composure, be agreeable
+- **Romantic Ideal**: Authentic feeling, passionate love, emotional intensity
+- **Double Bind**: Be emotionally controlled but also romantically passionate
+
+The sisters navigate this double bind differently, revealing its contradictions.
+
+**Modern Application:**
+
+This contrast technique remains powerful for understanding:
+
+**1. Individual Difference**
+
+People process emotion differently not due to superiority but temperament. Understanding this reduces judgment and increases empathy.
+
+**2. Cultural Variation**
+
+Different cultures value emotional restraint or expression differently. Recognizing this helps navigate multicultural contexts.
+
+**3. Situational Appropriateness**
+
+Sometimes restraint serves wellbeing; sometimes expression does. Maturity involves recognizing which approach fits which context rather than rigidly adhering to one.
+
+**4. Integration Over Polarization**
+
+The goal isn't choosing sense or sensibility but integrating both—feeling deeply and thinking clearly, expressing authentically and maintaining necessary restraint.
+
+**The Teaching Moment:**
+
+**For Writing:**
+
+Character through contrast is powerful technique. To reveal character:
+- Place multiple characters in same situation
+- Show different responses
+- Let differences reveal underlying values and temperaments
+- Avoid privileging one approach too obviously
+
+**For Reading:**
+
+When encountering contrasting characters, ask:
+- What does each reveal about the other?
+- What advantages and costs does each approach have?
+- Is the author privileging one or exploring both?
+- What does the contrast reveal about cultural tensions?
+
+**For Life:**
+
+Understanding that contrasting approaches to emotion exist and both have value reduces judgment and increases flexibility. The goal isn't suppressing our natural temperament but understanding its strengths and limitations, learning from people who process differently.
+
+**Austen's Wisdom:**
+
+By defining characters through contrast, Austen reveals:
+- Human diversity in emotional processing
+- That different approaches serve different contexts
+- That mature adulthood involves integration, not elimination
+- That both sense and sensibility are necessary for complete humanity
+
+The technique isn't just literary craft—it's psychological and philosophical insight: we understand ourselves better when we see ourselves in contrast to others, and wisdom involves recognizing that different approaches have different values in different contexts.
+
+This is why the novel remains relevant: it doesn't answer the question "Should I be like Elinor or Marianne?" but asks the deeper question: "How do I develop the strengths of both while avoiding the limitations of each?" That question transcends Regency England to address universal human development.`
+    },
+    {
+      id: 'loss-identity-home',
+      title: 'Loss, Identity, and Home: The Emotional Impact of Displacement',
+      question: 'What does the sisters\' displacement from Norland reveal about the relationship between home, identity, and security? How does loss of place affect personal identity?',
+      aiResponse: `**The Meaning of Home: More Than Physical Space**
+
+Chapter 3's focus on leaving Norland reveals profound insights about home, identity, and how loss of place affects who we are. This isn't just about moving houses—it's about fundamental displacement affecting identity, security, and belonging.
+
+**What Norland Represents:**
+
+**1. Identity and Belonging**
+
+Norland isn't just where the sisters lived—it's who they were:
+- "The Dashwood family had long been settled in Sussex"
+- Multiple generations created family identity tied to place
+- Social position depended on being "of Norland"
+- Personal identity formed through relationship to place
+
+Leaving Norland means losing not just residence but identity markers: they're no longer "Dashwoods of Norland Park" but displaced relations seeking new home.
+
+**2. Security and Stability**
+
+Home represents more than shelter:
+- **Economic Security**: Norland represented wealth and social position
+- **Social Standing**: Their place in society depended on their home
+- **Emotional Safety**: Familiar surroundings provided psychological security
+- **Future Prospects**: Marriage opportunities depended on social position
+
+Loss of Norland threatens all these forms of security simultaneously.
+
+**3. Memory and History**
+
+The sisters' grief includes grieving:
+- **Childhood Memories**: Growing up, learning, forming as people
+- **Family History**: Where father lived, where family gathered, where traditions formed
+- **Personal Development**: The place where they became who they are
+- **Future Dreams**: Imaginings of life continuing there
+
+Leaving means severing connection to personal history and imagined futures.
+
+**4. Autonomy and Control**
+
+At Norland, the sisters had:
+- **Mistress Status**: Elinor and mother were in charge
+- **Authority**: Decisions about household, grounds, daily life
+- **Privacy**: Their space, their domain, their control
+
+At Barton Cottage (their destination), they'll be:
+- **Guests/Tenants**: Dependent on Sir John Middleton's generosity
+- **Subordinate**: No longer in control of their environment
+- **Observed**: Losing privacy that comes with owning space
+
+Loss of home means loss of autonomy and agency.
+
+**The Sisters' Different Responses:**
+
+**Marianne's Romantic Attachment:**
+
+Marianne grieves Norland romantically and intensely:
+- Sees home as extension of self and family identity
+- Experiences leaving as traumatic rupture
+- Refuses consolation or forward thinking
+- Idealizes what's being lost
+- Believes authentic feeling requires intense expression
+
+Her response embodies Romantic philosophy: authentic emotion, connection to place, refusal to accept loss pragmatically. She would be "inexcusable" if she could "sleep" after such loss, romanticizing grief as demonstrating depth of feeling.
+
+**Elinor's Practical Approach:**
+
+Elinor grieves but channels emotion into action:
+- Acknowledges loss but focuses on necessities
+- Makes practical arrangements for move
+- Maintains social proprieties
+- Protects others by managing her own emotion
+- Looks forward rather than dwelling on past
+
+Her response embodies Enlightenment philosophy: reason managing emotion, practical adjustment, social responsibility over personal expression. She feels deeply ("deeply afflicted") but functions practically ("still she could struggle, she could exert herself").
+
+**Neither Response Is Simply Right or Wrong:**
+
+**Marianne's Approach:**
+- **Strength**: Honors emotional truth, acknowledges significance of loss, refuses to minimize what matters
+- **Limitation**: May prolong suffering, prevent practical adjustment, alienate others who need support
+
+**Elinor's Approach:**
+- **Strength**: Enables practical necessities, supports others, facilitates adjustment
+- **Limitation**: May suppress necessary grief, isolate through appearing strong, prevent emotional processing
+
+**Historical Context: Women and Home:**
+
+Understanding the specific significance for women deepens this analysis:
+
+**Legal Reality:**
+- Women didn't own property in marriage
+- Widows' rights to homes were limited
+- Daughters had no inheritance rights to property
+- Home security depended entirely on male relatives' generosity
+
+**Social Reality:**
+- Women's social identity tied to their home's status
+- Marriage prospects depended on social position maintained by home
+- Women's activities and social life occurred primarily at home
+- Loss of appropriate home meant loss of social position
+
+**Practical Reality:**
+- Women had limited income-earning options
+- Moving meant dependence on new patron/landlord
+- Smaller home meant reduced capacity to entertain and maintain social connections
+- Economic decline often meant social isolation
+
+For the Dashwood women, leaving Norland means:
+- **Social Decline**: From landed gentry to dependent relations
+- **Economic Insecurity**: From independent wealth to limited income
+- **Marital Disadvantage**: Reduced prospects due to lower status
+- **Identity Loss**: No longer identified with prestigious property
+
+**Modern Parallels:**
+
+While legal structures have changed, similar patterns persist:
+
+**Displacement and Identity:**
+- Refugees losing homeland face identity displacement
+- Gentrification displaces communities, disrupting identity
+- Economic hardship forces moves that sever community connections
+- Divorce often means one partner loses home and associated identity
+
+**Home and Security:**
+- Housing insecurity affects psychological wellbeing
+- Ownership provides security that renting doesn't
+- Economic crises force displacement with cascading effects
+- Home remains fundamental to sense of stability and belonging
+
+**Memory and Place:**
+- Personal development happens in specific places
+- Leaving home severs connection to memory and history
+- Displacement disrupts narrative continuity of personal identity
+- Modern mobility creates longing for "home" that may no longer exist
+
+**The Psychological Dimension:**
+
+Modern psychology recognizes what Austen depicted:
+
+**Attachment to Place:**
+- Humans form emotional bonds to physical places
+- Place attachment contributes to identity formation
+- Loss of place creates genuine grief similar to interpersonal loss
+- Forced displacement can be traumatic
+
+**Grief Process:**
+- Displacement requires grieving what's lost
+- Different people process place-loss differently
+- Both expression (Marianne) and integration (Elinor) have roles
+- Healthy adjustment requires acknowledging loss while adapting
+
+**Identity and Environment:**
+- Physical environment shapes personal identity
+- Familiar places provide psychological security
+- Change requires reconstructing identity in new context
+- Resilience involves maintaining core identity while adapting to new place
+
+**The Teaching Moment:**
+
+**For Understanding Literature:**
+
+Home in literature often represents:
+- Identity and belonging
+- Security and stability
+- Memory and history
+- Autonomy and control
+
+Loss of home creates crisis revealing character and testing resilience.
+
+**For Understanding History:**
+
+Historical context matters enormously. What seems like simple moving becomes crisis when understanding:
+- Legal structures making women dependent
+- Social systems tying identity to property
+- Economic realities limiting options
+- Cultural meanings of home and displacement
+
+**For Contemporary Relevance:**
+
+Understanding how displacement affects identity helps us recognize:
+- Why refugees experience trauma beyond physical danger
+- Why gentrification harms communities beyond economics
+- Why economic hardship forcing moves disrupts more than convenience
+- Why housing security affects psychological wellbeing profoundly
+
+**For Personal Development:**
+
+The sisters teach different lessons:
+
+**From Marianne**: Acknowledge loss authentically. Don't minimize what matters. Honor emotional truth even when painful.
+
+**From Elinor**: Function despite pain. Support others. Look forward while honoring past.
+
+**From Both**: Loss of place is real loss requiring real grief. Different people process differently. Both approaches have wisdom.
+
+**Austen's Insight:**
+
+Home isn't just physical space—it's:
+- **Identity**: Who we are tied to where we're from
+- **Security**: Safety (economic, social, emotional) grounded in place
+- **Memory**: Personal history embodied in physical location
+- **Belonging**: Connection to community and social position
+
+Loss of home therefore means:
+- **Identity Crisis**: Who am I if not "from there"?
+- **Insecurity**: Where do I belong now?
+- **Rupture**: How do I maintain connection to my history?
+- **Displacement**: Where is my place in the world?
+
+The sisters' different responses to this multilayered loss reveal not just their temperaments but fundamental human questions: How do we cope with loss? How do we reconstruct identity after displacement? How do we balance honoring what's lost with adapting to what's new?
+
+**The Universal Question:**
+
+Austen asks: What happens to us when we lose our place in the world—literally through displacement, figuratively through social change?
+
+This question transcends Regency England because displacement—literal or figurative—remains constant human experience. How we cope with losing our place, how we reconstruct identity in new circumstances, how we balance grief for what's lost with adaptation to what's new—these are universal human challenges.
+
+Understanding the sisters' displacement deepens our understanding of all displacement: the refugee losing homeland, the family forced to move for economics, the elderly leaving longtime homes, the children of divorce shuttling between houses, the gentrified community displaced by development.
+
+Place matters. Home matters. And when we lose them, who we are is genuinely at stake. That's what Austen shows us through the simple act of the Dashwood sisters leaving Norland—and why, two centuries later, we still recognize the loss.`
     }
   ],
   
-  // ==========================================
+  // ===================================================================
   // EDUCATOR RESOURCES
-  // ==========================================
+  // Teaching tools and activities
+  // ===================================================================
   educatorResources: {
     writingPrompt: {
       title: 'Writing from the Sisters\' Perspectives',
@@ -565,9 +958,10 @@ This theme resonates today: in a world where economic insecurity, displacement, 
     }
   },
   
-  // ==========================================
-  // CRITICAL THINKING EXERCISE
-  // ==========================================
+  // ===================================================================
+  // CRITICAL THINKING EXERCISE (Optional)
+  // One focused, high-level analytical task
+  // ===================================================================
   criticalThinkingExercise: {
     title: 'The Ethics of Emotional Expression: When Is Restraint Virtuous or Harmful?',
     
@@ -595,14 +989,15 @@ This theme resonates today: in a world where economic insecurity, displacement, 
     classroomApplication: 'This can work as: Individual analytical essay, Socratic seminar with structured exploration, Group project where different groups defend different perspectives on emotional expression, Connection to current events—analyze modern examples of grief expression using the same framework. Time required: 2-3 class periods. Works well as capstone assessment for themes of emotion, social expectations, and personal development in Sense and Sensibility.'
   },
   
-  // ==========================================
-  // WHY LITERATURE MATTERS
-  // ==========================================
+  // ===================================================================
+  // WHY LITERATURE MATTERS - Closing Motivation
+  // ===================================================================
   whyLiteratureMatters: getLiteratureMessageByChapter(3),
   
-  // ==========================================
+  // ===================================================================
   // NEXT TIME TEASER
-  // ==========================================
+  // Preview of next chapter
+  // ===================================================================
   nextTimeTeaser: {
     emoji: '❤️',
     title: 'Next: New Romance',

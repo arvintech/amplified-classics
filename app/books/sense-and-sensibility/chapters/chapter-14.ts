@@ -10,7 +10,7 @@ import { getLiteratureMessageByChapter } from '@/app/lib/literature-matters-mess
 
 export const chapter14: ChapterData = {
   number: 14,
-  title: 'Family Visit',
+  title: '',
   
   readingTime: 10,
   pages: 4,
@@ -25,7 +25,9 @@ export const chapter14: ChapterData = {
       
       'Edward\'s behavior during the visit increases Elinor\'s uncertainty about his feelings. His responses remain ambiguous, creating emotional tension while maintaining social propriety. His behavior hints at complications that will be revealed later.',
       
-      'The chapter develops social dynamics and prepares for future revelations about Edward\'s situation.'
+      'The chapter develops social dynamics and prepares for future revelations about Edward\'s situation.',
+      
+      'Chapter 14 shifts focus to Elinor\'s parallel romantic crisis, revealing that sense faces dangers parallel to sensibility. Where Marianne invests too completely without judgment, Elinor tolerates ambiguity too patiently without demanding clarity. Fanny deploys social manipulation using propriety as weapon, while Edward maintains mysterious constraints preventing commitment. Elinor\'s patient tolerance of indefinite uncertainty mirrors Marianne\'s excessive investment—both approaches create vulnerability through different means. Both sisters need what the other possesses to protect themselves from romantic danger.'
     ]
   },
   
@@ -117,15 +119,58 @@ export const chapter14: ChapterData = {
   thematicThreads: [
     {
       emoji: '🎭',
-      name: 'Social Performance',
-      explanation: 'Family interactions reveal social manipulation. Watch how characters navigate calculated behavior.'
+      name: 'Social Manipulation',
+      explanation: 'Fanny deploys sophisticated manipulation using propriety as weapon. Watch how power operates through indirect means.'
+    },
+    {
+      emoji: '❓',
+      name: 'Ambiguous Attachment',
+      explanation: 'Edward maintains romantic ambiguity with Elinor. Watch how uncertainty creates anxiety and parallels Marianne\'s situation differently.'
+    },
+    {
+      emoji: '👑',
+      name: 'Dignified Restraint',
+      explanation: 'Elinor responds to manipulation without retaliation or acceptance. Watch how maintaining dignity differs from passivity.'
+    },
+    {
+      emoji: '⚖️',
+      name: 'Parallel Vulnerabilities',
+      explanation: 'Sense faces dangers parallel to sensibility. Watch how both approaches create different but equivalent risks.'
     }
   ],
   
   discussionQuestions: [
     {
       title: 'Social Manipulation',
-      question: 'How does Fanny use social behavior to control situations? What does this reveal about her character?'
+      question: 'How does Fanny use propriety as weapon while maintaining plausible deniability? What are modern examples of this technique?'
+    },
+    {
+      title: 'Ambiguous Attachment',
+      question: 'Why does Edward maintain ambiguity with Elinor? When does genuine complication justify ongoing uncertainty versus become excuse for avoiding commitment?'
+    },
+    {
+      title: 'Dignified Restraint',
+      question: 'How does Elinor respond to Fanny\'s manipulation? What\'s the difference between dignified restraint and passive acceptance of mistreatment?'
+    },
+    {
+      title: 'Sense\'s Flaw',
+      question: 'How does Elinor\'s patient tolerance create parallel vulnerability to Marianne\'s passionate investment? What does each sister need from the other?'
+    },
+    {
+      title: 'Family Constraints',
+      question: 'How do family dynamics and obligations constrain romantic choices? When do they create genuine complication versus become excuse?'
+    },
+    {
+      title: 'Parallel Dangers',
+      question: 'Chapter 14 shows sense facing dangers parallel to sensibility—how? What does this reveal about Austen\'s philosophy?'
+    },
+    {
+      title: 'Situationships',
+      question: 'How does Edward and Elinor\'s ambiguous attachment parallel modern "situationships"? When is ambiguity protective versus exploitative?'
+    },
+    {
+      title: 'Modern Application',
+      question: 'When have you experienced social manipulation that maintained surface propriety? How did you navigate it while preserving dignity?'
     }
   ],
   
@@ -169,6 +214,36 @@ We see these patterns today:
 
 **The Lesson:**
 Authentic relationships require genuine behavior. Social manipulation creates short-term control but damages long-term connection.`
+    },
+    {
+      id: 'ambiguous-attachment-anxiety',
+      title: 'Situationships Before They Had a Name: Edward\'s Ambiguity and Elinor\'s Patient Suffering',
+      question: 'Why does Edward maintain romantic ambiguity with Elinor? When does genuine complication justify uncertainty versus become excuse for avoiding commitment?',
+      aiResponse: `Edward and Elinor\'s relationship demonstrates "ambiguous attachment"—connection without commitment, affection without clarity. He shows clear care through attentiveness and preference for her company, but maintains mystery about constraints preventing explicit commitment. Elinor must interpret signals, manage hope without confirmation, maintain availability despite lack of security. Modern parallel: "situationships" where partners act couple-like while avoiding relationship definition. Edward\'s ambiguity stems from genuine complication (secret engagement to Lucy), but effect on Elinor is similar to strategic ambiguity: she experiences relationship anxiety without security, invests emotionally without knowing if investment will be reciprocated, takes risks without accountability from him. The pattern reveals sense\'s flaw: Elinor\'s patient tolerance enables prolonged uncertainty, her emotional management prevents assertive boundary-setting, her respect for his privacy prevents demanding explanation. Protection requires: requesting explicit clarity about status and intentions, refusing to invest more deeply than clarity justifies, recognizing that genuine complications can be explained even if not resolved, and accepting that persistent ambiguity often means person prefers their optionality to your security.`
+    },
+    {
+      id: 'dignified-restraint-vs-passivity',
+      title: 'The Third Way: How Dignified Restraint Differs from Both Retaliation and Doormat Acceptance',
+      question: 'How does Elinor respond to Fanny\'s manipulation without either retaliating or passively accepting mistreatment? What\'s the difference?',
+      aiResponse: `Elinor demonstrates "dignified restraint"—perceiving manipulation accurately but responding civilly, maintaining self-respect without dramatic confrontation, holding boundaries without hostile retaliation. When Fanny deploys social manipulation, Elinor doesn\'t pretend it\'s not happening (passive acceptance) or respond with corresponding hostility (retaliation), but creates third option: maintaining her standards regardless of Fanny\'s behavior, refusing to show hurt that would indicate Fanny succeeded, responding courteously without granting satisfaction of visible impact. This differs from passivity (which doesn\'t recognize mistreatment) and aggression (which mirrors hostility). Key elements: recognizing what\'s occurring accurately, maintaining internal clarity about mistreatment, responding civilly without pretending offense didn\'t happen, holding boundaries without drama, refusing to internalize others\' contempt. Modern application: workplace manipulation, family power plays, social situations where direct confrontation is counterproductive. Not every offense requires dramatic response; maintaining composure can be more powerful than retaliating; you can perceive injustice clearly while choosing strategic response.`
+    },
+    {
+      id: 'parallel-dangers-both-sisters',
+      title: 'Mirror Vulnerabilities: How Sense and Sensibility Face Equal but Opposite Romantic Dangers',
+      question: 'How does Chapter 14 reveal that sense faces parallel dangers to sensibility? What does each sister need from the other?',
+      aiResponse: `Chapter 14 reveals crucial parallel: both romantic philosophies create vulnerability when pursued purely. Marianne\'s sensibility creates danger through excessive investment—trusting completely, investing maximally based on assumed commitment, dismissing warnings. Elinor\'s sense creates danger through excessive patience—tolerating ambiguity indefinitely, managing uncertainty without demanding clarity, respecting privacy without asserting needs. Marianne invests maximally in relationship without explicit commitment (Willoughby never proposed). Elinor invests moderately while awaiting commitment Edward won\'t provide. Both create vulnerability: Marianne to exploitation through excessive trust, Elinor to indefinite uncertainty through excessive patience. The solution isn\'t abandoning either approach but integration: Marianne needs Elinor\'s evaluative judgment to protect from exploitation—critically assessing partners, taking warnings seriously, demanding evidence before total investment. Elinor needs Marianne\'s assertive clarity-seeking to protect from prolonged uncertainty—expressing needs directly, requesting explicit commitments, refusing to accept indefinite ambiguity. Neither pure sensibility nor pure sense succeeds; wisdom requires what each possesses that the other lacks.`
+    },
+    {
+      id: 'weaponized-propriety',
+      title: 'Politeness as Violence: How Social Norms Can Be Weaponized While Maintaining Plausible Deniability',
+      question: 'How does Fanny use "proper" behavior as weapon? What are modern examples of weaponized politeness or propriety?',
+      aiResponse: `Fanny demonstrates "weaponized propriety"—using social norms as tools of control while maintaining plausible deniability. She arrives with minimal notice (asserting entitlement), displays wealth emphasizing status difference, distributes criticism disguised as concern, offers "help" that asserts dominance, uses propriety as excuse for coldness. Her manipulation succeeds because she operates within conventions—nobody can object without appearing rude, yet everyone understands her message. Modern examples: "I\'m just trying to help" delivering unwanted criticism; "I\'m concerned about you" expressing disapproval; "proper" professional standards enforcing discriminatory norms; "family obligations" justifying control; "social conventions" policing behavior. The technique weaponizes politeness: technically correct behavior serving manipulation, surface civility masking hostility, inability to articulate exact offense making victim doubt perception. Protection: recognize that technically correct behavior can serve manipulation, trust instincts about subtext rather than accepting surface propriety, name patterns explicitly ("I notice you frame criticism as helpfulness"), refuse indirect communication ("Please state concerns directly"), maintain boundaries regardless of propriety claims.`
+    },
+    {
+      id: 'family-constraints-or-excuses',
+      title: 'When Complications Become Excuses: Distinguishing Genuine Constraints from Convenient Justifications',
+      question: 'Do family obligations create genuine complications for Edward, or do they become convenient excuses for avoiding commitment? How do we distinguish?',
+      aiResponse: `Chapter 14 raises crucial question: When do family constraints create genuine complications versus convenient excuses? Edward faces real family pressure—Fanny\'s disapproval, family expectations, financial dependency. These are genuine complications. However, his continued ambiguity despite complications suggests either inability or unwillingness to prioritize Elinor. The distinction: Genuine complications can be explained even if not resolved ("I want to be with you but family pressure prevents formal commitment now; here\'s my timeline") versus using complications to maintain ambiguity without accountability ("It\'s complicated" without explanation). Genuine complications motivate finding solutions; excuses justify maintaining status quo indefinitely. Key questions: Does person explain complications specifically or keep them vague? Do they work toward resolution or accept indefinite ambiguity? Do complications prevent commitment or just formal announcement? Does timeline exist or is future indefinitely postponed? Modern parallel: partners citing "not ready for commitment," "need to focus on career," "family wouldn\'t understand"—sometimes genuine, sometimes convenient excuses maintaining optionality while securing relationship benefits. If complications are real, specificity and solution-orientation should exist; if excuses, vagueness and indefinite postponement prevail.`
     }
   ],
   
